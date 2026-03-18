@@ -730,35 +730,33 @@ h1 {
 
 
 /* --- SECTION 8: FINAL CLOSE --- */
+
 .final-close-section {
-	padding: 160px 0;
+	padding: 120px 0;
 	background-color: var(--bg-primary);
 	position: relative;
 	overflow: hidden;
+	border-top: 1px solid var(--border);
 }
 
-.final-close-section::after {
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 100%;
-	max-image: 800px;
-	height: 300px;
-	background: radial-gradient(circle at 50% 100%, rgba(94, 106, 210, 0.1) 0%, transparent 70%);
-	pointer-events: none;
+.final-flex-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 60px;
+	position: relative;
+	z-index: 2;
 }
 
-.final-content-wrapper {
-	max-width: 800px;
-	margin: 0 auto;
+.final-text-side {
+	flex: 1;
+	text-align: left;
 }
 
 .final-headline {
-	font-size: clamp(2rem, 5vw, 3.5rem);
-	line-height: 1.2;
-	margin-bottom: 40px;
+	font-size: clamp(2rem, 4vw, 2.8rem);
+	line-height: 1.1;
+	margin-bottom: 24px;
 	color: var(--text-muted);
 }
 
@@ -767,35 +765,53 @@ h1 {
 }
 
 .final-subtext {
-	font-size: 1.5rem;
+	font-size: 1.15rem;
 	color: var(--text-muted);
-	margin-bottom: 60px;
-	line-height: 1.6;
+	max-width: 500px;
 }
 
 .highlight-white {
 	color: #fff;
 	font-weight: 500;
+	margin-left: 8px;
 }
 
-.final-cta {
-	margin-top: 40px;
+.final-cta-side {
+	flex-shrink: 0;
 }
 
-/* --- FOOTER --- */
-.minimal-footer {
-	padding: 60px 0;
-	border-top: 1px solid var(--border);
-	background-color: var(--bg-primary);
+.final-close-section::after {
+	content: "";
+	position: absolute;
+	bottom: -100px;
+	right: -100px;
+	width: 500px;
+	height: 500px;
+	background: radial-gradient(circle, rgba(94, 106, 210, 0.15) 0%, transparent 70%);
+	pointer-events: none;
+	z-index: 1;
 }
 
-.minimal-footer p {
-	font-size: 0.85rem;
-	color: var(--text-muted);
-	opacity: 0.5;
-	letter-spacing: 0.05em;
-}
+@media (max-width: 992px) {
+	.final-flex-container {
+		flex-direction: column;
+		text-align: center;
+		gap: 48px;
+	}
 
+	.final-text-side {
+		text-align: center;
+	}
+
+	.final-subtext {
+		margin: 0 auto;
+	}
+
+	.final-close-section::after {
+		right: 50%;
+		transform: translateX(50%);
+	}
+}
 
 /* --- RESPONSIVE STYLES --- */
 @media (max-width: 992px) {
@@ -834,9 +850,7 @@ h1 {
 		grid-template-columns: 1fr;
 		gap: 60px;
 	}
-}
 
-@media (max-width: 768px) {
 	.investment-card {
 		padding: 40px 24px;
 	}
