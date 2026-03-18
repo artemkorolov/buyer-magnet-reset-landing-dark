@@ -3,10 +3,18 @@
 	--bg-primary: #000000;
 	--bg-secondary: #080808;
 	--text-primary: #ffffff;
-	--text-muted: #8a8a8e;
-	--accent: #5e6ad2;
+	--text-muted: #88888E;
+
+	/* НОВИЙ: Soft Blue Accent */
+	--accent: #82B1FF;
+	--accent-glow: rgba(130, 177, 255, 0.15);
+	--accent-soft: rgba(130, 177, 255, 0.08);
+
 	--border: rgba(255, 255, 255, 0.08);
 	--card-bg: #0c0c0c;
+
+	/* Системні відступи */
+	--section-padding: 140px;
 }
 
 * {
@@ -20,51 +28,88 @@ html {
 }
 
 body {
-	font-family: 'Inter', -apple-system, sans-serif;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 	background-color: var(--bg-primary);
 	color: var(--text-primary);
 	line-height: 1.6;
 	-webkit-font-smoothing: antialiased;
+	overflow-x: hidden;
 }
 
-.textured-bg {
-	background-color: var(--bg-primary);
-}
-
+/* Типографіка */
 h1,
 h2,
 h3 {
-	font-family: 'Geist', sans-serif;
-	letter-spacing: -0.03em;
+	font-family: 'Geist', 'Inter', sans-serif;
+	letter-spacing: -0.04em;
 	font-weight: 700;
+	color: #fff;
+}
+
+/* Основний заголовок секцій (уніфікований) */
+.section-title-lg {
+	font-size: clamp(2rem, 5vw, 2.8rem);
+	line-height: 1.1;
+	margin-bottom: 24px;
 }
 
 .container {
 	max-width: 1100px;
 	margin: 0 auto;
-	padding: 0 24px;
+	padding: 0 32px;
+	/* Дефолтне вирівнювання — по лівому краю */
+	text-align: left;
 }
 
-.text-center {
+/* Спеціальний клас для Hero та Investment (де потрібен центр) */
+.text-center,
+.hero .container,
+.investment-section .container {
 	text-align: center;
+}
+
+/* Бейджі (Kickers) */
+.badge-label {
+	display: inline-block;
+	font-size: 11px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: var(--accent);
+	margin-bottom: 16px;
+}
+
+/* Універсальні іконки з унікальним стилем */
+[data-lucide] {
+	width: 28px;
+	height: 28px;
+	stroke-width: 1.5;
+	filter: drop-shadow(0 0 10px var(--accent-glow));
+	vertical-align: middle;
 }
 
 .border-bottom {
 	border-bottom: 1px solid var(--border);
 }
 
+.textured-bg {
+	background-color: var(--bg-primary);
+}
+
 
 /* --- SECTION 1: HERO --- */
 .hero {
 	position: relative;
-	padding: 160px 0 120px 0;
+	padding: 180px 0 120px 0;
 	overflow: hidden;
 	background-color: #000;
 	background-image:
-		radial-gradient(circle at 50% -20%, rgba(94, 106, 210, 0.15) 0%, transparent 50%),
+		/* Змінено на Soft Blue */
+		radial-gradient(circle at 50% -20%, rgba(130, 177, 255, 0.12) 0%, transparent 50%),
 		radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 1) 0%, transparent 100%);
 }
 
+/* Сітка на фоні */
 .hero::before {
 	content: "";
 	position: absolute;
@@ -73,45 +118,42 @@ h3 {
 	width: 100%;
 	height: 100%;
 	background-image:
-		linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-		linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-	background-size: 40px 40px;
+		linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+		linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+	background-size: 44px 44px;
+	/* Трохи збільшив розмір для преміальності */
 	mask-image: radial-gradient(ellipse at center, black, transparent 80%);
 	-webkit-mask-image: radial-gradient(ellipse at center, black, transparent 80%);
 	pointer-events: none;
 	z-index: 0;
 }
 
-.hero::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 100%;
-	max-width: 1200px;
-	height: 1px;
-	background: linear-gradient(90deg, transparent, rgba(94, 106, 210, 0.3), transparent);
-	z-index: 1;
-}
-
 .hero-container {
 	position: relative;
 	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	/* Герой завжди по центру */
 }
 
+/* Kicker / Badge */
 .badge {
 	display: inline-flex;
 	align-items: center;
 	gap: 8px;
-	padding: 6px 14px;
+	padding: 8px 16px;
 	border: 1px solid var(--border);
 	border-radius: 100px;
 	font-size: 11px;
 	font-weight: 600;
 	color: var(--text-muted);
-	margin-bottom: 32px;
-	background: rgba(255, 255, 255, 0.03);
+	margin-bottom: 40px;
+	background: rgba(130, 177, 255, 0.03);
+	/* Додав легкий блакитний відтінок */
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
 }
 
 .badge .dot {
@@ -119,93 +161,284 @@ h3 {
 	height: 6px;
 	background-color: var(--accent);
 	border-radius: 50%;
-	box-shadow: 0 0 8px var(--accent);
+	box-shadow: 0 0 10px var(--accent);
 }
 
-h1 {
-	font-size: clamp(2.5rem, 8vw, 4.5rem);
-	line-height: 1.1;
+/* Заголовок */
+.hero h1 {
+	font-size: clamp(2.8rem, 8vw, 4.8rem);
+	line-height: 1.05;
 	margin-bottom: 32px;
-	background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0.7) 100%);
-	background-clip: text;
+	background: linear-gradient(180deg, #fff 40%, rgba(255, 255, 255, 0.5) 100%);
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
+	font-weight: 800;
+	letter-spacing: -0.04em;
+	max-width: 950px;
 }
 
-.hero p:not(.hero-subtext) {
-	font-size: 1.25rem;
-	color: var(--text-muted);
-	max-width: 600px;
+/* Опис (Subheadline) */
+.hero-description {
+	max-width: 680px;
 	margin: 0 auto 48px auto;
+	font-size: 1.25rem;
+	line-height: 1.6;
+	color: var(--text-muted);
 }
 
+.highlight-text {
+	color: #fff;
+	margin-top: 12px;
+	display: block;
+}
+
+.highlight-text strong {
+	color: var(--accent);
+	font-weight: 600;
+}
+
+/* Кнопка */
 .btn-hero {
 	display: inline-flex;
 	align-items: center;
-	gap: 10px;
-	padding: 18px 36px;
+	gap: 12px;
+	padding: 20px 42px;
 	background: #ffffff;
-	color: #000000;
+	color: #000000 !important;
 	text-decoration: none;
-	font-weight: 600;
-	border-radius: 8px;
-	transition: all 0.2s ease;
+	font-weight: 700;
+	border-radius: 12px;
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	font-size: 1.1rem;
 }
 
 .btn-hero:hover {
-	transform: translateY(-2px);
-	box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
+	transform: translateY(-3px);
+	/* Тінь тепер з блакитним відтінком */
+	box-shadow: 0 15px 30px rgba(130, 177, 255, 0.2);
+	background: #fff;
 }
 
 .hero-subtext {
 	margin-top: 24px;
 	font-size: 14px;
 	color: var(--text-muted);
-	opacity: 0.6;
+	opacity: 0.7;
+	letter-spacing: 0.01em;
 }
 
+/* Адаптивність */
+@media (max-width: 768px) {
+	.hero {
+		padding: 140px 0 80px 0;
+	}
+
+	.hero h1 {
+		font-size: 2.5rem;
+		letter-spacing: -0.02em;
+	}
+
+	.hero-description {
+		font-size: 1.1rem;
+	}
+
+	.btn-hero {
+		width: 100%;
+		justify-content: center;
+	}
+}
 
 /* --- SECTION 2: PROBLEM --- */
 .problem-section {
-	padding: 120px 0;
+	padding: var(--section-padding) 0;
+	background-color: var(--bg-primary);
 }
 
 .grid-2-problem-new {
 	display: grid;
-	grid-template-columns: 1.2fr 1fr;
-	gap: 80px;
-	align-items: center;
+	/* Трохи змістив пропорцію для кращого балансу тексту */
+	grid-template-columns: 1.1fr 0.9fr;
+	gap: 100px;
+	align-items: start;
+	/* Вирівнювання по верху для зручності читання */
+	text-align: left;
+	/* Строго по лівому краю */
 }
 
-.section-title-lg {
-	font-size: clamp(2rem, 5vw, 3rem);
-	line-height: 1.1;
+/* Використовуємо уніфікований заголовок з Global Styles */
+.problem-section .section-title-lg {
+	margin-bottom: 32px;
+	letter-spacing: -0.04em;
+	max-width: 500px;
 }
 
 .problem-body-new {
 	display: flex;
 	flex-direction: column;
-	gap: 40px;
+	gap: 32px;
+	padding-top: 10px;
+	/* Компенсація висоти заголовка поруч */
 }
 
 .muted-text {
 	color: var(--text-muted);
 	font-size: 1.15rem;
+	line-height: 1.6;
 }
 
 .dark-text {
 	color: var(--text-primary);
 	font-weight: 500;
-	font-size: 1.15rem;
+	font-size: 1.2rem;
+	line-height: 1.5;
 }
 
 .highlight-punch {
-	margin-top: 10px;
+	margin-top: 8px;
 	font-size: 1.15rem;
+	color: var(--text-muted);
 }
 
 .highlight-punch strong {
 	color: var(--accent);
+	font-weight: 600;
+	/* Додав легке світіння для тексту акценту */
+	text-shadow: 0 0 15px var(--accent-glow);
+}
+
+/* Адаптивність */
+@media (max-width: 992px) {
+	.grid-2-problem-new {
+		grid-template-columns: 1fr;
+		gap: 48px;
+	}
+
+	.problem-section .section-title-lg {
+		max-width: 100%;
+	}
+}
+/* --- SECTION 3: THE REAL REASON --- */
+
+.reason-section {
+	padding: 140px 0;
+	background-color: var(--bg-primary);
+}
+
+.reason-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 100px;
+	align-items: flex-start;
+}
+
+.reason-header {
+	position: sticky;
+	top: 100px;
+}
+
+.reason-intro-text {
+	margin-top: 32px;
+	font-size: 1.5rem;
+	color: var(--text-muted);
+	line-height: 1.4;
+}
+
+.reason-intro-text .text-white {
+	color: #fff;
+	font-weight: 600;
+}
+
+.reason-card {
+	background: var(--card-bg);
+	border: 1px solid var(--border);
+	padding: 60px;
+	border-radius: 24px;
+	position: relative;
+}
+
+.reason-statement {
+	font-size: 1.25rem;
+	margin-bottom: 40px;
+	line-height: 1.5;
+}
+
+.highlight-muted {
+	color: var(--text-muted);
+	opacity: 0.8;
+}
+
+.because-box {
+	margin-bottom: 40px;
+	padding: 32px;
+	background: rgba(255, 255, 255, 0.02);
+	border-radius: 12px;
+	border: 1px solid var(--border);
+}
+
+.because-label {
+	display: block;
+	font-size: 11px;
+	font-weight: 700;
+	color: var(--accent);
+	letter-spacing: 0.1em;
+	margin-bottom: 24px;
+}
+
+.because-list {
+	list-style: none;
+}
+
+.because-list li {
+	font-size: 1.1rem;
+	margin-bottom: 16px;
+	padding-left: 20px;
+	position: relative;
+	color: #fff;
+}
+
+.because-list li::before {
+	content: "—";
+	position: absolute;
+	left: 0;
+	color: var(--accent);
+}
+
+.reason-footer {
+	margin-top: 40px;
+}
+
+.reason-footer p {
+	font-size: 1.1rem;
+	color: var(--text-muted);
+	margin-bottom: 12px;
+}
+
+.final-punch {
+	font-size: 1.5rem;
+	line-height: 1.3;
+	color: #fff;
+}
+
+.final-punch span {
+	color: var(--accent);
+	font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+	.reason-grid {
+		grid-template-columns: 1fr;
+		gap: 60px;
+	}
+
+	.reason-header {
+		position: static;
+	}
+
+	.reason-card {
+		padding: 40px 24px;
+	}
 }
 
 
@@ -289,6 +522,7 @@ h1 {
 
 
 /* --- SECTION 4: THE SYSTEM --- */
+
 .system-section {
 	padding: 120px 0;
 	background-color: var(--bg-primary);
@@ -313,6 +547,7 @@ h1 {
 	grid-template-columns: repeat(3, 1fr);
 	gap: 24px;
 	align-items: stretch;
+	/* Картки завжди однієї висоти в ряду */
 }
 
 .phase-card-new {
@@ -345,6 +580,12 @@ h1 {
 	align-items: center;
 }
 
+.card-icon-wilson {
+	width: 24px;
+	height: 24px;
+	stroke-width: 1.5;
+}
+
 .week-badge {
 	font-size: 11px;
 	font-weight: 600;
@@ -354,7 +595,6 @@ h1 {
 	border-radius: 6px;
 	border: 1px solid var(--border);
 	letter-spacing: 0.02em;
-	height: fit-content;
 	line-height: 1;
 }
 
@@ -362,6 +602,7 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
+	/* Виштовхує футер донизу */
 }
 
 .phase-number {
@@ -377,11 +618,12 @@ h1 {
 	font-size: 1.5rem;
 	margin-bottom: 24px;
 	letter-spacing: -0.02em;
+	color: #fff;
 }
 
 .phase-list {
 	list-style: none;
-	margin-bottom: 32px;
+	margin-bottom: 40px;
 }
 
 .phase-list li {
@@ -397,7 +639,7 @@ h1 {
 	content: "";
 	position: absolute;
 	left: 0;
-	top: 10px;
+	top: 9px;
 	width: 4px;
 	height: 4px;
 	background-color: var(--accent);
@@ -405,35 +647,165 @@ h1 {
 	box-shadow: 0 0 6px var(--accent);
 }
 
+/* Оновлений футер для довгих речень */
 .card-footer {
 	margin-top: auto;
 	padding-top: 24px;
 	border-top: 1px solid var(--border);
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
+	/* Вирівнювання по верхньому краю для довгих текстів */
+	gap: 16px;
 }
 
 .goal-label {
 	font-size: 0.85rem;
 	color: var(--text-muted);
+	line-height: 1.5;
+	flex: 1;
 }
 
 .goal-label strong {
 	color: var(--text-primary);
 	font-weight: 600;
+	display: block;
+	/* Результат з нового рядка для кращої читабельності */
+	margin-top: 4px;
+	font-size: 0.9rem;
 }
 
 .arrow-small {
 	width: 16px;
 	height: 16px;
 	color: var(--text-muted);
-	transition: transform 0.3s ease;
+	margin-top: 4px;
+	/* Корекція положення відносно тексту */
+	transition: transform 0.3s ease, color 0.3s ease;
+	flex-shrink: 0;
 }
 
 .phase-card-new:hover .arrow-small {
 	transform: translateX(4px);
 	color: var(--accent);
+}
+
+/* --- RESPONSIVE --- */
+
+@media (max-width: 1024px) {
+	.phases-cards-grid {
+		grid-template-columns: 1fr;
+		/* На планшетах і мобільних — в один стовпчик */
+		gap: 16px;
+	}
+
+	.phase-card-new {
+		padding: 32px;
+	}
+}
+
+
+/* --- SECTION 5: WHY THREADS --- */
+
+.threads-why-section {
+	padding: 140px 0;
+	background-color: var(--bg-primary);
+}
+
+.threads-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 80px;
+	align-items: start;
+}
+
+.threads-left {
+	position: sticky;
+	top: 120px;
+}
+
+.manifesto-content {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.lead-text {
+	font-size: 2rem;
+	font-weight: 700;
+	color: #fff;
+	letter-spacing: -0.02em;
+}
+
+.no-list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.no-list li {
+	font-size: 1.25rem;
+	color: var(--text-muted);
+	padding-left: 20px;
+	position: relative;
+}
+
+.no-list li::before {
+	content: "✕";
+	position: absolute;
+	left: 0;
+	font-size: 0.9rem;
+	top: 4px;
+	color: #ff4444;
+	/* Тонкий акцент на запереченні */
+	opacity: 0.7;
+}
+
+.threads-focus {
+	margin-top: 20px;
+	padding-top: 40px;
+	border-top: 1px solid var(--border);
+}
+
+.threads-focus p:first-child {
+	font-size: 1.5rem;
+	color: #fff;
+	margin-bottom: 24px;
+}
+
+.warning-text {
+	font-size: 1.2rem;
+	color: var(--text-muted);
+	line-height: 1.5;
+}
+
+.warning-text span {
+	display: block;
+	margin-top: 8px;
+	color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	background: linear-gradient(90deg, var(--accent), #fff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/* Адаптивність */
+@media (max-width: 992px) {
+	.threads-wrapper {
+		grid-template-columns: 1fr;
+		gap: 48px;
+	}
+
+	.threads-left {
+		position: static;
+	}
+
+	.lead-text {
+		font-size: 1.75rem;
+	}
 }
 
 
@@ -625,9 +997,10 @@ h1 {
 }
 
 
-/* --- SECTION 7: INVESTMENT --- */
+/* --- SECTION 10: INVESTMENT (REFINED) --- */
+
 .investment-section {
-	padding: 160px 0;
+	padding: 120px 0;
 	background-color: var(--bg-primary);
 	display: flex;
 	justify-content: center;
@@ -635,97 +1008,85 @@ h1 {
 
 .investment-card {
 	position: relative;
-	max-width: 800px;
+	max-width: 750px;
+	/* Трохи компактніше */
 	width: 100%;
 	background: var(--card-bg);
 	border: 1px solid var(--border);
 	border-radius: 24px;
-	padding: 60px;
+	padding: 60px 40px;
 	overflow: hidden;
 	text-align: center;
-	transition: border-color 0.4s ease;
 }
 
-.investment-card:hover {
-	border-color: rgba(94, 106, 210, 0.5);
-}
-
-.card-glow {
-	position: absolute;
-	top: -50%;
-	left: -50%;
-	width: 200%;
-	height: 200%;
-	background: radial-gradient(circle at center, rgba(94, 106, 210, 0.05) 0%, transparent 50%);
-	pointer-events: none;
-}
-
-.investment-title {
-	font-size: 2.5rem;
-	margin-bottom: 24px;
-	letter-spacing: -0.03em;
+/* Стандартний розмір як у всіх секціях */
+.investment-card .section-title-lg {
+	font-size: clamp(1.8rem, 4vw, 2.5rem);
+	margin-bottom: 16px;
+	letter-spacing: -0.02em;
 }
 
 .price-tag {
 	font-size: 4rem;
+	/* Трохи зменшили масштаб */
 	font-weight: 800;
-	font-family: 'Geist', sans-serif;
+	margin-bottom: 40px;
 	color: #fff;
-	margin-bottom: 40px;
-	background: linear-gradient(180deg, #fff 40%, rgba(255, 255, 255, 0.5) 100%);
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
 }
 
-.investment-grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 40px;
-	text-align: left;
-	padding: 40px 0;
+.investment-content-new {
+	margin-bottom: 40px;
+}
+
+.focus-points {
+	font-size: 1.15rem;
+	color: var(--text-muted);
+	line-height: 1.6;
+	margin-bottom: 32px;
+}
+
+.focus-points .text-white {
+	color: #fff;
+}
+
+.positioning-statement {
+	padding-top: 32px;
 	border-top: 1px solid var(--border);
-	border-bottom: 1px solid var(--border);
-	margin-bottom: 40px;
 }
 
-.breakdown-text {
+.positioning-statement p {
+	font-size: 0.9rem;
+	color: var(--text-muted);
+	margin-bottom: 8px;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+/* Зменшений тайтл всередині картки */
+.highlight-accent {
 	font-size: 1.25rem;
-	color: var(--text-primary);
-	line-height: 1.5;
-	font-weight: 500;
-}
-
-.check-list-minimal {
-	list-style: none;
-}
-
-.check-list-minimal li {
-	display: flex;
-	align-items: center;
-	gap: 12px;
-	color: var(--text-muted);
-	margin-bottom: 12px;
-	font-size: 1.1rem;
-}
-
-.check-list-minimal li i {
+	/* Значно зменшено для балансу */
 	color: var(--accent);
-	width: 18px;
-	height: 18px;
-}
-
-.productized-note {
-	font-size: 1rem;
-	color: var(--text-muted);
-	margin-bottom: 48px;
-	font-style: italic;
+	font-weight: 600;
+	letter-spacing: 0;
 }
 
 .btn-full {
 	width: 100%;
 	justify-content: center;
-	font-size: 1.2rem;
-	padding: 24px;
+	padding: 22px;
+	font-size: 1.1rem;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+	.investment-card {
+		padding: 40px 20px;
+	}
+
+	.price-tag {
+		font-size: 3rem;
+	}
 }
 
 
@@ -812,6 +1173,83 @@ h1 {
 		transform: translateX(50%);
 	}
 }
+
+
+/* --- SECTION 9: AUTHORITY FRAME --- */
+
+.authority-section {
+	padding: 100px 0;
+	background-color: var(--bg-primary);
+	position: relative;
+}
+
+.authority-wrapper {
+	max-width: 900px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.authority-lead {
+	font-size: 1.5rem;
+	color: var(--text-primary);
+	margin-bottom: 48px;
+	font-weight: 500;
+	letter-spacing: -0.02em;
+}
+
+.authority-grid {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 32px;
+}
+
+.auth-item {
+	position: relative;
+	padding: 0 10px;
+}
+
+.auth-no {
+	color: var(--text-muted);
+	font-size: 1.1rem;
+	text-decoration: line-through;
+	text-decoration-color: rgba(255, 255, 255, 0.2);
+	opacity: 0.6;
+}
+
+.auth-yes {
+	color: var(--accent);
+	font-size: 1.2rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	filter: drop-shadow(0 0 8px rgba(94, 106, 210, 0.3));
+}
+
+/* Розділювальні крапки між пунктами */
+.auth-item:not(:last-child)::after {
+	content: "•";
+	position: absolute;
+	right: -20px;
+	color: var(--border);
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+	.authority-grid {
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	.auth-item:not(:last-child)::after {
+		display: none;
+	}
+
+	.authority-lead {
+		font-size: 1.25rem;
+	}
+}
+
 
 /* --- RESPONSIVE STYLES --- */
 @media (max-width: 992px) {
