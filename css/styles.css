@@ -493,7 +493,6 @@ p {
 	}
 }
 
-
 /* --- SECTION 5: WHY THREADS (TABLE STYLE) --- */
 .threads-table-section {
 	padding: var(--section-padding) 0;
@@ -557,46 +556,45 @@ p {
 
 .text-white {
 	color: #fff;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 @media (max-width: 992px) {
 	.manifesto-table {
 		grid-template-columns: 1fr;
-	
+		/* Перехід в один стовпчик */
 		border-radius: 16px;
-	
+		/* Трохи менший радіус для мобільних */
 	}
 
 	.table-cell {
 		padding: 32px 24px;
-
+		/* Компактніші паддінги */
 		border-right: none !important;
-
+		/* Прибираємо вертикальний роздільник */
 		border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 	}
 
 	.main-cell {
 		background: rgba(255, 255, 255, 0.03);
-
+		/* Робимо акцент на першій чарунці */
 	}
 
 	.footer-cell {
 		grid-column: span 1;
-
+		/* Займає один стовпчик */
 		padding: 32px 24px;
 	}
 
 	.footer-flex {
 		flex-direction: column;
-
+		/* Текст один під одним */
 		align-items: flex-start;
 		gap: 16px;
 	}
 
 	.text-right {
 		text-align: left;
-	
+
 	}
 
 
@@ -1115,23 +1113,23 @@ p {
 	}
 
 	/* SECTION 5 */
-				.manifesto-table {
-					grid-template-columns: 1fr;
-				}
-		
-				.table-cell {
-					padding: 40px;
-				}
-		
-				.footer-flex {
-					flex-direction: column;
-					align-items: flex-start;
-					gap: 16px;
-				}
-		
-				.text-right {
-					text-align: left;
-				}
+	.manifesto-table {
+		grid-template-columns: 1fr;
+	}
+
+	.table-cell {
+		padding: 40px;
+	}
+
+	.footer-flex {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 16px;
+	}
+
+	.text-right {
+		text-align: left;
+	}
 
 	/* SECTION 6 */
 	.phases-cards-grid {
