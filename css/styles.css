@@ -561,33 +561,30 @@ p {
 @media (max-width: 992px) {
 	.manifesto-table {
 		grid-template-columns: 1fr;
-		/* Перехід в один стовпчик */
+
 		border-radius: 16px;
-		/* Трохи менший радіус для мобільних */
+
 	}
 
 	.table-cell {
 		padding: 32px 24px;
-		/* Компактніші паддінги */
+
 		border-right: none !important;
-		/* Прибираємо вертикальний роздільник */
+
 		border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 	}
 
 	.main-cell {
 		background: rgba(255, 255, 255, 0.03);
-		/* Робимо акцент на першій чарунці */
 	}
 
 	.footer-cell {
 		grid-column: span 1;
-		/* Займає один стовпчик */
 		padding: 32px 24px;
 	}
 
 	.footer-flex {
 		flex-direction: column;
-		/* Текст один під одним */
 		align-items: flex-start;
 		gap: 16px;
 	}
@@ -753,95 +750,99 @@ p {
 /* --- SECTION 7: MOMENTUM PHASE (REFINED WITH LUCIDE) --- */
 .momentum-section {
 	padding: var(--section-padding) 0;
-	background-color: var(--bg-primary);
 }
 
-.grid-2-momentum {
+.split-grid {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1.1fr;
 	gap: 100px;
 	align-items: start;
 }
 
-.momentum-header {
+.split-header {
 	position: sticky;
-	top: 100px;
+	top: 120px;
+}
+
+.info-card {
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0) 100%);
+	border: 1px solid rgba(255, 255, 255, 0.05);
+	padding: 64px;
+	border-radius: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+	margin-top: 6px;
 }
 
 .display-title {
-	font-size: 40px;
-	line-height: 1.2;
-	letter-spacing: -0.03em;
-	font-weight: 500;
-	color: #fff;
-}
-
-.momentum-sub {
-	margin-top: 32px;
-	font-size: 20px;
-	color: var(--text-muted);
-	line-height: 1.6;
-}
-
-.highlight-white {
-	color: #fff;
-	font-weight: 500;
-	margin-top: 8px;
-}
-
-.momentum-card {
-	background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0) 100%);
-	border: 1px solid var(--border);
-	padding: 64px;
-	border-radius: 16px;
-}
-
-.block-label {
-	font-size: 12px;
-	font-weight: 500;
-	color: var(--text-muted);
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
+	font-size: 40px !important;
+	line-height: 1.1 !important;
+	letter-spacing: -0.04em !important;
 	margin-bottom: 32px;
+	color: #fff;
 }
 
-.momentum-list {
+.body-text-white {
+	font-size: 20px !important;
+	line-height: 1.5;
+	color: #fff;
+	font-weight: 500;
+	letter-spacing: -0.01em;
+}
+
+.body-text-muted,
+.because-list li {
+	font-size: 18px !important;
+	line-height: 1.6;
+	color: var(--text-muted);
+}
+
+.because-list {
 	list-style: none;
-	margin-bottom: 48px;
+	padding: 0;
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
 }
 
-.momentum-list li {
-	font-size: 18px;
+.because-list li {
 	color: #fff;
 	display: flex;
-	align-items: center;
 	gap: 12px;
 }
 
-.momentum-list li::before {
+.because-list li::before {
 	content: "—";
 	color: var(--accent);
-	font-weight: 300;
 }
 
-.momentum-footer {
+.reason-footer {
+	border-top: 1px solid rgba(255, 255, 255, 0.05);
 	padding-top: 32px;
-	border-top: 1px solid var(--border);
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
 }
 
-.momentum-footer p {
-	font-size: 16px;
-	color: var(--text-muted);
+.mb-24 {
+	margin-bottom: 24px;
 }
 
-.final-punch-small {
-	color: #fff;
-	font-weight: 500;
-	margin-top: 8px;
-	font-size: 18px;
+@media (max-width: 992px) {
+	.split-grid {
+		grid-template-columns: 1fr;
+		gap: 48px;
+	}
+
+	.split-header {
+		position: static;
+	}
+
+	.info-card {
+		padding: 40px 24px;
+		margin-top: 0;
+	}
 }
 
 
@@ -913,25 +914,34 @@ p {
 /* --- SECTION 9: AUTHORITY FRAME (ULTIMATE CLEAN) --- */
 .authority-section {
 	padding: var(--section-padding) 0;
-	background-color: var(--bg-primary);
 }
 
 .authority-wrapper {
-	max-width: 800px;
+	max-width: 900px;
 }
 
-.authority-lead {
-	font-size: 32px;
+.authority-section .display-title {
+	font-size: 40px !important;
+	line-height: 1.1;
+	letter-spacing: -0.04em;
 	color: #fff;
-	margin-bottom: 48px;
 	font-weight: 500;
-	letter-spacing: -0.03em;
-	line-height: 1.2;
+}
+
+.body-text-white-small {
+	font-size: 18px;
+	color: #fff;
+	font-weight: 500;
+}
+
+.auth-item span{
+	margin-bottom: 0;
 }
 
 .authority-grid {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 	gap: 32px;
 }
 
@@ -940,27 +950,32 @@ p {
 	align-items: center;
 }
 
-.auth-no {
-	color: var(--text-muted);
-	font-size: 18px;
-	font-weight: 400;
-	position: relative;
-}
-
 .auth-item:not(:last-child)::after {
 	content: "—";
 	margin-left: 32px;
-	color: var(--border);
+	color: var(--accent);
 	font-weight: 300;
 }
 
-.auth-yes {
-	color: #fff;
-	font-size: 18px;
-	font-weight: 600;
-	letter-spacing: -0.01em;
+.mb-48 {
+	margin-bottom: 48px;
 }
 
+@media (max-width: 768px) {
+	.authority-grid {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 16px;
+	}
+
+	.auth-item:not(:last-child)::after {
+		display: none;
+	}
+
+	.auth-item {
+		font-size: 17px;
+	}
+}
 
 /* --- SECTION 10: INVESTMENT (CENTERED & WIDE) --- */
 .investment-section {
@@ -1023,8 +1038,7 @@ p {
 /* --- SECTION 11: FINAL CLOSE (CLEAN & UNIFIED) --- */
 .final-close-section {
 	padding: 120px 0;
-	background-color: var(--bg-primary);
-	border-top: 1px solid var(--border);
+	border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .final-flex-container {
@@ -1038,33 +1052,69 @@ p {
 	flex: 1;
 }
 
-.final-headline {
-	font-size: 48px;
+.final-close-section .display-title {
+	font-size: 40px !important;
 	line-height: 1.1;
-	margin-bottom: 24px;
-	font-weight: 500;
 	letter-spacing: -0.04em;
+	margin-bottom: 24px;
 	color: var(--text-muted);
 }
 
-.final-headline .text-white {
+.final-close-section .text-white {
 	color: #fff;
 }
 
-.final-subtext {
+.final-subtext p {
+	font-size: 18px;
+	line-height: 1.6;
+	color: var(--text-muted);
+}
+
+.final-subtext .body-text-white {
 	font-size: 20px;
-	color: var(--text-muted);
-	max-width: 520px;
-	line-height: 1.5;
-}
-
-.highlight-white {
 	color: #fff;
-	font-weight: 500;
+	display: block;
+	margin-top: 12px;
 }
 
-.final-cta-side {
-	flex-shrink: 0;
+/* КНОПКА (CTA) */
+.btn-primary {
+	display: inline-flex;
+	align-items: center;
+	gap: 12px;
+	padding: 18px 32px;
+	background-color: #fff;
+	color: #000;
+	border-radius: 100px;
+	font-weight: 600;
+	font-size: 16px;
+	transition: all 0.3s ease;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.btn-primary:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+}
+
+/* АДАПТИВ */
+@media (max-width: 992px) {
+	.final-flex-container {
+		flex-direction: column;
+		text-align: center;
+		gap: 48px;
+	}
+
+	.final-subtext p {
+		max-width: 100%;
+	}
+
+	.final-cta-side,
+	.btn-primary {
+		width: 100%;
+		justify-content: center;
+	}
 }
 
 
@@ -1272,7 +1322,6 @@ p {
 
 	/* BUTTON */
 	.btn-primary {
-		max-width: 100% !important;
 		padding: 18px 24px;
 		font-size: 17px;
 	}
