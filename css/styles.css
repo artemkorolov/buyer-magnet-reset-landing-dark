@@ -586,10 +586,11 @@ p {
 
 .no-list-table li::before {
 	content: "";
-	width: 6px;
-	height: 6px;
-	background: var(--accent);
+	width: 5px;
+	height: 5px;
+	background: var(--text-muted);
 	border-radius: 50%;
+	opacity: 0.5;
 }
 
 .footer-cell {
@@ -622,9 +623,10 @@ p {
 
 .final-punchline span {
 	display: inline-block;
-	color: var(--accent);
+	color: #fff;
 	font-weight: 600;
 	margin-left: 8px;
+	border-bottom: 1px solid var(--border);
 }
 
 @media (max-width: 992px) {
@@ -825,112 +827,109 @@ p {
 
 /* --- SECTION 7: MOMENTUM PHASE (REFINED WITH LUCIDE) --- */
 .momentum-section {
-	position: relative;
 	padding: var(--section-padding) 0;
 	background-color: var(--bg-primary);
-	border-top: 1px solid var(--border);
 }
 
 .grid-2-momentum {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 100px;
-	align-items: flex-start;
+	align-items: start;
 }
 
 .momentum-header {
-	padding-left: 32px;
-	border-left: 2px solid var(--accent);
-	border-image: linear-gradient(to bottom, var(--accent), transparent) 1;
+	position: sticky;
+	top: 100px;
+}
+
+.display-title {
+	font-size: 40px;
+	line-height: 1.2;
+	letter-spacing: -0.03em;
+	font-weight: 500;
+	color: #fff;
 }
 
 .momentum-sub {
 	margin-top: 32px;
-	font-size: 1.25rem;
+	font-size: 20px;
 	color: var(--text-muted);
 	line-height: 1.6;
 }
 
-.momentum-card {
-	background: var(--card-bg);
-	border: 1px solid var(--border);
-	padding: 56px 48px;
-	border-radius: 28px;
-	transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+.highlight-white {
+	color: #fff;
+	font-weight: 500;
+	margin-top: 8px;
 }
 
-.momentum-card:hover {
-	border-color: rgba(130, 177, 255, 0.3);
-	transform: translateY(-8px);
-	box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+.momentum-card {
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0) 100%);
+	border: 1px solid var(--border);
+	padding: 64px;
+	border-radius: 16px;
+}
+
+.block-label {
+	font-size: 12px;
+	font-weight: 500;
+	color: var(--text-muted);
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	margin-bottom: 32px;
 }
 
 .momentum-list {
 	list-style: none;
-	margin: 32px 0;
+	margin-bottom: 48px;
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
+	gap: 16px;
 }
 
 .momentum-list li {
+	font-size: 18px;
+	color: #fff;
 	display: flex;
 	align-items: center;
-	gap: 16px;
-	font-size: 1.15rem;
-	color: #fff;
-	transition: transform 0.3s ease;
+	gap: 12px;
 }
 
-.momentum-list li svg {
-	width: 20px;
-	height: 20px;
-	color: var(--accent);
-	flex-shrink: 0;
-	stroke-width: 2px;
-	filter: drop-shadow(0 0 8px var(--accent-glow));
-	transition: transform 0.3s ease;
-}
-
-.momentum-card:hover li {
-	transform: translateX(6px);
-}
-
-.momentum-card:hover li svg {
-	transform: scale(1.1);
+.momentum-list li::before {
+	content: "—";
+	color: var(--border);
 }
 
 .momentum-footer {
-	margin-top: 40px;
 	padding-top: 32px;
 	border-top: 1px solid var(--border);
 }
 
 .momentum-footer p {
-	font-size: 1rem;
+	font-size: 16px;
 	color: var(--text-muted);
-	line-height: 1.6;
 }
 
-.momentum-footer p strong {
+.final-punch-small {
 	color: #fff;
-	font-weight: 600;
-	display: block;
-	margin-top: 6px;
+	font-weight: 500;
+	margin-top: 8px;
+	font-size: 18px;
 }
 
 @media (max-width: 992px) {
-	.momentum-section {
-		padding: 80px 0;
-	}
-
 	.grid-2-momentum {
 		grid-template-columns: 1fr;
-		gap: 60px;
+		gap: 48px;
+	}
+
+	.momentum-header {
+		position: static;
 	}
 
 	.momentum-card {
-		padding: 40px 24px;
+		padding: 40px;
 	}
 }
 
