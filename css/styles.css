@@ -288,7 +288,7 @@ p {
 
 	background: #050505;
 
-	
+
 	border: 1px solid rgba(255, 255, 255, 0.03);
 	border-left: 1px solid rgba(255, 255, 255, 0.1);
 
@@ -1562,6 +1562,23 @@ p {
 }
 
 @media (max-width: 768px) {
+
+	.body-text-muted,
+	.because-list li::before {
+		content: '';
+	}
+
+	.because-list li {
+		gap: 0;
+	}
+
+	.no-list-table li::before {
+		content: '';
+	}
+
+	.no-list-table li {
+		gap: 0;
+	}
 
 	/* TYPOGRAPHY & HERO */
 	.display-title,
