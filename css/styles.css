@@ -60,12 +60,16 @@ h3 {
 
 section {
 	padding: var(--section-padding) 0;
+	background-color: var(--bg-primary);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 	position: relative;
 }
 
 section:nth-child(even) {
 	background-color: #050505;
+	background-image: radial-gradient(circle at 50% 0%,
+			rgba(255, 255, 255, 0.02) 0%,
+			transparent 100%);
 }
 
 section:last-of-type {
@@ -147,14 +151,6 @@ p {
 	height: 20px !important;
 	stroke-width: 2px;
 	flex-shrink: 0;
-}
-
-@media (max-width: 768px) {
-	.btn-primary {
-		max-width: 300px;
-		padding: 18px 24px;
-		font-size: 17px;
-	}
 }
 
 /* --- SECTION 1: HERO --- */
@@ -244,92 +240,24 @@ p {
 	letter-spacing: 0.01em;
 }
 
-@media (max-width: 768px) {
-	.hero {
-		padding: 80px 0;
-	}
-
-	.hero h1 {
-		font-size: 2.5rem;
-		letter-spacing: -0.02em;
-		line-height: 1.1;
-	}
-
-	.hero-description {
-		font-size: 1.1rem;
-		margin-bottom: 32px;
-	}
-
-	.badge {
-		margin-bottom: 24px;
-	}
-}
-
-
 /* --- SECTION 2: PROBLEM --- */
-.problem-section {
-	padding: var(--section-padding) 0;
-	background-color: var(--bg-primary);
-}
-
 .grid-2-problem-new {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 100px;
+	gap: 80px;
 	align-items: start;
 }
 
-.display-title {
-	font-size: 40px;
-	line-height: 1.2;
-	letter-spacing: -0.03em;
-	font-weight: 500;
-	color: #fff;
-	max-width: 540px;
+.problem-header-new {
+	padding-top: 8px;
 }
 
 .problem-body-new {
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
-}
-
-.text-group {
-	display: flex;
-	flex-direction: column;
-	gap: 8px;
-}
-
-.body-text-muted {
-	color: var(--text-muted);
-	font-size: 18px;
-	line-height: 1.6;
-}
-
-.body-text-white {
-	color: #fff;
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 1.6;
-}
-
-.highlight-punch {
-	font-size: 20px;
-	color: var(--text-muted);
-	margin: 12px 0;
-	line-height: 1.4;
-}
-
-.highlight-punch strong {
-	color: #fff;
-	font-weight: 600;
-}
-
-@media (max-width: 992px) {
-	.grid-2-problem-new {
-		grid-template-columns: 1fr;
-		gap: 48px;
-	}
+	border-left: 1px solid rgba(255, 255, 255, 0.05);
+	padding-left: 60px;
 }
 
 
@@ -455,21 +383,6 @@ p {
 	margin-top: 4px;
 }
 
-@media (max-width: 992px) {
-	.reason-grid {
-		grid-template-columns: 1fr;
-		gap: 60px;
-	}
-
-	.reason-header {
-		position: static;
-	}
-
-	.reason-card {
-		padding: 40px;
-	}
-}
-
 
 /* --- SECTION 4: TRANSFORMATION (BALANCED) --- */
 .transformation-split {
@@ -545,16 +458,6 @@ p {
 	font-weight: 600;
 }
 
-@media (max-width: 992px) {
-	.split-grid {
-		grid-template-columns: 1fr;
-		gap: 48px;
-	}
-
-	.info-card {
-		padding: 40px;
-	}
-}
 
 /* --- SECTION 5: WHY THREADS (TABLE STYLE) --- */
 .threads-table-section {
@@ -653,34 +556,6 @@ p {
 	font-weight: 600;
 	margin-left: 8px;
 	border-bottom: 1px solid var(--border);
-}
-
-@media (max-width: 992px) {
-	.manifesto-table {
-		grid-template-columns: 1fr;
-	}
-
-	.table-cell {
-		padding: 40px;
-		grid-column: span 1 !important;
-	}
-
-	.footer-flex {
-		flex-direction: column;
-		align-items: flex-start;
-		gap: 16px;
-	}
-
-	.final-punchline {
-		text-align: left;
-		font-size: 18px;
-	}
-
-	.final-punchline span {
-		margin-left: 0;
-		display: block;
-		margin-top: 4px;
-	}
 }
 
 
@@ -826,30 +701,6 @@ p {
 	font-size: 16px;
 }
 
-@media (max-width: 992px) {
-	.phases-cards-grid {
-		display: flex;
-		overflow-x: auto;
-		scroll-snap-type: x mandatory;
-		gap: 16px;
-		padding: 0 20px 40px;
-		margin: 0 -20px;
-	}
-
-	.phases-cards-grid::-webkit-scrollbar {
-		display: none;
-	}
-
-	.phase-card-new {
-		min-width: 85vw;
-		scroll-snap-align: center;
-		padding: 32px;
-	}
-
-	.display-title-centered {
-		font-size: 32px;
-	}
-}
 
 /* --- SECTION 7: MOMENTUM PHASE (REFINED WITH LUCIDE) --- */
 .momentum-section {
@@ -945,21 +796,6 @@ p {
 	font-size: 18px;
 }
 
-@media (max-width: 992px) {
-	.grid-2-momentum {
-		grid-template-columns: 1fr;
-		gap: 48px;
-	}
-
-	.momentum-header {
-		position: static;
-	}
-
-	.momentum-card {
-		padding: 40px;
-	}
-}
-
 
 /* --- SECTION 8: WHAT YOU RECEIVE (TOTAL MOBILE RESET) --- */
 .receive-section {
@@ -1005,32 +841,6 @@ p {
 	color: #fff;
 	line-height: 1.4;
 	letter-spacing: -0.01em;
-}
-
-@media (min-width: 992px) {
-	.receive-grid {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 16px;
-	}
-
-	.receive-item {
-		padding: 48px;
-	}
-
-	.receive-item.wide {
-		grid-column: span 3;
-	}
-
-	.receive-item.wide .receive-content {
-		flex-direction: row;
-		align-items: center;
-		gap: 32px;
-	}
-
-	.receive-item h3 {
-		font-size: 18px;
-	}
 }
 
 .receive-summary {
@@ -1103,26 +913,6 @@ p {
 	letter-spacing: -0.01em;
 }
 
-@media (max-width: 768px) {
-	.authority-grid {
-		flex-direction: column;
-		align-items: flex-start;
-		gap: 16px;
-	}
-
-	.auth-item:not(:last-child)::after {
-		display: none;
-	}
-
-	.authority-lead {
-		font-size: 24px;
-	}
-
-	.auth-no,
-	.auth-yes {
-		font-size: 18px;
-	}
-}
 
 /* --- SECTION 10: INVESTMENT (CENTERED & WIDE) --- */
 .investment-section {
@@ -1140,15 +930,6 @@ p {
 	margin: 0 auto;
 }
 
-.block-label {
-	display: block;
-	font-size: 12px;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	color: var(--text-muted);
-	margin-bottom: 24px;
-}
-
 .display-title-centered {
 	font-size: 40px;
 	font-weight: 500;
@@ -1159,10 +940,9 @@ p {
 
 .price-tag {
 	font-size: 64px;
-	font-weight: 600;
+	font-weight: 500;
+	letter-spacing: -0.05em;
 	color: #fff;
-	letter-spacing: -0.04em;
-	margin-bottom: 48px;
 }
 
 .focus-points {
@@ -1191,45 +971,6 @@ p {
 	line-height: 1.4;
 }
 
-.btn-full {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	gap: 12px;
-	width: 100%;
-	max-width: 400px;
-	padding: 20px;
-	background-color: #fff;
-	color: #000 !important;
-	border-radius: 12px;
-	font-size: 18px;
-	font-weight: 600;
-	text-decoration: none;
-	transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-.btn-full:hover {
-	opacity: 0.9;
-	transform: translateY(-2px);
-}
-
-@media (max-width: 768px) {
-	.investment-card {
-		padding: 48px 24px;
-	}
-
-	.display-title-centered {
-		font-size: 32px;
-	}
-
-	.price-tag {
-		font-size: 56px;
-	}
-
-	.highlight-punch-large {
-		font-size: 20px;
-	}
-}
 
 /* --- SECTION 11: FINAL CLOSE (CLEAN & UNIFIED) --- */
 .final-close-section {
@@ -1278,7 +1019,130 @@ p {
 	flex-shrink: 0;
 }
 
+
+
 @media (max-width: 992px) {
+	:root {
+		--section-padding: 80px;
+	}
+
+	/* SECTION 2 */
+	.grid-2-problem-new {
+		grid-template-columns: 1fr !important;
+		gap: 40px;
+	}
+
+	.problem-body-new {
+		border-left: none;
+		padding-left: 0;
+		border-top: 1px solid rgba(255, 255, 255, 0.05);
+		padding-top: 40px;
+	}
+
+	/* SECTION 3 */
+	.reason-grid {
+		grid-template-columns: 1fr;
+		gap: 60px;
+	}
+
+	.reason-header {
+		position: static;
+	}
+
+	.reason-card {
+		padding: 40px;
+	}
+
+	/* SECTION 4 */
+	.split-grid {
+		grid-template-columns: 1fr;
+		gap: 48px;
+	}
+
+	.info-card {
+		padding: 40px;
+	}
+
+	/* SECTION 5 */
+	.manifesto-table {
+		grid-template-columns: 1fr;
+	}
+
+	.table-cell {
+		padding: 40px;
+		grid-column: span 1 !important;
+	}
+
+	.footer-flex {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 16px;
+	}
+
+	.final-punchline {
+		text-align: left;
+		font-size: 18px;
+	}
+
+	.final-punchline span {
+		margin-left: 0;
+		display: block;
+		margin-top: 4px;
+	}
+
+	/* SECTION 6 */
+	.phases-cards-grid {
+		display: flex;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		gap: 16px;
+		padding: 0 20px 40px;
+		margin: 0 -20px;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.phases-cards-grid::-webkit-scrollbar {
+		display: none;
+	}
+
+	.phase-card-new {
+		min-width: 85vw;
+		scroll-snap-align: center;
+		padding: 32px;
+	}
+
+	/* SECTION 7 */
+	.grid-2-momentum {
+		grid-template-columns: 1fr !important;
+		display: flex;
+		flex-direction: column;
+		gap: 48px;
+	}
+
+	.momentum-header {
+		position: static;
+	}
+
+	.momentum-card {
+		padding: 40px;
+	}
+
+	/* SECTION 8 & OTHERS FROM RESPONSIVE STYLES */
+	.comparison-grid,
+	.receive-grid,
+	.investment-grid {
+		grid-template-columns: 1fr !important;
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	/* SECTION 10 & 11 */
+	.investment-card {
+		padding: 48px 24px;
+		margin: 0 16px;
+	}
+
 	.final-close-section {
 		padding: 80px 0;
 	}
@@ -1297,48 +1161,9 @@ p {
 		text-align: center;
 		width: 100%;
 	}
-}
 
-
-/* --- RESPONSIVE STYLES --- */
-@media (max-width: 992px) {
-	.hero {
-		padding: 100px 0 60px 0;
-	}
-
-	.grid-2-problem-new,
-	.comparison-grid,
-	.phases-cards-grid,
-	.grid-2-momentum,
-	.investment-grid,
-	.receive-grid {
-		grid-template-columns: 1fr !important;
-		gap: 40px;
-	}
-
-	.info-block.side-border {
-		padding-left: 0;
-		border-left: none;
-		border-top: 1px solid var(--border);
-		padding-top: 40px;
-	}
-
-	.receive-item.wide {
-		grid-column: span 1 !important;
-	}
-
-	.receive-item.wide .receive-content {
-		flex-direction: column;
-		align-items: flex-start;
-		gap: 16px;
-	}
-
-	.investment-card {
-		padding: 40px 24px;
-	}
-
-	.price-tag {
-		font-size: 3rem;
+	.display-title-centered {
+		font-size: 32px;
 	}
 
 	.container {
@@ -1346,12 +1171,98 @@ p {
 	}
 }
 
-@media (max-width: 768px) {
-	:root {
-		--section-padding: 80px;
+@media (min-width: 992px) {
+
+	/* SECTION 8 */
+	.receive-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 16px;
 	}
 
+	.receive-item {
+		padding: 48px;
+	}
+
+	.receive-item.wide {
+		grid-column: span 3;
+	}
+
+	.receive-item.wide .receive-content {
+		flex-direction: row;
+		align-items: center;
+		gap: 32px;
+	}
+
+	.receive-item h3 {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 768px) {
+
+	/* TYPOGRAPHY & HERO */
+	.display-title-hero,
+	.display-title,
+	.display-title-centered,
 	.hero h1 {
-		font-size: 2.5rem;
+		font-size: 32px !important;
+		line-height: 1.2;
+		letter-spacing: -0.02em;
+	}
+
+	.hero {
+		padding: 80px 0;
+	}
+
+	.hero-description {
+		font-size: 18px;
+		margin-bottom: 32px;
+	}
+
+	.hero-description p,
+	.focus-points {
+		font-size: 18px;
+	}
+
+	.badge {
+		margin-bottom: 24px;
+	}
+
+	/* BUTTON */
+	.btn-primary {
+		max-width: 100% !important;
+		padding: 18px 24px;
+		font-size: 17px;
+	}
+
+	/* SECTION 9 (AUTHORITY) */
+	.authority-grid {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 16px;
+	}
+
+	.auth-item:not(:last-child)::after {
+		display: none;
+	}
+
+	.authority-lead {
+		font-size: 24px;
+	}
+
+	.auth-no,
+	.auth-yes {
+		font-size: 18px;
+	}
+
+	/* SECTION 10 (INVESTMENT) */
+	.price-tag {
+		font-size: 48px !important;
+		margin-bottom: 32px;
+	}
+
+	.highlight-punch-large {
+		font-size: 20px;
 	}
 }
