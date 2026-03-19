@@ -687,6 +687,7 @@ p {
 .manifesto-table {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+
 	border: 1px solid rgba(255, 255, 255, 0.05);
 	border-radius: 24px;
 	overflow: hidden;
@@ -696,10 +697,21 @@ p {
 .table-cell {
 	padding: 64px;
 	border: 0.5px solid rgba(255, 255, 255, 0.05);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .main-cell {
 	background: rgba(255, 255, 255, 0.02);
+}
+
+.left-footer-cell {
+	background: rgba(255, 255, 255, 0.01);
+}
+
+.right-footer-cell {
+	background: rgba(255, 255, 255, 0.01);
 }
 
 .table-cell .body-text-white {
@@ -708,6 +720,16 @@ p {
 	color: #fff;
 	font-weight: 500;
 	letter-spacing: -0.01em;
+	margin: 0;
+}
+
+.no-list-table {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
 }
 
 .no-list-table li {
@@ -724,72 +746,23 @@ p {
 	font-weight: 600;
 }
 
-.footer-cell {
-	grid-column: span 2;
-	padding: 40px 64px;
-	background: rgba(255, 255, 255, 0.01);
+.text-blue {
+	color: var(--accent);
 }
 
-.footer-flex {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.text-right {
-	text-align: right;
-}
-
-.text-white {
-	color: #fff;
-}
 
 @media (max-width: 992px) {
 	.manifesto-table {
 		grid-template-columns: 1fr;
-
 		border-radius: 16px;
-
 	}
 
 	.table-cell {
 		padding: 32px 24px;
-
 		border-right: none !important;
-
 		border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 	}
-
-	.main-cell {
-		background: rgba(255, 255, 255, 0.03);
-	}
-
-	.footer-cell {
-		grid-column: span 1;
-		padding: 32px 24px;
-	}
-
-	.footer-flex {
-		flex-direction: column;
-		align-items: flex-start;
-		gap: 16px;
-	}
-
-	.text-right {
-		text-align: left;
-
-	}
-
-
-	.no-list-table {
-		gap: 16px;
-	}
-
-	.no-list-table li {
-		font-size: 17px !important;
-	}
 }
-
 
 
 
