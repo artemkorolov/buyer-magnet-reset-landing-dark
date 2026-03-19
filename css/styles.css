@@ -339,7 +339,6 @@ p {
 	left: 64px;
 	width: 80px;
 	height: 1px;
-	background: linear-gradient(90deg, transparent, var(--accent), transparent);
 }
 
 .reason-statement {
@@ -394,7 +393,7 @@ p {
 
 .because-list li::before {
 	content: "—";
-	color: var(--accent);
+	color: var(--text-muted);
 }
 
 @media (max-width: 992px) {
@@ -502,7 +501,7 @@ p {
 
 .because-list li::before {
 	content: "—";
-	color: var(--accent);
+	color: var(--text-muted);
 }
 
 .reason-footer {
@@ -585,7 +584,7 @@ p {
 }
 
 .process-line .arrow {
-	color: var(--accent);
+	color: var(--text-muted);
 	font-weight: 400;
 }
 
@@ -663,7 +662,7 @@ p {
 
 .no-list-table li::before {
 	content: "—";
-	color: var(--accent);
+	color: var(--text-muted);
 	font-weight: 600;
 }
 
@@ -974,7 +973,7 @@ p {
 
 .because-list li::before {
 	content: "—";
-	color: var(--accent);
+	color: var(--text-muted);
 }
 
 .reason-footer {
@@ -1114,7 +1113,7 @@ p {
 .auth-item:not(:last-child)::after {
 	content: "—";
 	margin-left: 32px;
-	color: var(--accent);
+	color: var(--text-muted);
 	font-weight: 400;
 }
 
