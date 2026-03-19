@@ -110,6 +110,53 @@ p {
 	color: var(--text-muted);
 }
 
+/* BUTTON */
+.btn-primary {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	padding: 18px 46px;
+	width: 100%;
+	max-width: 300px;
+	background-color: #fff;
+	color: #000 !important;
+	border-radius: 12px;
+	border: none;
+	font-size: 18px;
+	font-weight: 600;
+	text-decoration: none;
+	white-space: nowrap;
+	letter-spacing: -0.01em;
+	cursor: pointer;
+	transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+	opacity: 0.95;
+	transform: translateY(-3px);
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.btn-primary i,
+.btn-primary svg,
+.btn-primary [data-lucide] {
+	display: inline-flex !important;
+	visibility: visible !important;
+	width: 20px !important;
+	height: 20px !important;
+	stroke-width: 2px;
+	flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+	.btn-primary {
+		max-width: 300px;
+		padding: 18px 24px;
+		font-size: 17px;
+	}
+}
+
 /* --- SECTION 1: HERO --- */
 .hero {
 	position: relative;
@@ -189,25 +236,6 @@ p {
 	color: var(--text-muted);
 }
 
-.btn-hero {
-	display: inline-flex;
-	align-items: center;
-	gap: 12px;
-	padding: 20px 42px;
-	background: #ffffff;
-	color: #000000 !important;
-	text-decoration: none;
-	font-weight: 700;
-	border-radius: 12px;
-	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-	font-size: 1.1rem;
-}
-
-.btn-hero:hover {
-	transform: translateY(-3px);
-	box-shadow: 0 15px 30px rgba(130, 177, 255, 0.2);
-}
-
 .hero-subtext {
 	margin-top: 24px;
 	font-size: 14px;
@@ -230,12 +258,6 @@ p {
 	.hero-description {
 		font-size: 1.1rem;
 		margin-bottom: 32px;
-	}
-
-	.btn-hero {
-		width: 100%;
-		justify-content: center;
-		padding: 18px 32px;
 	}
 
 	.badge {
@@ -663,7 +685,6 @@ p {
 
 
 /* --- SECTION 6: THE SYSTEM (30-DAY RESET) --- */
-
 .system-section {
 	padding: var(--section-padding) 0;
 	background-color: var(--bg-primary);
@@ -1253,24 +1274,8 @@ p {
 	font-weight: 500;
 }
 
-.final-cta-side .btn-hero {
-	background-color: #fff;
-	color: #000 !important;
-	border-radius: 12px;
-	padding: 20px 48px;
-	font-size: 18px;
-	font-weight: 600;
-	display: flex;
-	align-items: center;
-	gap: 12px;
-	text-decoration: none;
-	transition: transform 0.2s ease, opacity 0.2s ease;
-	white-space: nowrap;
-}
-
-.final-cta-side .btn-hero:hover {
-	opacity: 0.9;
-	transform: translateY(-2px);
+.final-cta-side {
+	flex-shrink: 0;
 }
 
 @media (max-width: 992px) {
@@ -1289,12 +1294,8 @@ p {
 	}
 
 	.final-cta-side {
+		text-align: center;
 		width: 100%;
-	}
-
-	.final-cta-side .btn-hero {
-		width: 100%;
-		justify-content: center;
 	}
 }
 
