@@ -1231,7 +1231,7 @@ p {
 	/* SECTION 10 & 11 */
 	.investment-card {
 		padding: 48px 24px;
-		margin: 0 16px;
+		/* margin: 0 16px; */
 	}
 
 	.final-close-section {
