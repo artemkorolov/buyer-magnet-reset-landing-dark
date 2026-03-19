@@ -285,6 +285,9 @@ p {
 	margin: 0;
 }
 
+
+
+
 .body-text-muted {
 	color: var(--text-muted);
 }
@@ -348,12 +351,10 @@ p {
 	color: var(--text-muted);
 }
 
-/* ДЕТАЛІ */
 .reason-intro-text {
 	margin-top: 32px;
 	display: flex;
 	flex-direction: column;
-	gap: 8px;
 }
 
 .because-list {
@@ -404,11 +405,6 @@ p {
 
 
 /* --- SECTION 4: TRANSFORMATION (BALANCED) --- */
-.transformation-split {
-	padding: var(--section-padding) 0;
-	background-color: var(--bg-primary);
-}
-
 .split-grid {
 	display: grid;
 	grid-template-columns: 1fr 1.1fr;
@@ -416,134 +412,102 @@ p {
 	align-items: start;
 }
 
-.display-title {
-	font-size: 40px;
-	line-height: 1.2;
-	margin-bottom: 24px;
-	letter-spacing: -0.03em;
-	font-weight: 500;
-	color: #fff;
-}
-
-.definition-sub {
-	font-size: 18px;
-	color: var(--text-muted);
-	line-height: 1.6;
-	max-width: 440px;
-}
-
-.highlight-text {
-	color: #fff;
-	font-weight: 500;
-}
-
 .info-card {
-	background: linear-gradient(145deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%);
-	border: 1px solid var(--border);
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0) 100%);
+	border: 1px solid rgba(255, 255, 255, 0.05);
 	padding: 64px;
-	border-radius: 16px;
-	position: relative;
+	border-radius: 24px;
+	margin-top: 6px;
 }
 
-.block-label {
-	font-size: 12px;
-	font-weight: 500;
-	color: var(--text-muted);
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
+.display-title {
+	font-size: 40px !important;
+	line-height: 1.1 !important;
+	letter-spacing: -0.04em !important;
 	margin-bottom: 32px;
 }
 
-.large-text {
-	font-size: 24px;
-	line-height: 1.4;
+.body-text-white {
+	font-size: 20px !important;
+	line-height: 1.5;
 	color: #fff;
-	letter-spacing: -0.02em;
-	margin-bottom: 48px;
+	font-weight: 500;
+}
+
+.body-text-muted,
+.process-line span:not(.arrow) {
+	font-size: 18px !important;
+	line-height: 1.6;
+	color: var(--text-muted);
 }
 
 .process-line {
+	margin-top: 48px;
+	padding-top: 32px;
+	border-top: 1px solid rgba(255, 255, 255, 0.05);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-top: 32px;
-	border-top: 1px solid var(--border);
-	color: var(--text-muted);
-	font-size: 15px;
 }
 
 .process-line .arrow {
 	color: var(--accent);
-	font-weight: 600;
+	font-weight: 400;
+}
+
+.mb-24 {
+	margin-bottom: 24px;
 }
 
 
 /* --- SECTION 5: WHY THREADS (TABLE STYLE) --- */
 .threads-table-section {
 	padding: var(--section-padding) 0;
-	background-color: var(--bg-primary);
-}
-
-.table-header {
-	margin-bottom: 48px;
 }
 
 .manifesto-table {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	border: 1px solid var(--border);
-	border-radius: 16px;
+	border: 1px solid rgba(255, 255, 255, 0.05);
+	border-radius: 24px;
 	overflow: hidden;
-	background: transparent;
+	margin-top: 48px;
 }
 
 .table-cell {
 	padding: 64px;
-	border: 0.5px solid var(--border);
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	border: 0.5px solid rgba(255, 255, 255, 0.05);
 }
 
 .main-cell {
 	background: rgba(255, 255, 255, 0.02);
 }
 
-.main-cell .lead-text {
-	font-size: 32px;
-	font-weight: 500;
-	line-height: 1.1;
+.table-cell .body-text-white {
+	font-size: 20px !important;
+	line-height: 1.4;
 	color: #fff;
-	letter-spacing: -0.03em;
-}
-
-.no-list-table {
-	list-style: none;
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
+	font-weight: 500;
+	letter-spacing: -0.01em;
 }
 
 .no-list-table li {
-	font-size: 18px;
+	font-size: 18px !important;
 	color: var(--text-muted);
 	display: flex;
 	align-items: center;
-	position: relative;
-	padding-left: 24px;
+	gap: 16px;
 }
 
 .no-list-table li::before {
 	content: "—";
-	position: absolute;
-	left: 0;
 	color: var(--accent);
-	font-weight: 300;
+	font-weight: 600;
 }
 
 .footer-cell {
 	grid-column: span 2;
-	padding: 48px 64px;
+	padding: 40px 64px;
 	background: rgba(255, 255, 255, 0.01);
 }
 
@@ -551,32 +515,20 @@ p {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	gap: 40px;
 }
 
-.footer-note {
-	font-size: 12px;
-	color: var(--text-muted);
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-}
-
-.final-punchline {
-	font-size: 20px;
-	color: #fff;
-	font-weight: 500;
+.text-right {
 	text-align: right;
-	letter-spacing: -0.02em;
 }
 
-.final-punchline span {
-	display: inline-block;
+.text-white {
 	color: #fff;
-	font-weight: 600;
-	margin-left: 8px;
-	border-bottom: 1px solid var(--border);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+@media (max-width: 992px) {
+
+}
 
 /* --- SECTION 6: THE SYSTEM (30-DAY RESET) --- */
 .system-section {
@@ -1084,31 +1036,23 @@ p {
 	}
 
 	/* SECTION 5 */
-	.manifesto-table {
-		grid-template-columns: 1fr;
-	}
-
-	.table-cell {
-		padding: 40px;
-		grid-column: span 1 !important;
-	}
-
-	.footer-flex {
-		flex-direction: column;
-		align-items: flex-start;
-		gap: 16px;
-	}
-
-	.final-punchline {
-		text-align: left;
-		font-size: 18px;
-	}
-
-	.final-punchline span {
-		margin-left: 0;
-		display: block;
-		margin-top: 4px;
-	}
+				.manifesto-table {
+					grid-template-columns: 1fr;
+				}
+		
+				.table-cell {
+					padding: 40px;
+				}
+		
+				.footer-flex {
+					flex-direction: column;
+					align-items: flex-start;
+					gap: 16px;
+				}
+		
+				.text-right {
+					text-align: left;
+				}
 
 	/* SECTION 6 */
 	.phases-cards-grid {
