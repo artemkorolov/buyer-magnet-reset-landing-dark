@@ -241,11 +241,23 @@ p {
 }
 
 /* --- SECTION 2: PROBLEM --- */
+.problem-section {
+	padding: var(--section-padding) 0;
+}
+
 .grid-2-problem-new {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 80px;
+	gap: 100px;
 	align-items: start;
+}
+
+.display-title {
+	font-size: 40px;
+	line-height: 1.1;
+	letter-spacing: -0.04em;
+	font-weight: 500;
+	color: #fff;
 }
 
 .problem-header-new {
@@ -258,6 +270,28 @@ p {
 	gap: 40px;
 	border-left: 1px solid rgba(255, 255, 255, 0.05);
 	padding-left: 60px;
+	margin-top: 6px;
+}
+
+.text-group {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.text-group p {
+	font-size: 18px;
+	line-height: 1.6;
+	margin: 0;
+}
+
+.body-text-muted {
+	color: var(--text-muted);
+}
+
+.body-text-white {
+	color: #fff;
+	font-weight: 500;
 }
 
 
@@ -1028,8 +1062,8 @@ p {
 
 	/* SECTION 2 */
 	.grid-2-problem-new {
-		grid-template-columns: 1fr !important;
-		gap: 40px;
+		grid-template-columns: 1fr;
+		gap: 48px;
 	}
 
 	.problem-body-new {
@@ -1037,6 +1071,7 @@ p {
 		padding-left: 0;
 		border-top: 1px solid rgba(255, 255, 255, 0.05);
 		padding-top: 40px;
+		margin-top: 0;
 	}
 
 	/* SECTION 3 */
