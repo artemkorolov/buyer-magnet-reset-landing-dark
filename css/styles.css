@@ -8,7 +8,7 @@
 	--accent-soft: rgba(79, 124, 255, 0.1);
 	--border: rgba(255, 255, 255, 0.06);
 	--card-bg: #0C0C0C;
-	--section-padding: 160px;
+	--section-padding: 120px;
 }
 
 * {
@@ -758,7 +758,7 @@ p {
 
 /* --- SECTION 6: THE SYSTEM (30-DAY RESET) --- */
 .system-section {
-	padding: 140px 0;
+	padding: 120px 0;
 	background-color: #000;
 	overflow-x: hidden;
 }
