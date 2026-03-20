@@ -442,163 +442,109 @@ h3 {
 	padding: var(--section-padding) 0;
 }
 
-.split-grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 80px;
-	align-items: center;
-}
-
-.split-header {
-	max-width: 460px;
-}
-
-.info-content-clean {
-	max-width: 560px;
-	display: flex;
-	flex-direction: column;
-	gap: 40px;
-}
-
-.card-content-top .body-text-white {
-	font-size: 24px;
-	line-height: 1.4;
-	font-weight: 500;
-	letter-spacing: -0.02em;
-}
-
-
 .process-line {
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 	gap: 12px;
-	font-size: 16px;
-	color: var(--text-muted);
-	border-top: 1px solid var(--border-subtle);
-	padding-top: 24px;
+	border-top: 1px solid rgba(255, 255, 255, 0.05);
+	padding-top: 32px;
 }
 
 .process-step {
 	white-space: nowrap;
 }
 
-.process-step-white {
-	color: var(--text-main);
-	font-weight: 600;
-}
-
 .arrow {
-	color: var(--border-subtle);
+	color: rgba(255, 255, 255, 0.2);
 	font-weight: 400;
 }
 
-/* MOBILE */
 @media (max-width: 768px) {
-	.split-grid {
-		grid-template-columns: 1fr;
-		gap: 48px;
-		padding: 0 32px;
-
-	}
-
 	.process-line {
-		flex-wrap: wrap;
-
 		gap: 8px;
-	}
-
-	.card-content-top .body-text-white {
-		font-size: 20px;
+		padding-top: 24px;
 	}
 }
-
 /* SECTION 5: THREADS MANIFESTO */
 
-.threads-manifesto {
+.threads-section {
 	padding: var(--section-padding) 0;
 }
 
-.manifesto-grid {
-	display: grid;
-	grid-template-columns: 1fr 1.2fr;
-	gap: 1px;
-	background-color: var(--border-subtle);
-	border: 1px solid var(--border-subtle);
-	border-radius: 12px;
-	overflow: hidden;
+.threads-header-full {
+	margin-bottom: 64px;
 }
 
-.manifesto-item {
-	background-color: var(--bg-primary);
-	padding: 48px;
+.linear-features-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.linear-feature-col {
+	padding: 0 40px;
+	border-right: 1px solid rgba(255, 255, 255, 0.08);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
-.main-statement .body-text-white {
-	font-size: clamp(24px, 4vw, 32px);
-	line-height: 1.2;
-	font-weight: 600;
-	letter-spacing: -0.03em;
+.linear-feature-col:first-child {
+	padding-left: 0;
 }
 
-.clean-list {
+.linear-feature-col:last-child {
+	padding-right: 0;
+	border-right: none;
+}
+
+.clean-list-vertical {
 	list-style: none;
+	padding: 0;
+	margin: 0;
 	display: flex;
 	flex-direction: column;
-	gap: 12px;
+	gap: 16px;
 }
 
-.clean-list li {
+.clean-list-vertical li {
 	color: var(--text-muted);
 	font-size: 17px;
 	display: flex;
-	align-items: center;
-	gap: 10px;
+	align-items: flex-start;
+	gap: 12px;
 	line-height: 1.5;
 }
 
-.clean-list li::before {
+.clean-list-vertical li::before {
 	content: "—";
-	color: var(--border-subtle);
+	color: rgba(255, 255, 255, 0.2);
 }
 
-.intro-statement .body-text-muted {
-	font-size: 17px;
-	line-height: 1.5;
-}
-
-.final-statement h3 {
-	font-size: 22px;
-	line-height: 1.3;
-	font-weight: 500;
-	letter-spacing: -0.02em;
-}
-
-@media (max-width: 768px) {
-	.manifesto-grid {
+@media (max-width: 992px) {
+	.linear-features-grid {
 		grid-template-columns: 1fr;
+		gap: 32px;
 	}
 
-	.manifesto-item {
-		padding: 32px;
+	.linear-feature-col {
+		padding: 0 0 32px 0;
+		border-right: none;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 	}
 
-	.container {
-		padding: 0 32px;
+	.linear-feature-col:first-child {
+		padding-left: 0;
 	}
 
-	.main-statement .body-text-white {
-		font-size: 24px;
-	}
-
-	.final-statement h3 {
-		font-size: 20px;
+	.linear-feature-col:last-child {
+		padding-right: 0;
+		padding-bottom: 0;
+		border-bottom: none;
 	}
 }
 
-/* PHASES SECTION */
+/* SECTION 6 PHASES SECTION */
 .phases-header {
 	margin-bottom: 48px;
 }
