@@ -264,20 +264,22 @@ p {
 }
 
 .problem-grid-3-col {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px; /* Збільшено з 24px для більшого "повітря" */
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 32px;
+	/* Збільшено з 24px для більшого "повітря" */
 }
 
 .problem-column {
-  padding: 48px; /* Також трохи збільшив внутрішній відступ для балансу */
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  transition: transform 0.3s ease, border-color 0.3s ease;
+	padding: 48px;
+	/* Також трохи збільшив внутрішній відступ для балансу */
+	background: rgba(255, 255, 255, 0.03);
+	border: 1px solid rgba(255, 255, 255, 0.05);
+	border-radius: 24px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .problem-column:hover {
@@ -818,6 +820,10 @@ p {
 	gap: 16px;
 }
 
+.card-content {
+	margin-bottom: 32px;
+}
+
 .card-icon-wilson {
 	width: 72px;
 	height: 72px;
@@ -1091,7 +1097,7 @@ p {
 
 .receive-card {
 	background: #080808;
-	
+
 	border: 1px solid rgba(255, 255, 255, 0.06);
 	border-radius: 24px;
 
@@ -1609,7 +1615,7 @@ p {
 	letter-spacing: -0.04em;
 	color: rgba(255, 255, 255, 0.4);
 	/* Muted заголовок */
-	margin-bottom: 32px;
+	margin-bottom: 42px;
 }
 
 .text-white-accent {
