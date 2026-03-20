@@ -1050,80 +1050,88 @@ p {
 
 /* --- SECTION 8: WHAT YOU RECEIVE (TOTAL MOBILE RESET) --- */
 .receive-section {
-	padding: var(--section-padding) 0;
+	padding: 140px 0;
 	background-color: #000;
 }
 
 .receive-layout-new {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
-	gap: 80px;
+	gap: 100px;
+
 	align-items: start;
 }
 
 .receive-sidebar {
 	position: sticky;
-	top: 100px;
+	top: 120px;
 }
 
 .receive-description {
 	font-size: 20px;
-	color: #8A8A93;
-	line-height: 1.5;
-	margin: 24px 0 40px;
+	color: rgba(255, 255, 255, 0.45);
+	line-height: 1.6;
+	margin: 32px 0 0;
+
 }
 
 .receive-description strong {
 	color: #fff;
+	font-weight: 500;
 }
 
 .receive-grid-new {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 16px;
+	gap: 24px;
+
 }
 
 .receive-card {
-	background: #0A0A0A;
-	border: 1px solid rgba(255, 255, 255, 0.05);
-	border-radius: 16px;
-	padding: 32px;
+	background: #080808;
+	
+	border: 1px solid rgba(255, 255, 255, 0.06);
+	border-radius: 24px;
+
+	padding: 40px;
+
 	display: flex;
 	align-items: center;
-	gap: 20px;
-	transition: all 0.3s ease;
+	gap: 24px;
+	transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .receive-card:hover {
-	background: #111;
-	border-color: rgba(255, 255, 255, 0.1);
+	background: #0c0c0c;
+	border-color: rgba(255, 255, 255, 0.12);
+	transform: translateY(-4px);
 }
 
 .receive-icon-wrapper {
 	flex-shrink: 0;
-	width: 42px;
-	height: 42px;
+	width: 48px;
+	height: 48px;
 	background: rgba(255, 255, 255, 0.03);
 	border: 1px solid rgba(255, 255, 255, 0.08);
-	border-radius: 10px;
+	border-radius: 12px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: #8A8A93;
+	color: rgba(255, 255, 255, 0.6);
 }
 
 .receive-card h3 {
-	font-size: 17px;
+	font-size: 18px;
 	font-weight: 500;
 	color: #fff;
-	line-height: 1.3;
+	line-height: 1.4;
 	margin: 0;
 }
 
 @media (max-width: 1100px) {
 	.receive-layout-new {
 		grid-template-columns: 1fr;
-		gap: 60px;
+		gap: 64px;
 	}
 
 	.receive-sidebar {
@@ -1134,10 +1142,12 @@ p {
 @media (max-width: 640px) {
 	.receive-grid-new {
 		grid-template-columns: 1fr;
+		gap: 16px;
 	}
 
 	.receive-card {
-		padding: 24px;
+		padding: 32px 24px;
+		border-radius: 20px;
 	}
 }
 
