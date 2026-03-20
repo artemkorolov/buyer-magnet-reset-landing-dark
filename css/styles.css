@@ -262,22 +262,20 @@ p {
 }
 
 .problem-grid-3-col {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 32px;
-	/* Збільшено з 24px для більшого "повітря" */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px; /* Збільшено з 24px для більшого "повітря" */
 }
 
 .problem-column {
-	padding: 48px;
-	/* Також трохи збільшив внутрішній відступ для балансу */
-	background: rgba(255, 255, 255, 0.03);
-	border: 1px solid rgba(255, 255, 255, 0.05);
-	border-radius: 24px;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	transition: transform 0.3s ease, border-color 0.3s ease;
+  padding: 48px; /* Також трохи збільшив внутрішній відступ для балансу */
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .problem-column:hover {
@@ -756,8 +754,8 @@ p {
 
 /* --- SECTION 6: THE SYSTEM (30-DAY RESET) --- */
 .system-section {
-	padding: var(--section-padding) 0;
-	background-color: var(--bg-primary);
+	padding: 140px 0;
+	background-color: #000;
 	overflow-x: hidden;
 }
 
@@ -768,93 +766,90 @@ p {
 }
 
 .display-title-centered {
-	font-size: 40px;
-	line-height: 1.2;
+	font-size: 48px !important;
+	line-height: 1.1;
 	margin-bottom: 24px;
-	letter-spacing: -0.03em;
+	letter-spacing: -0.04em;
 	font-weight: 500;
 	color: #fff;
 }
 
 .main-definition-large {
 	font-size: 20px;
-	color: var(--text-muted);
+	color: rgba(255, 255, 255, 0.45);
 	line-height: 1.6;
 }
 
 .phases-cards-grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 24px;
+	gap: 40px;
 	align-items: stretch;
 }
 
 .phase-card-new {
-	background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0) 100%);
-	border: 1px solid var(--border);
-	padding: 48px;
-	border-radius: 16px;
+	background: #080808;
+	border: 1px solid rgba(255, 255, 255, 0.06);
+	padding: 64px 48px;
+	border-radius: 32px;
 	display: flex;
 	flex-direction: column;
-	transition: border-color 0.3s ease;
+	transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+	position: relative;
 }
 
 .phase-card-new:hover {
 	border-color: rgba(255, 255, 255, 0.15);
+	transform: translateY(-8px);
 }
 
 .card-top {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-start;
 	margin-bottom: 48px;
 }
 
 .card-top-left {
 	display: flex;
-	align-items: center;
+	flex-direction: column;
 	gap: 16px;
 }
 
-.phase-number {
-	font-size: 14px;
-	font-weight: 500;
-	color: var(--text-muted);
-	opacity: 0.5;
-	padding-right: 16px;
-	border-right: 1px solid var(--border);
-	line-height: 1;
-}
-
 .card-icon-wilson {
-	width: 68px;
-	height: 68px;
-	color: var(--text-primary);
-	background: rgba(255, 255, 255, 0.04);
-	padding: 12px;
-	border-radius: 12px;
+	width: 72px;
+	height: 72px;
+	color: rgba(255, 255, 255, 0.6);
+	background: rgba(255, 255, 255, 0.03);
+	padding: 18px;
+	border-radius: 20px;
 	border: 1px solid rgba(255, 255, 255, 0.08);
 	stroke-width: 1.5px;
 	flex-shrink: 0;
 }
 
+.phase-number {
+	font-size: 13px;
+	font-weight: 600;
+	color: rgba(255, 255, 255, 0.2);
+	letter-spacing: 0.1em;
+	margin-top: 8px;
+}
+
 .week-badge {
 	font-size: 11px;
 	font-weight: 500;
-	color: var(--text-muted);
+	color: rgba(255, 255, 255, 0.5);
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
-	padding: 6px 12px;
+	padding: 6px 14px;
 	border-radius: 100px;
-	border: 1px solid var(--border);
-}
-
-.card-content {
-	flex-grow: 1;
+	background: rgba(255, 255, 255, 0.03);
+	border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .phase-title {
-	font-size: 24px;
+	font-size: 26px;
 	font-weight: 500;
 	margin-bottom: 24px;
 	color: #fff;
@@ -863,13 +858,15 @@ p {
 
 .phase-list {
 	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
 .phase-list li {
-	color: var(--text-muted);
-	font-size: 16px;
-	margin-bottom: 12px;
-	padding-left: 20px;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 17px;
+	margin-bottom: 14px;
+	padding-left: 24px;
 	position: relative;
 	line-height: 1.5;
 }
@@ -878,19 +875,18 @@ p {
 	content: "—";
 	position: absolute;
 	left: 0;
-	color: var(--border);
-	font-weight: 300;
+	color: rgba(255, 255, 255, 0.2);
 }
 
 .card-footer {
-	margin-top: 40px;
+	margin-top: auto;
 	padding-top: 32px;
-	border-top: 1px solid var(--border);
+	border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .goal-label {
 	font-size: 14px;
-	color: var(--text-muted);
+	color: rgba(255, 255, 255, 0.4);
 }
 
 .goal-label strong {
@@ -898,7 +894,35 @@ p {
 	color: #fff;
 	font-weight: 500;
 	margin-top: 8px;
-	font-size: 16px;
+	font-size: 17px;
+}
+
+@media (max-width: 1100px) {
+	.system-section {
+		padding: 80px 0;
+	}
+
+	.phases-cards-grid {
+		display: flex;
+		overflow-x: auto;
+		gap: 20px;
+		padding: 0 24px 40px;
+		margin: 0 -24px;
+		scroll-snap-type: x mandatory;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.phases-cards-grid::-webkit-scrollbar {
+		display: none;
+	}
+
+	.phase-card-new {
+		min-width: 300px;
+		max-width: 340px;
+		flex: 0 0 auto;
+		scroll-snap-align: center;
+		padding: 40px 32px;
+	}
 }
 
 
