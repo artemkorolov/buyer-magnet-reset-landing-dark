@@ -259,33 +259,38 @@ p {
 .problem-header-new {
 	margin-bottom: 64px;
 	text-align: left;
-
 }
 
 .problem-grid-3-col {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 1px;
-
-	background: rgba(255, 255, 255, 0.05);
-
-	border: 1px solid rgba(255, 255, 255, 0.05);
-	border-radius: 24px;
-	overflow: hidden;
-	box-shadow: -20px 40px 80px rgba(0, 0, 0, 0.8);
+	gap: 24px;
 }
 
 .problem-column {
-	padding: 48px;
-	background: #050505;
+	padding: 40px;
+	background: rgba(255, 255, 255, 0.03);
+	border: 1px solid rgba(255, 255, 255, 0.05);
+	border-radius: 24px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
+	transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-.highlight-column {
-	background: #080808;
+.problem-column:hover {
+	/* border-color: var(--text-muted); */
+}
 
+.icon-box-new {
+	width: 56px;
+	height: 56px;
+	background: rgba(255, 255, 255, 0.05);
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 32px;
 }
 
 .text-group {
@@ -296,14 +301,12 @@ p {
 
 .text-group p {
 	font-size: 18px;
-
 	line-height: 1.6;
 	margin: 0;
 }
 
 .body-text-muted {
 	color: rgba(255, 255, 255, 0.5);
-
 }
 
 .body-text-white {
@@ -312,14 +315,15 @@ p {
 }
 
 
+
 @media (max-width: 992px) {
 	.problem-grid-3-col {
 		grid-template-columns: 1fr;
+		gap: 16px;
 	}
 
 	.problem-column {
 		padding: 32px 24px;
-		border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 	}
 }
 
@@ -1011,32 +1015,56 @@ p {
 /* --- SECTION 8: WHAT YOU RECEIVE (TOTAL MOBILE RESET) --- */
 .receive-section {
 	padding: var(--section-padding) 0;
+	background-color: #000;
 }
 
-.receive-grid {
+.receive-layout-new {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 1px;
+	grid-template-columns: 1fr 2fr;
+	gap: 80px;
+	align-items: start;
+}
 
-	border: 1px solid var(--border);
+.receive-sidebar {
+	position: sticky;
+	top: 100px;
+}
+
+.receive-description {
+	font-size: 20px;
+	color: #8A8A93;
+	line-height: 1.5;
+	margin: 24px 0 40px;
+}
+
+.receive-description strong {
+	color: #fff;
+}
+
+.receive-grid-new {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 16px;
+}
+
+.receive-card {
+	background: #0A0A0A;
+	border: 1px solid rgba(255, 255, 255, 0.05);
 	border-radius: 16px;
-	overflow: hidden;
-}
-
-.receive-item {
-	background-color: var(--bg-primary);
-	padding: 48px 32px;
+	padding: 32px;
 	display: flex;
-	flex-direction: column;
-	gap: 24px;
-	transition: background 0.3s ease;
+	align-items: center;
+	gap: 20px;
+	transition: all 0.3s ease;
 }
 
-.receive-item:hover {
-	background-color: rgba(255, 255, 255, 0.02);
+.receive-card:hover {
+	background: #111;
+	border-color: rgba(255, 255, 255, 0.1);
 }
 
 .receive-icon-wrapper {
+	flex-shrink: 0;
 	width: 42px;
 	height: 42px;
 	background: rgba(255, 255, 255, 0.03);
@@ -1045,80 +1073,35 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-.receive-icon {
 	color: #8A8A93;
-	width: 20px;
-	height: 20px;
-	stroke-width: 1.5px;
 }
 
-.receive-item h3 {
+.receive-card h3 {
 	font-size: 17px;
 	font-weight: 500;
 	color: #fff;
-	letter-spacing: -0.01em;
-}
-
-
-.receive-footer-grid {
-	grid-column: span 3;
-	display: grid;
-	grid-template-columns: 1fr 1.5fr;
-	gap: 1px;
-	/* background-color: var(--border); */
-}
-
-.receive-item.wide {
-	flex-direction: row;
-	align-items: center;
-	gap: 24px;
-}
-
-.receive-summary-card {
-	/* background-color: var(--bg-primary); */
-	padding: 48px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
-.summary-label {
-	font-size: 11px;
-	letter-spacing: 0.1em;
-	color: #555;
-	margin-bottom: 12px;
-	font-weight: 600;
-}
-
-.summary-text {
-	font-size: 24px;
-	font-weight: 500;
-	color: #8A8A93;
 	line-height: 1.3;
+	margin: 0;
 }
 
-.summary-text .highlight {
-	color: #fff;
-	display: block;
+@media (max-width: 1100px) {
+	.receive-layout-new {
+		grid-template-columns: 1fr;
+		gap: 60px;
+	}
+
+	.receive-sidebar {
+		position: static;
+	}
 }
 
-
-@media (max-width: 992px) {
-
-	.receive-grid,
-	.receive-footer-grid {
+@media (max-width: 640px) {
+	.receive-grid-new {
 		grid-template-columns: 1fr;
 	}
 
-	.receive-footer-grid {
-		grid-column: span 1;
-	}
-
-	.receive-item.wide {
-		flex-direction: column;
-		align-items: flex-start;
+	.receive-card {
+		padding: 24px;
 	}
 }
 
@@ -1131,7 +1114,7 @@ p {
 
 .authority-wrapper-left {
 	max-width: 900px;
-	
+
 }
 
 .authority-grid-modern {
@@ -1455,6 +1438,7 @@ p {
 	.final-headline {
 		font-size: 32px;
 	}
+
 
 	.final-cta-side {
 		text-align: center;
