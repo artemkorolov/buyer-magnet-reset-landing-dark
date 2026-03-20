@@ -679,7 +679,7 @@ h3 {
 @media (max-width: 768px) {
 	.phases-scroll-wrapper {
 		margin-top: 0;
-		margin-right: -24px;
+		margin-right: -10px;
 
 		margin-bottom: 0;
 		margin-left: 0;
