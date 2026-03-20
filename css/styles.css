@@ -976,7 +976,7 @@ p {
 	left: 64px;
 	width: 120px;
 	height: 1px;
-	background: linear-gradient(90deg, #4F7CFF, transparent);
+	
 }
 
 .display-title {
@@ -1519,7 +1519,7 @@ p {
 
 @media (max-width: 768px) {
 
-	.body-text-muted,
+	/* .body-text-muted,
 	.because-list li::before {
 		content: '';
 	}
@@ -1534,7 +1534,7 @@ p {
 
 	.no-list-table li {
 		gap: 0;
-	}
+	} */
 
 	/* TYPOGRAPHY & HERO */
 	.display-title,
