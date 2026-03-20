@@ -644,7 +644,7 @@ p {
 
 /* --- SECTION 5: WHY THREADS (TABLE STYLE) --- */
 .threads-table-section {
-	padding: var(--section-padding) 0;
+	padding: 140px 0;
 	background-color: #000;
 }
 
@@ -653,24 +653,22 @@ p {
 	grid-template-columns: 1fr 1fr;
 
 	background: #080808;
-
 	border: 1px solid rgba(255, 255, 255, 0.08);
 	border-radius: 32px;
 	overflow: hidden;
-	margin-top: 48px;
+	margin-top: 80px;
 	position: relative;
 	box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
 }
 
-
 .manifesto-table-enhanced::before {
 	content: "";
 	position: absolute;
-	top: 0;
+	top: -1px;
 	left: 64px;
 	width: 120px;
 	height: 1px;
-
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), transparent);
 	z-index: 2;
 }
 
@@ -683,13 +681,10 @@ p {
 	justify-content: center;
 }
 
-.main-cell {
-	background: rgba(255, 255, 255, 0.02);
-}
-
+.main-cell,
 .left-footer-cell,
 .right-footer-cell {
-	background: rgba(255, 255, 255, 0.01);
+	background: transparent;
 }
 
 .table-cell .body-text-white {
@@ -707,34 +702,30 @@ p {
 	margin: 0;
 	display: flex;
 	flex-direction: column;
-	gap: 16px;
+	gap: 20px;
 }
 
 .no-list-table li {
 	font-size: 18px !important;
-	color: rgba(255, 255, 255, 0.5);
-
+	color: rgba(255, 255, 255, 0.45);
 	display: flex;
 	align-items: center;
 	gap: 16px;
 }
 
+
 .no-list-table li::before {
-	content: "—";
-	color: var(--text-muted);
-	font-weight: 600;
+	content: "";
+	width: 6px;
+	height: 6px;
+	background-color: rgba(255, 255, 255, 0.15);
+	border-radius: 50%;
+	flex-shrink: 0;
 }
 
-.text-blue {
-	color: #4A90E2;
+.text-white {
+	color: #fff;
 	font-weight: 600;
-}
-
-.block-label {
-	font-size: 14px;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	color: rgba(255, 255, 255, 0.4);
 }
 
 @media (max-width: 992px) {
@@ -745,7 +736,6 @@ p {
 
 	.table-cell {
 		padding: 40px 24px;
-		border-right: none !important;
 	}
 
 	.manifesto-table-enhanced::before {
@@ -936,12 +926,11 @@ p {
 
 /* --- SECTION 7: MOMENTUM PHASE (REFINED WITH LUCIDE) --- */
 .momentum-section {
-	padding: var(--section-padding) 0;
-	background-color: var(--bg-primary);
+	padding: 140px 0;
+	background-color: #000;
 	position: relative;
 	overflow: hidden;
 }
-
 
 .momentum-section::before {
 	content: "";
@@ -968,43 +957,53 @@ p {
 	top: 120px;
 }
 
-
 .info-card {
-	background: rgba(255, 255, 255, 0.01);
-	border-color: rgba(255, 255, 255, 0.12);
-
-	padding: 64px;
-	border-radius: 24px;
+	background: #080808;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	padding: 80px 64px;
+	border-radius: 32px;
 	display: flex;
 	flex-direction: column;
 	gap: 48px;
-	margin-top: 6px;
-	transition: border-color 0.3s ease;
+	position: relative;
+	box-shadow: 0 40px 100px rgba(0, 0, 0, 0.6);
 }
 
-
+.info-card::after {
+	content: "";
+	position: absolute;
+	top: -1px;
+	left: 64px;
+	width: 120px;
+	height: 1px;
+	background: linear-gradient(90deg, #4F7CFF, transparent);
+}
 
 .display-title {
-	font-size: 40px !important;
+	font-size: 48px !important;
 	line-height: 1.1 !important;
 	letter-spacing: -0.04em !important;
-	margin-bottom: 42px;
+	margin-bottom: 48px;
 	color: #fff;
+}
+
+.reason-intro-text {
+	margin-top: 24px;
 }
 
 .body-text-white {
-	font-size: 20px !important;
-	line-height: 1.5;
+	font-size: 24px !important;
+	line-height: 1.4;
 	color: #fff;
-	font-weight: 500;
-	letter-spacing: -0.01em;
+	font-weight: 600;
+	letter-spacing: -0.02em;
 }
 
 .body-text-muted,
 .because-list li {
 	font-size: 18px !important;
 	line-height: 1.6;
-	color: var(--text-muted);
+	color: rgba(255, 255, 255, 0.45);
 }
 
 .because-list {
@@ -1012,30 +1011,36 @@ p {
 	padding: 0;
 	display: flex;
 	flex-direction: column;
-	gap: 16px;
+	gap: 20px;
 }
 
 .because-list li {
 	color: #fff;
 	display: flex;
-	gap: 12px;
+	align-items: center;
+	gap: 16px;
 }
 
 .because-list li::before {
-	content: "—";
-	color: var(--text-muted);
+	content: "";
+	width: 6px;
+	height: 6px;
+	background-color: rgba(255, 255, 255, 0.15);
+	border-radius: 50%;
+	flex-shrink: 0;
+}
+
+.card-content-top {
+	position: relative;
+	padding-bottom: 48px;
 }
 
 .reason-footer {
 	border-top: 1px solid rgba(255, 255, 255, 0.05);
-	padding-top: 32px;
+	padding-top: 40px;
 	display: flex;
 	flex-direction: column;
-	gap: 8px;
-}
-
-.mb-24 {
-	margin-bottom: 24px;
+	gap: 12px;
 }
 
 @media (max-width: 992px) {
@@ -1050,8 +1055,15 @@ p {
 
 	.info-card {
 		padding: 40px 24px;
-		background: rgba(255, 255, 255, 0.02);
-		margin-top: 0;
+		border-radius: 24px;
+	}
+
+	.info-card::after {
+		left: 24px;
+	}
+
+	.display-title {
+		font-size: 36px !important;
 	}
 }
 
