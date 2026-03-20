@@ -15,8 +15,10 @@
 	--font-main: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
 
 	--container-max: 1436px;
-	--section-padding: 80px;
+	/* --section-padding: 80px; */
+	--section-padding: 120px;
 }
+
 
 /* reset */
 * {
@@ -50,6 +52,10 @@ body {
 	text-align: center;
 }
 
+:root {
+	--section-padding: 120px;
+}
+
 section {
 	padding: var(--section-padding) 0;
 	border-bottom: 1px solid var(--border-subtle);
@@ -64,13 +70,13 @@ section+section {
 /* responsive spacing */
 @media (min-width: 1024px) {
 	:root {
-		--section-padding: 96px;
+		--section-padding: 140px;
 	}
 }
 
 @media (max-width: 768px) {
 	:root {
-		--section-padding: 72px;
+		--section-padding: 88px;
 	}
 
 	.container {
@@ -276,7 +282,7 @@ h3 {
 
 .problem-column-clean {
 	max-width: 340px;
-	
+
 }
 
 
@@ -332,7 +338,7 @@ h3 {
 	}
 }
 
-/* REASON SECTION */
+/* SECTION 3 REASON SECTION */
 .reason-section {
 	padding: var(--section-padding) 0;
 	background-color: #000;
