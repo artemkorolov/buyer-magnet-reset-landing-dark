@@ -1111,7 +1111,7 @@ h3 {
 
 @media (max-width: 768px) {
 	.final-close-section {
-		padding: var(--section-padding-mobile) 24px;
+		padding: var(--section-padding) 0;
 	}
 
 	.final-text-lead {
