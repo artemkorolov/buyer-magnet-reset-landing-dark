@@ -211,6 +211,23 @@ h3 {
 	border-radius: 50%;
 }
 
+@media (min-width: 1025px) and (max-width: 1440px) {
+	.hero {
+		min-height: 82vh;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.display-title-hero {
+		font-size: clamp(52px, 7vw, 76px);
+	}
+
+	.hero-description {
+		max-width: 460px;
+		font-size: 19px;
+	}
+}
+
 @media (max-width: 768px) {
 	.hero {
 		min-height: 87dvh;
@@ -230,6 +247,7 @@ h3 {
 		padding: 0 10px;
 	}
 }
+
 
 /* ==========================================================================
    SECTION 2: THE REAL PROBLEM
@@ -305,6 +323,12 @@ h3 {
 	color: #ffffff;
 	font-weight: 500;
 
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+	.problem-section {
+		padding: 50px 0 80px
+	}
 }
 
 
