@@ -153,12 +153,12 @@ h3 {
    SECTION 1: HERO
    ========================================================================== */
 .hero {
-	min-height: 86vh;
+	/* min-height: 86vh; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding-top: 55px;
-	padding-bottom: 55px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 .display-title-hero {
@@ -213,9 +213,9 @@ h3 {
 
 @media (min-width: 1025px) and (max-width: 1440px) {
 	.hero {
-		min-height: 82vh;
-		padding-top: 40px;
-		padding-bottom: 50px;
+		/* min-height: 85vh; */
+		/* padding-top: 55px;
+		padding-bottom: 55px; */
 	}
 
 	.display-title-hero {
