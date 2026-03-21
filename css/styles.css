@@ -1129,14 +1129,6 @@ h3 {
 	font-size: 18px;
 }
 
-.role-title {
-	font-size: clamp(32px, 5vw, 48px);
-	font-weight: 600;
-	color: #ffffff;
-	margin-bottom: 32px;
-	letter-spacing: -0.02em;
-}
-
 .role-main-text {
 	font-size: 20px;
 	font-weight: 500;
