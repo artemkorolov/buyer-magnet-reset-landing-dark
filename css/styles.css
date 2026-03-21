@@ -153,16 +153,16 @@ h3 {
    SECTION 1: HERO
    ========================================================================== */
 .hero {
-	/* min-height: 86vh; */
+	min-height: 90vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding: 80px 0;
+	box-sizing: border-box;
 }
 
 .display-title-hero {
-	font-size: clamp(56px, 10vw, 92px);
+	font-size: clamp(54px, 8.5vw, 88px);
 	line-height: 0.95;
 	margin-bottom: 32px;
 	max-width: 1100px;
@@ -211,40 +211,39 @@ h3 {
 	border-radius: 50%;
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
-	 .hero {
-		/* min-height: 85vh; */
-		/* padding-top: 55px;
-		padding-bottom: 55px; */
-	}
-
-	.display-title-hero {
-		font-size: clamp(52px, 7vw, 76px);
-	}
-
-	.hero-description {
-		max-width: 460px;
-		font-size: 19px;
-	} 
-}
-
-@media (max-width: 768px) {
+@media screen and (max-height: 850px) {
 	.hero {
-		/* min-height: 87dvh; */
-		padding-top: 60px;
+		min-height: 82vh;
+		padding-top: 40px;
 		padding-bottom: 40px;
 	}
 
 	.display-title-hero {
-		font-size: clamp(44px, 13vw, 60px);
-		line-height: 1.0;
-		letter-spacing: -0.04em;
+		font-size: clamp(48px, 7vw, 68px);
 	}
 
 	.hero-description {
+		margin-bottom: 32px;
+		font-size: 18px;
+	}
+}
+
+
+@media (max-width: 768px) {
+	.hero {
+		min-height: 85dvh;
+
+		padding: 60px 20px;
+	}
+
+	.display-title-hero {
+		font-size: clamp(42px, 12vw, 56px);
+		line-height: 1.0;
+	}
+
+	.hero-description {
+		max-width: 300px;
 		font-size: 17px;
-		max-width: 100%;
-		padding: 0 10px;
 	}
 }
 
@@ -254,7 +253,7 @@ h3 {
    ========================================================================== */
 
 .problem-section {
-	padding: 65px 0 120px;
+	padding: 40px 0 120px;
 	margin-top: 0;
 	position: relative;
 	z-index: 1;
