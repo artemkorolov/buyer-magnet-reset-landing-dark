@@ -145,7 +145,7 @@ h3 {
 	box-sizing: border-box;
 	background: linear-gradient(180deg,
 			#000000 0%,
-			#040404 60%);
+			#050505 50%);
 }
 
 .display-title-hero {
@@ -243,12 +243,9 @@ h3 {
 	margin-top: 0;
 	position: relative;
 	z-index: 1;
-
 	border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
 
-	background: radial-gradient(ellipse at top center, rgba(255, 255, 255, 0.04) 0%, rgba(0, 0, 0, 0) 60%);
-	background-color: #000000;
 }
 
 .gray-dots {
@@ -1049,7 +1046,14 @@ h3 {
 	color: #888888;
 }
 
+.final-message-simple {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
 .final-text-sub {
+	max-width: 400px;
 	font-size: 17px;
 	color: #888888;
 	line-height: 1.6;
@@ -1099,9 +1103,10 @@ h3 {
 }
 
 @media (max-width: 768px) {
-	.role-section{
+	.role-section {
 		text-align: start;
 	}
+
 	.role-title {
 		font-size: 28px;
 	}
