@@ -212,7 +212,7 @@ h3 {
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
-	.hero {
+	 .hero {
 		/* min-height: 85vh; */
 		/* padding-top: 55px;
 		padding-bottom: 55px; */
@@ -225,7 +225,7 @@ h3 {
 	.hero-description {
 		max-width: 460px;
 		font-size: 19px;
-	}
+	} 
 }
 
 @media (max-width: 768px) {
@@ -325,11 +325,11 @@ h3 {
 
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
+/* @media (min-width: 1025px) and (max-width: 1440px) {
 	.problem-section {
 		padding: 50px 0 80px
 	}
-}
+} */
 
 
 
