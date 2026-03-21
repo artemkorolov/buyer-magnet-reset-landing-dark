@@ -1074,48 +1074,68 @@ h3 {
 	}
 }
 
-/* SECTION ROLE */
+/* ==========================================================================
+   SECTION: ROLE 
+   ========================================================================== */
+
 .role-section {
-	padding: var(--section-padding) 0;
-	text-align: center;
+	padding: 160px 0;
+
 }
 
-.role-container {
-	max-width: 600px;
-	margin: 0 auto;
+.role-grid {
+	display: grid;
+	grid-template-columns: 1.1fr 0.9fr;
+
+	gap: 80px;
+	align-items: center;
+
 }
 
-.role-kicker {
-	margin-bottom: 24px;
-	font-size: 18px;
+
+.role-header-col {
+	text-align: left;
 }
 
-.role-main-text {
-	font-size: 20px;
-	font-weight: 500;
-	color: #ffffff;
-	margin-bottom: 12px;
+.role-header-col .display-title {
+	margin-bottom: 20px;
+	text-align: left;
+
+	line-height: 1.0;
 }
 
-.role-muted-text {
+.role-subtitle {
 	font-size: 18px;
 	color: var(--text-muted);
+	letter-spacing: -0.01em;
+}
+
+
+.role-content-col {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.role-instruction-box {
+	max-width: 400px;
+}
+
+
+@media (max-width: 991px) {
+	.role-grid {
+		gap: 40px;
+		grid-template-columns: 1fr;
+	}
 }
 
 @media (max-width: 768px) {
 	.role-section {
-		text-align: start;
+		padding: 100px 20px;
 	}
 
-	.role-title {
-		font-size: 28px;
+	.role-header-col,
+	.role-content-col {
+		text-align: left;
 	}
 
-	.role-main-text {
-		font-size: 18px;
-	}
-
-	.role-muted-text {
-		font-size: 16px;
-	}
 }
