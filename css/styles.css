@@ -166,13 +166,6 @@ h3 {
 	-webkit-text-fill-color: transparent;
 }
 
-/* .hero-description {
-	max-width: 500px;
-	margin: 0 auto 48px;
-	line-height: 1.5;
-	color: var(--text-muted);
-} */
-
 .hero-description {
 	max-width: 430px;
 	margin: 0 auto 48px;
@@ -227,8 +220,7 @@ h3 {
 
 @media (max-width: 768px) {
 	.hero {
-		min-height: 83dvh;
-		/* padding: 48px 20px; */
+		min-height: 85dvh;
 		padding: 48px 0px;
 	}
 
