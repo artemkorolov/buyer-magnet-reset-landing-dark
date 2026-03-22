@@ -559,6 +559,13 @@ h3 {
 	}
 }
 
+@media (max-width: 768px) {
+	.threads-header-full {
+		margin-bottom: 40px;
+	}
+}
+
+
 
 /* ==========================================================================
    SECTION 6: THE SYSTEM (3 PHASES)
