@@ -844,7 +844,7 @@ h3 {
    SECTION 9: ROLE 
    ========================================================================== */
 
-.role-section {
+/* .role-section {
 	padding: var(--section-padding) 0;
 }
 
@@ -898,8 +898,70 @@ h3 {
 		text-align: left;
 	}
 
+} */
+
+.role-section {
+	padding: var(--section-padding) 0;
 }
 
+.role-grid {
+	display: grid;
+	grid-template-columns: 1.2fr 0.8fr;
+
+	gap: 60px;
+	align-items: flex-start;
+
+}
+
+.role-header-col .display-title {
+	margin-bottom: 32px;
+	line-height: 1.0;
+}
+
+
+.role-main-instruction {
+	font-size: 18px;
+	line-height: 1.4;
+	
+	color: var(--text-muted);
+	margin-bottom: 40px;
+
+}
+
+
+.role-accent-text {
+	font-size: 20px;
+	line-height: 1.4;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+
+.prominent {
+	color: #ffffff;
+	font-weight: 700;
+	letter-spacing: -0.01em;
+}
+
+@media (max-width: 991px) {
+	.role-grid {
+		grid-template-columns: 1fr;
+		gap: 40px;
+	}
+}
+
+@media (max-width: 768px) {
+	.role-section {
+		padding: 80px 0;
+	}
+
+	.role-main-instruction {
+		font-size: 17px;
+	}
+
+	.role-accent-text {
+		font-size: 19px;
+	}
+}
 
 /* ==========================================================================
    SECTION 10: AUTHORITY FRAME (SUBTLE TRUST)
