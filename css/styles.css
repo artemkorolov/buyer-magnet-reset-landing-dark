@@ -744,15 +744,6 @@ h3 {
 	border-color: rgba(255, 255, 255, 0.15);
 }
 
-.card-subtitle-small {
-	font-size: 14px;
-	color: #888888;
-	margin-bottom: 32px;
-	text-transform: uppercase;
-	letter-spacing: 0.05em;
-	font-weight: 500;
-}
-
 .phase-list-dash-new {
 	list-style: none;
 	padding: 0;
