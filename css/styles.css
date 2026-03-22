@@ -228,7 +228,8 @@ h3 {
 @media (max-width: 768px) {
 	.hero {
 		min-height: 83dvh;
-		padding: 48px 20px;
+		/* padding: 48px 20px; */
+		padding: 48px 0px;
 	}
 
 	.display-title-hero {
@@ -237,7 +238,6 @@ h3 {
 	}
 
 	.hero-description {
-		/* max-width: 300px; */
 		font-size: 17px;
 	}
 }
@@ -285,7 +285,6 @@ h3 {
 	margin-top: 16px;
 }
 
-
 .problem-grid-3-col {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -318,7 +317,7 @@ h3 {
 
 @media (max-width: 768px) {
 	.problem-section {
-		padding: 40px 20px 80px;
+		padding: 40px 0 80px;
 		margin-top: 0;
 	}
 
@@ -436,7 +435,7 @@ h3 {
 	.reason-grid {
 		grid-template-columns: 1fr;
 		gap: 48px;
-		padding: 0 32px;
+		padding: 0 20px;
 	}
 
 	.reason-header {
@@ -857,7 +856,74 @@ h3 {
 
 
 /* ==========================================================================
-   SECTION 9: AUTHORITY FRAME (SUBTLE TRUST)
+   SECTION 9: ROLE 
+   ========================================================================== */
+
+.role-section {
+	padding: 160px 0;
+
+}
+
+.role-grid {
+	display: grid;
+	grid-template-columns: 1.1fr 0.9fr;
+
+	gap: 80px;
+	align-items: center;
+
+}
+
+
+.role-header-col {
+	text-align: left;
+}
+
+.role-header-col .display-title {
+	margin-bottom: 20px;
+	text-align: left;
+
+	line-height: 1.0;
+}
+
+.role-subtitle {
+	font-size: 18px;
+	color: var(--text-muted);
+	letter-spacing: -0.01em;
+}
+
+
+.role-content-col {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.role-instruction-box {
+	max-width: 400px;
+}
+
+
+@media (max-width: 991px) {
+	.role-grid {
+		gap: 40px;
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 768px) {
+	.role-section {
+		padding: 100px 0px;
+	}
+
+	.role-header-col,
+	.role-content-col {
+		text-align: left;
+	}
+
+}
+
+
+/* ==========================================================================
+   SECTION 10: AUTHORITY FRAME (SUBTLE TRUST)
    ========================================================================== */
 
 .authority-section {
@@ -901,13 +967,12 @@ h3 {
 	}
 
 	.auth-divider {
-		display: none;
-
+		/* display: none; */
 	}
 }
 
 /* ==========================================================================
-   SECTION 10: AUTHORITY FRAME (SUBTLE TRUST)
+   SECTION 11: AUTHORITY FRAME (SUBTLE TRUST)
    ========================================================================== */
 
 .investment-section {
@@ -1037,7 +1102,7 @@ h3 {
 }
 
 /* ==========================================================================
-   SECTION 11: FINAL CLOSE
+   SECTION 12: FINAL CLOSE
    ========================================================================== */
 .final-close-section {
 	padding: var(--section-padding) 0;
@@ -1092,70 +1157,4 @@ h3 {
 	.final-text-lead {
 		font-size: 24px;
 	}
-}
-
-/* ==========================================================================
-   SECTION: ROLE 
-   ========================================================================== */
-
-.role-section {
-	padding: 160px 0;
-
-}
-
-.role-grid {
-	display: grid;
-	grid-template-columns: 1.1fr 0.9fr;
-
-	gap: 80px;
-	align-items: center;
-
-}
-
-
-.role-header-col {
-	text-align: left;
-}
-
-.role-header-col .display-title {
-	margin-bottom: 20px;
-	text-align: left;
-
-	line-height: 1.0;
-}
-
-.role-subtitle {
-	font-size: 18px;
-	color: var(--text-muted);
-	letter-spacing: -0.01em;
-}
-
-
-.role-content-col {
-	display: flex;
-	justify-content: flex-start;
-}
-
-.role-instruction-box {
-	max-width: 400px;
-}
-
-
-@media (max-width: 991px) {
-	.role-grid {
-		gap: 40px;
-		grid-template-columns: 1fr;
-	}
-}
-
-@media (max-width: 768px) {
-	.role-section {
-		padding: 100px 20px;
-	}
-
-	.role-header-col,
-	.role-content-col {
-		text-align: left;
-	}
-
 }
