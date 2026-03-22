@@ -65,7 +65,7 @@ section+section {
 
 @media (max-width: 768px) {
 	:root {
-		--section-padding: 88px;
+		--section-padding: 65px;
 	}
 
 	.container {
@@ -152,7 +152,7 @@ h3 {
 }
 
 .display-title-hero {
-	font-size: clamp(54px, 8.5vw, 88px);
+	font-size: clamp(54px, 8.5vw, 100px);
 	line-height: 0.95;
 	margin-bottom: 32px;
 	max-width: 1100px;
@@ -220,7 +220,6 @@ h3 {
 
 @media (max-width: 768px) {
 	.hero {
-		/* min-height: 83dvh; */
 		min-height: 90dvh;
 		padding: 48px 0px;
 	}
@@ -245,8 +244,6 @@ h3 {
 	margin-top: 0;
 	position: relative;
 	z-index: 1;
-	border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
 
 }
 
@@ -310,7 +307,7 @@ h3 {
 
 @media (max-width: 768px) {
 	.problem-section {
-		padding: 40px 0 80px;
+		padding: 40px 0 65px;
 		margin-top: 0;
 	}
 
@@ -904,7 +901,7 @@ h3 {
 
 @media (max-width: 768px) {
 	.role-section {
-		padding: 100px 0px;
+		padding: 65px 0px;
 	}
 
 	.role-header-col,
@@ -1087,6 +1084,11 @@ h3 {
 
 	.dot-divider {
 		display: none;
+	}
+
+	.investment-section {
+		padding-top: 65px;
+		padding-bottom: 65px;
 	}
 }
 
