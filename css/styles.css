@@ -1153,7 +1153,7 @@ h3 {
    ========================================================================== */
 
 
-.final-close-section {
+/* .final-close-section {
 	padding: var(--section-padding) 0;
 	text-align: center;
 }
@@ -1205,5 +1205,68 @@ h3 {
 
 	.final-text-lead {
 		font-size: 24px;
+	}
+} */
+
+.final-close-section {
+	padding: 160px 0;
+
+	text-align: center;
+}
+
+.final-calm-container {
+	max-width: 800px;
+
+	margin: 0 auto;
+}
+
+.final-text-lead {
+	font-size: clamp(32px, 5vw, 56px);
+
+	line-height: 1.1;
+	margin-bottom: 48px;
+	letter-spacing: -0.03em;
+}
+
+
+.line-soft {
+	display: block;
+	color: rgba(255, 255, 255, 0.4);
+	font-weight: 500;
+}
+
+.line-strong {
+	display: block;
+	color: #ffffff;
+	font-weight: 700;
+	margin-top: 12px;
+}
+
+.final-text-sub {
+	font-size: 20px;
+	line-height: 1.6;
+}
+
+.sub-highlight {
+	color: #ffffff;
+	margin-bottom: 8px;
+	font-weight: 500;
+}
+
+.sub-muted {
+	color: #888888;
+}
+
+@media (max-width: 768px) {
+	.final-close-section {
+		padding: 100px 20px;
+	}
+
+	.final-text-lead {
+		font-size: 32px;
+	}
+
+	.final-text-sub {
+		font-size: 18px;
 	}
 }
