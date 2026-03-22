@@ -370,8 +370,7 @@ h3 {
 .reason-content-clean {
 	display: flex;
 	flex-direction: column;
-	/* gap: 48px; */
-	gap: 32px;
+	gap: 48px;
 }
 
 .because-content {
