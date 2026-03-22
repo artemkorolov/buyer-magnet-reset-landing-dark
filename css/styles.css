@@ -9,8 +9,7 @@
 	--border-subtle: rgba(255, 255, 255, 0.08);
 	--font-main: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
 	--container-max: 1360px;
-	/* --section-padding: 120px; */
-	--section-padding: 120px;
+	--section-padding: 110px;
 }
 
 * {
@@ -60,7 +59,7 @@ section+section {
 
 @media (min-width: 1024px) {
 	:root {
-		--section-padding: 100px;
+		--section-padding: 120px;
 	}
 }
 
