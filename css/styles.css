@@ -922,7 +922,7 @@ h3 {
 .role-main-instruction {
 	font-size: 18px;
 	line-height: 1.4;
-	
+
 	color: var(--text-muted);
 	margin-bottom: 40px;
 
@@ -1099,7 +1099,7 @@ h3 {
 	align-items: center;
 	gap: 16px;
 	margin-bottom: 48px;
-	font-size: 13px;
+	font-size: 17px;
 	color: #888888;
 }
 
@@ -1132,6 +1132,7 @@ h3 {
 
 	.checkout-features-line {
 		/* flex-direction: column; */
+		font-size: 13px;
 		gap: 12px;
 	}
 
