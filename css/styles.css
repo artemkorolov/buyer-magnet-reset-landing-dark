@@ -963,7 +963,7 @@ h3 {
    ========================================================================== */
 
 .investment-section {
-	padding: var(--section-padding) 0;
+	padding: var(--section-padding);
 	display: flex;
 	justify-content: center;
 	position: relative;
@@ -1088,8 +1088,7 @@ h3 {
 	}
 
 	.investment-section {
-		padding-top: 65px;
-		padding-bottom: 65px;
+		padding: 65px 32px;
 	}
 }
 
