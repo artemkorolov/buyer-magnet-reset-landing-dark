@@ -56,7 +56,6 @@ section+section {
 	margin-top: -1px;
 }
 
-
 @media (min-width: 1024px) {
 	:root {
 		--section-padding: 115px;
@@ -65,14 +64,14 @@ section+section {
 
 @media (max-width: 768px) {
 	:root {
-		--section-padding: 65px;
+		/* --section-padding: 65px; */
+		--section-padding: 75px;
 	}
 
 	.container {
 		padding: 0 32px;
 	}
 }
-
 
 h1,
 h2,
@@ -141,7 +140,6 @@ h3 {
    SECTION 1: HERO
    ========================================================================== */
 .hero {
-	/* min-height: 90vh; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -204,7 +202,6 @@ h3 {
 	.hero {
 		min-height: 85vh;
 		padding-top: 30px;
-		/* padding-bottom: 40px; */
 		padding-bottom: 50px;
 	}
 
@@ -245,7 +242,6 @@ h3 {
 	margin-top: 0;
 	position: relative;
 	z-index: 1;
-
 }
 
 .gray-dots {
@@ -254,7 +250,6 @@ h3 {
 
 .problem-header-new {
 	margin-bottom: 64px;
-
 }
 
 .problem-header-new .display-title {
@@ -297,7 +292,6 @@ h3 {
 .text-highlight {
 	color: #ffffff;
 	font-weight: 500;
-
 }
 
 @media (max-width: 992px) {
@@ -314,7 +308,6 @@ h3 {
 
 	.problem-grid-3-col {
 		grid-template-columns: 1fr;
-
 		gap: 32px;
 	}
 
@@ -325,7 +318,6 @@ h3 {
 	.problem-header-new .display-title {
 		font-size: 30px;
 	}
-
 
 	.hide-mobile {
 		display: none;
@@ -340,6 +332,7 @@ h3 {
 /* ==========================================================================
    SECTION 3: THE REAL REASON
    ========================================================================== */
+
 .reason-section {
 	padding: var(--section-padding) 0;
 	background-color: #000;
@@ -560,6 +553,7 @@ h3 {
 /* ==========================================================================
    SECTION 6: THE SYSTEM (3 PHASES)
    ========================================================================== */
+
 .phases-section {
 	padding: var(--section-padding) 0;
 }
@@ -786,6 +780,7 @@ h3 {
 /* ==========================================================================
    SECTION 8:  WHAT YOU RECEIVE
    ========================================================================== */
+
 .receive-list-clean {
 	display: flex;
 	flex-direction: column;
@@ -851,20 +846,16 @@ h3 {
    ========================================================================== */
 
 .role-section {
-	/* padding: 160px 0; */
 	padding: var(--section-padding) 0;
-
 }
 
 .role-grid {
 	display: grid;
 	grid-template-columns: 1.1fr 0.9fr;
-
 	gap: 80px;
 	align-items: center;
 
 }
-
 
 .role-header-col {
 	text-align: left;
@@ -873,7 +864,6 @@ h3 {
 .role-header-col .display-title {
 	margin-bottom: 20px;
 	text-align: left;
-
 	line-height: 1.0;
 }
 
@@ -883,7 +873,6 @@ h3 {
 	letter-spacing: -0.01em;
 }
 
-
 .role-content-col {
 	display: flex;
 	justify-content: flex-start;
@@ -892,7 +881,6 @@ h3 {
 .role-instruction-box {
 	max-width: 400px;
 }
-
 
 @media (max-width: 991px) {
 	.role-grid {
@@ -917,12 +905,10 @@ h3 {
 /* ==========================================================================
    SECTION 10: AUTHORITY FRAME (SUBTLE TRUST)
    ========================================================================== */
-
 .authority-section {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
 	position: relative;
 	z-index: 1;
-
 }
 
 .authority-grid-modern {
@@ -949,7 +935,6 @@ h3 {
 	background-color: rgba(255, 255, 255, 0.15);
 
 }
-
 
 @media (max-width: 768px) {
 	.authority-grid-modern {
@@ -1105,6 +1090,8 @@ h3 {
 /* ==========================================================================
    SECTION 12: FINAL CLOSE
    ========================================================================== */
+
+
 .final-close-section {
 	padding: var(--section-padding) 0;
 	text-align: center;
