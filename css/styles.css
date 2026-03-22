@@ -301,7 +301,7 @@ h3 {
 
 @media (max-width: 768px) {
 	.problem-section {
-		padding: 40px 0 65px;
+		padding: 40px 0 75px;
 		margin-top: 0;
 	}
 
@@ -890,7 +890,7 @@ h3 {
 
 @media (max-width: 768px) {
 	.role-section {
-		padding: 65px 0px;
+		padding: 75px 0px;
 	}
 
 	.role-header-col,
@@ -1078,7 +1078,7 @@ h3 {
 	}
 
 	.investment-section {
-		padding: 65px 32px;
+		padding: 75px 32px;
 	}
 
 	.price-container-soft {
