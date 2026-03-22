@@ -9,6 +9,7 @@
 	--border-subtle: rgba(255, 255, 255, 0.08);
 	--font-main: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
 	--container-max: 1360px;
+	/* --section-padding: 120px; */
 	--section-padding: 120px;
 }
 
@@ -59,7 +60,7 @@ section+section {
 
 @media (min-width: 1024px) {
 	:root {
-		--section-padding: 140px;
+		--section-padding: 100px;
 	}
 }
 
@@ -240,7 +241,7 @@ h3 {
    ========================================================================== */
 
 .problem-section {
-	padding: 40px 0 120px;
+	padding: 40px 0 100px;
 	margin-top: 0;
 	position: relative;
 	z-index: 1;
@@ -850,7 +851,8 @@ h3 {
    ========================================================================== */
 
 .role-section {
-	padding: 160px 0;
+	/* padding: 160px 0; */
+	padding: var(--section-padding) 0;
 
 }
 
@@ -962,7 +964,7 @@ h3 {
    ========================================================================== */
 
 .investment-section {
-	padding: var(--section-padding) 30px;
+	padding: var(--section-padding) 0;
 	display: flex;
 	justify-content: center;
 	position: relative;
