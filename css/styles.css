@@ -220,7 +220,8 @@ h3 {
 
 @media (max-width: 768px) {
 	.hero {
-		min-height: 85dvh;
+		/* min-height: 83dvh; */
+		min-height: 90dvh;
 		padding: 48px 0px;
 	}
 
