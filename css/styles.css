@@ -64,7 +64,6 @@ section+section {
 
 @media (max-width: 768px) {
 	:root {
-		/* --section-padding: 65px; */
 		--section-padding: 75px;
 	}
 
