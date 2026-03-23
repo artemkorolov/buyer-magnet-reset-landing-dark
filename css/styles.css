@@ -1051,9 +1051,8 @@ h3 {
 	justify-content: center;
 	box-sizing: border-box;
 
-	box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4),
-
-		0 0 80px rgba(59, 130, 246, 0.1);
+box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4),
+		0 0 100px rgba(59, 130, 246, 0.06);
 
 	position: relative;
 }
@@ -1172,44 +1171,45 @@ h3 {
 		padding: 48px 24px;
 		border-radius: 24px;
 		box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5),
-			0 0 30px rgba(59, 130, 246, 0.25);
+			0 0 45px rgba(59, 130, 246, 0.15);
 
-		padding: 48px 24px;
+		padding: 40px 20px;
 		border-radius: 24px;
 	}
+}
 
-	/* .checkout-features-line {
+/* .checkout-features-line {
 		font-size: 13px;
 		gap: 12px;
 	} */
 
-	.checkout-features-line {
-		display: flex;
-		flex-direction: row !important;
-		flex-wrap: nowrap;
-		justify-content: center;
-		gap: 8px;
-		font-size: 13px;
-		white-space: nowrap;
-	}
+.checkout-features-line {
+	display: flex;
+	flex-direction: row !important;
+	flex-wrap: nowrap;
+	justify-content: center;
+	gap: 8px;
+	font-size: 13px;
+	white-space: nowrap;
+}
 
-	/* .dot-divider {
+/* .dot-divider {
 		display: none;
 	} */
 
-	.dot-divider {
-		display: inline;
-		opacity: 0.2;
-	}
-
-	.investment-section {
-		padding: 75px 32px;
-	}
-
-	.price-container-soft {
-		padding: 24px;
-	}
+.dot-divider {
+	display: inline;
+	opacity: 0.2;
 }
+
+.investment-section {
+	padding: 75px 32px;
+}
+
+.price-container-soft {
+	padding: 24px;
+}
+
 
 /* ==========================================================================
    SECTION 12: FINAL CLOSE
