@@ -3,16 +3,14 @@
 	--bg-secondary: (255, 255, 255, 0.02);
 	--accent-blue: #4f7cff;
 	--accent-glow: rgba(79, 124, 255, 0.25);
-	--text-body-bright: #b1b1b1;
 	--color-label: #666666;
 
 	--text-title: #ffffff;
 	--text-subtitle: #d0d6e0;
 	--text-content: #8a8f98;
-
 	--text-main: #f7f8f8;
 	--text-muted: #62666d;
-
+	--text-body-bright: #b1b1b1;
 
 	--border-subtle: rgba(255, 255, 255, 0.08);
 	--border-content: rgba(255, 255, 255, 0.05);
@@ -150,6 +148,7 @@ a {
 /* ==========================================================================
    SECTION 1: HERO
    ========================================================================== */
+
 .hero {
 	display: flex;
 	align-items: center;
@@ -292,13 +291,6 @@ a {
 .problem-column-clean {
 	max-width: 344px;
 }
-
-/* .body-text-muted {
-	font-size: 16px;
-	line-height: 1.6;
-	color: var(--text-muted);
-	margin: 0;
-} */
 
 .text-highlight {
 	color: var(--text-main);
@@ -565,7 +557,6 @@ a {
 }
 
 
-
 /* ==========================================================================
    SECTION 6: THE SYSTEM (3 PHASES)
    ========================================================================== */
@@ -729,6 +720,7 @@ a {
 	}
 }
 
+
 /* ==========================================================================
    SECTION 7: MOMENTUM PHASE
    ========================================================================== */
@@ -807,7 +799,6 @@ a {
 	transition: all 0.3s ease;
 }
 
-
 .receive-item:last-child {
 	border-bottom: none;
 }
@@ -833,7 +824,6 @@ a {
 
 
 @media (min-width: 1024px) {
-
 	.receive-item:hover .receive-icon-box {
 		background: var(--border-subtle);
 		border-color: var(--border-content);
@@ -888,7 +878,6 @@ a {
 .prominent {
 	color: var(--text-main);
 	font-weight: 500;
-	/* letter-spacing: -0.01em; */
 }
 
 @media (max-width: 991px) {
@@ -911,6 +900,7 @@ a {
 		font-size: 19px;
 	}
 }
+
 
 /* ==========================================================================
    SECTION 10: AUTHORITY FRAME (SUBTLE TRUST)
@@ -958,12 +948,12 @@ a {
 	}
 }
 
+
 /* ==========================================================================
    SECTION 11: AUTHORITY FRAME (SUBTLE TRUST)
    ========================================================================== */
 
 .investment-section {
-	/* padding: var(--section-padding); */
 	padding: var(--section-padding) 24px 160px 24px;
 	padding-bottom: 130px;
 	display: flex;
@@ -991,7 +981,6 @@ a {
 	position: relative;
 	overflow: hidden;
 }
-
 
 .glossy-checkout-container::before {
 	content: "";
