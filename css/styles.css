@@ -1030,18 +1030,17 @@ h3 {
 	pointer-events: none;
 }
 
-/* Ієрархія для "One" (Muted) */
+
 .one-muted {
 	color: rgba(255, 255, 255, 0.3);
-	/* Робимо "One" тихішим */
+
 	font-weight: 400;
 	margin-right: 2px;
 }
 
-/* Акцент на ключових словах у фічах */
+
 .feature-item {
 	color: var(--text-main);
-	/* Білий */
 	font-weight: 600;
 }
 
@@ -1175,7 +1174,7 @@ h3 {
    SECTION 12: FINAL CLOSE
    ========================================================================== */
 
-.final-close-section {
+/* .final-close-section {
 	padding: var(--section-padding) 0;
 	text-align: center;
 }
@@ -1239,5 +1238,72 @@ h3 {
 	.sub-muted {
 		font-size: 14px;
 		margin: 0;
+	}
+} */
+
+/*  */
+.final-close-section {
+	padding: 120px 0;
+
+	text-align: center;
+}
+
+.final-calm-container {
+	max-width: 650px;
+	
+	margin: 0 auto;
+}
+
+.display-title {
+	margin-bottom: 32px;
+
+	line-height: 1.2;
+}
+
+.line-soft {
+	display: block;
+	color: rgba(255, 255, 255, 0.4);
+	font-weight: 400;
+
+	font-size: 0.8em;
+	margin-bottom: 6px;
+}
+
+.line-strong {
+	display: block;
+	color: var(--text-main);
+	font-weight: 600;
+
+	letter-spacing: -0.02em;
+}
+
+
+.final-text-sub {
+	font-size: 18px;
+	line-height: 1.6;
+	color: var(--text-muted);
+
+	max-width: 550px;
+	margin: 0 auto;
+}
+
+
+.text-highlight {
+	color: var(--text-main);
+
+	font-weight: 600;
+}
+
+@media (max-width: 768px) {
+	.final-close-section {
+		padding: 80px 24px;
+	}
+
+	.line-soft {
+		font-size: 0.9em;
+	}
+
+	.final-text-sub {
+		font-size: 16px;
 	}
 }
