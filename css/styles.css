@@ -903,9 +903,6 @@ h3 {
 /* ==========================================================================
    SECTION 10: AUTHORITY FRAME (SUBTLE TRUST)
    ========================================================================== */
-.authority-section {
-	/* position: relative; */
-}
 
 .authority-grid-modern {
 	display: flex;
@@ -945,7 +942,7 @@ h3 {
 @media (max-width: 768px) {
 	.authority-text-inline {
 		gap: 6px;
-		font-size: 16px;
+		font-size: 15px;
 	}
 }
 
@@ -962,32 +959,6 @@ h3 {
 	position: relative;
 }
 
-/* .glossy-checkout-container {
-	width: 100%;
-	max-width: 960px;
-	margin: 0 auto;
-	padding: 80px 40px;
-	display: flex;
-	justify-content: center;
-	box-sizing: border-box;
-	background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
-	border: 1px solid var(--border-content);
-	border-radius: 32px;
-	backdrop-filter: blur(20px);
-	box-shadow: 0 24px 64px rgba(0, 0, 0, 0.1), 0 0 34px rgba(59, 130, 246, 0.1);
-	position: relative;
-}
-
-.one-muted {
-	color: var(--color-label);
-	margin-right: 2px;
-}
-
-.feature-item {
-	color: var(--text-main);
-	font-weight: 600;
-} */
-
 .glossy-checkout-container {
 	width: 100%;
 	max-width: 960px;
@@ -996,31 +967,20 @@ h3 {
 	display: flex;
 	justify-content: center;
 	box-sizing: border-box;
-
-
 	background: linear-gradient(165deg, rgba(15, 23, 42, 0.8) 0%, rgba(0, 0, 0, 0.95) 100%);
-
-
 	border: 1px solid rgba(59, 130, 246, 0.2);
-
-
 	border-radius: 32px;
 	backdrop-filter: blur(24px);
-
 	-webkit-backdrop-filter: blur(24px);
-
 	box-shadow:
 		0 40px 100px rgba(0, 0, 0, 0.8),
 		0 0 80px rgba(59, 130, 246, 0.18),
-
 		0 0 20px rgba(59, 130, 246, 0.1);
-
-
 	position: relative;
 	overflow: hidden;
 }
 
-/* 4. Додатковий внутрішній відблиск для преміальності */
+
 .glossy-checkout-container::before {
 	content: "";
 	position: absolute;
@@ -1032,14 +992,11 @@ h3 {
 	pointer-events: none;
 }
 
-
 .one-muted {
 	color: rgba(255, 255, 255, 0.3);
-
 	font-weight: 400;
 	margin-right: 2px;
 }
-
 
 .feature-item {
 	color: var(--text-main);
@@ -1177,17 +1134,13 @@ h3 {
    ========================================================================== */
 
 .final-close-section {
-	/* padding: var(--section-padding) 0; */
-	/* text-align: center; */
 	padding-top: 140px;
 	padding-bottom: 200px;
-	/* Великий відступ в самому кінці сайту */
 	text-align: left;
 }
 
 .final-calm-container {
 	max-width: 600px;
-	/* margin: 0 auto; */
 }
 
 .final-message-simple .display-title {
@@ -1215,7 +1168,6 @@ h3 {
 	line-height: 1.6;
 	color: var(--text-muted);
 	max-width: 500px;
-	/* margin: 0 auto; */
 }
 
 .highlight-white {
