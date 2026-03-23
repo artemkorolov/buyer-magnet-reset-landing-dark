@@ -1242,7 +1242,7 @@ h3 {
 } */
 
 /*  */
-.final-close-section {
+/* .final-close-section {
 	padding: 120px 0;
 
 	text-align: center;
@@ -1304,6 +1304,69 @@ h3 {
 	}
 
 	.final-text-sub {
+		font-size: 16px;
+	}
+} *//* --- Final Close Section --- */
+
+.final-close-section {
+	padding: 140px 0;
+	/* Більше простору зверху/знизу для преміальності */
+	text-align: center;
+}
+
+.final-calm-container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 24px;
+}
+
+/* Використовуємо твій стандартний розмір заголовка секції */
+.final-message-simple .display-title {
+	font-size: 36px;
+	/* Такий же, як у "And your role in all this?" */
+	font-weight: 600;
+	line-height: 1.2;
+	margin-bottom: 32px;
+	letter-spacing: -0.02em;
+}
+
+.line-soft {
+	display: block;
+	color: var(--text-label);
+	/* Твій технічний сірий #888888 / #666666 */
+	font-weight: 400;
+	margin-bottom: 4px;
+}
+
+.line-strong {
+	display: block;
+	color: #ffffff;
+}
+
+/* Текст підтримки: Continuous sentence block */
+.final-description {
+	font-size: 17px;
+	/* Такий же, як .text-base-muted в інших секціях */
+	line-height: 1.6;
+	color: var(--text-muted);
+	/* Твій #a1a1a1 */
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+/* Легке виділення (Slight highlight) */
+.highlight-white {
+	color: #ffffff;
+	font-weight: 600;
+}
+
+/* Адаптація */
+@media (max-width: 768px) {
+	.final-message-simple .display-title {
+		font-size: 28px;
+	}
+
+	.final-description {
 		font-size: 16px;
 	}
 }
