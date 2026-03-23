@@ -1,14 +1,13 @@
 :root {
 	--bg-primary: #000000;
-	--bg-secondary: #050505;
 	--accent-blue: #4f7cff;
 	--accent-glow: rgba(79, 124, 255, 0.25);
 	--text-main: #ffffff;
 	--text-muted: #a1a1a1;
 	--text-soft: #71717a;
 	--color-label: #666666;
-
 	--border-subtle: rgba(255, 255, 255, 0.08);
+	--border-content: rgba(255, 255, 255, 0.05);
 	--font-main: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
 	--container-max: 1360px;
 	--section-padding: 115px;
@@ -336,7 +335,6 @@ h3 {
 
 .reason-section {
 	padding: var(--section-padding) 0;
-	background-color: #000;
 }
 
 .reason-grid {
@@ -360,7 +358,7 @@ h3 {
 .because-content {
 	position: relative;
 	padding-top: 32px;
-	border-top: 1px solid rgba(255, 255, 255, 0.05);
+	border-top: 1px solid var(--border-content);
 }
 
 .because-list-new {
@@ -391,7 +389,7 @@ h3 {
 }
 
 .reason-footer-highlight {
-	border-top: 1px solid rgba(255, 255, 255, 0.05);
+	border-top: 1px solid var(--border-content);
 	padding-top: 32px;
 	display: flex;
 	flex-direction: column;
@@ -482,7 +480,7 @@ h3 {
 
 .linear-feature-col {
 	padding: 0 40px;
-	border-right: 1px solid rgba(255, 255, 255, 0.08);
+	border-right: 1px solid var(--border-content);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -517,7 +515,7 @@ h3 {
 
 .clean-list-vertical li::before {
 	content: "—";
-	color: rgba(255, 255, 255, 0.2);
+	color: var(--color-label);
 }
 
 @media (max-width: 992px) {
@@ -529,7 +527,7 @@ h3 {
 	.linear-feature-col {
 		padding: 0 0 32px 0;
 		border-right: none;
-		border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+		border-bottom: 1px solid var(--border-content);
 	}
 
 	.linear-feature-col:first-child {
@@ -594,7 +592,7 @@ h3 {
 .icon-box-large {
 	width: 52px;
 	height: 52px;
-	border: 1px solid rgba(255, 255, 255, 0.15);
+	border: 1px solid var(--border-content);
 	border-radius: 12px;
 	display: flex;
 	align-items: center;
@@ -604,7 +602,7 @@ h3 {
 }
 
 .phase-card:hover .icon-box-large {
-	transform: scale(1.02);
+	/* transform: scale(1.02); */
 }
 
 .icon-box-large svg {
@@ -618,7 +616,7 @@ h3 {
 	font-size: 10px;
 	font-weight: 700;
 	color: #888888;
-	background: rgba(255, 255, 255, 0.05);
+	background: var(--border-content);
 	padding: 4px 12px;
 	border-radius: 100px;
 	letter-spacing: 0.05em;
@@ -626,7 +624,7 @@ h3 {
 
 .phase-number {
 	font-size: 13px;
-	color: rgba(255, 255, 255, 0.2);
+	color: var(--color-label);
 	font-weight: 600;
 	margin-bottom: 20px;
 }
