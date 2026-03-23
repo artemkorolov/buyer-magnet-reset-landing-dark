@@ -844,62 +844,6 @@ h3 {
    SECTION 9: ROLE 
    ========================================================================== */
 
-/* .role-section {
-	padding: var(--section-padding) 0;
-}
-
-.role-grid {
-	display: grid;
-	grid-template-columns: 1.1fr 0.9fr;
-	gap: 80px;
-	align-items: center;
-
-}
-
-.role-header-col {
-	text-align: left;
-}
-
-.role-header-col .display-title {
-	margin-bottom: 20px;
-	text-align: left;
-	line-height: 1.0;
-}
-
-.role-subtitle {
-	font-size: 18px;
-	color: var(--text-muted);
-	letter-spacing: -0.01em;
-}
-
-.role-content-col {
-	display: flex;
-	justify-content: flex-start;
-}
-
-.role-instruction-box {
-	max-width: 400px;
-}
-
-@media (max-width: 991px) {
-	.role-grid {
-		gap: 40px;
-		grid-template-columns: 1fr;
-	}
-}
-
-@media (max-width: 768px) {
-	.role-section {
-		padding: 75px 0px;
-	}
-
-	.role-header-col,
-	.role-content-col {
-		text-align: left;
-	}
-
-} */
-
 .role-section {
 	padding: var(--section-padding) 0;
 }
@@ -907,10 +851,8 @@ h3 {
 .role-grid {
 	display: grid;
 	grid-template-columns: 1.2fr 0.8fr;
-
 	gap: 60px;
 	align-items: flex-start;
-
 }
 
 .role-header-col .display-title {
@@ -918,23 +860,18 @@ h3 {
 	line-height: 1.0;
 }
 
-
 .role-main-instruction {
 	font-size: 18px;
 	line-height: 1.4;
-
 	color: var(--text-muted);
 	margin-bottom: 40px;
-
 }
-
 
 .role-accent-text {
 	font-size: 20px;
 	line-height: 1.4;
 	color: rgba(255, 255, 255, 0.7);
 }
-
 
 .prominent {
 	color: #ffffff;
@@ -994,7 +931,6 @@ h3 {
 	width: 1px;
 	height: 14px;
 	background-color: rgba(255, 255, 255, 0.15);
-
 }
 
 @media (max-width: 768px) {
@@ -1005,24 +941,19 @@ h3 {
 	}
 }
 
-/*  */
 .authority-text-inline {
 	display: flex;
 	flex-wrap: nowrap;
-	/* Примусово в один рядок */
 	gap: 8px;
-	/* Невеликий простір між фразами */
 	align-items: center;
 	margin-top: 16px;
 	white-space: nowrap;
-	/* Щоб не розривалося на мобайлі */
 }
 
 @media (max-width: 768px) {
 	.authority-text-inline {
 		gap: 6px;
 		font-size: 15px;
-		/* Трохи менше для впевненості */
 	}
 }
 
@@ -1050,34 +981,25 @@ h3 {
 	display: flex;
 	justify-content: center;
 	box-sizing: border-box;
-
 	box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4),
 		0 0 100px rgba(59, 130, 246, 0.06);
-
 	position: relative;
 }
 
-
 .one-muted {
 	color: rgba(255, 255, 255, 0.3);
-
 	font-weight: 400;
 	margin-right: 2px;
 }
 
 .feature-item {
 	color: #ffffff;
-
 	font-weight: 600;
 }
 
-
 .checkout-footer-text {
 	color: #a1a1a1;
-
 }
-
-
 
 .checkout-card-calm {
 	width: 100%;
@@ -1172,7 +1094,6 @@ h3 {
 		border-radius: 24px;
 		box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5),
 			0 0 45px rgba(59, 130, 246, 0.15);
-
 		padding: 40px 20px;
 		border-radius: 24px;
 	}
@@ -1199,13 +1120,6 @@ h3 {
 
 }
 
-/* .checkout-features-line {
-		font-size: 13px;
-		gap: 12px;
-	} */
-
-
-
 .price-container-soft {
 	padding: 24px;
 }
@@ -1219,8 +1133,6 @@ h3 {
 	padding: clamp(100px, 10vw, 140px) 0;
 	text-align: center;
 }
-
-
 
 .display-title {
 	margin-bottom: 24px;
@@ -1259,7 +1171,6 @@ h3 {
 
 .sub-muted {
 	color: #a1a1a1;
-
 	font-size: 17px;
 	margin: 0;
 }
