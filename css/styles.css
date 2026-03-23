@@ -3,7 +3,7 @@
 	--bg-secondary: (255, 255, 255, 0.02);
 	--accent-blue: #4f7cff;
 	--accent-glow: rgba(79, 124, 255, 0.25);
-
+	--text-body-bright: #e0e0e0;
 	--color-label: #666666;
 
 	--text-main: #ffffff;
@@ -102,11 +102,11 @@ h3 {
 	margin-bottom: 24px;
 }
 
-.body-text-muted {
+/* .body-text-muted {
 	color: var(--text-muted);
 	font-size: 17px;
 	line-height: 1.6;
-}
+} */
 
 .keyword {
 	color: var(--text-main);
@@ -173,13 +173,13 @@ h3 {
 	max-width: 430px;
 	margin: 0 auto 48px;
 	line-height: 1.5;
-	color: var(--text-muted);
+	color: var(--text-body-bright);
 }
 
 .hero-subtext {
 	margin-top: 22px;
 	font-size: 14px;
-	color: var(--text-muted);
+	color: var(--text-body-bright);
 }
 
 .badge {
@@ -271,7 +271,7 @@ h3 {
 
 .problem-subtitle {
 	font-size: 17px;
-	color: var(--text-muted);
+	color: var(--text-body-bright);
 	font-weight: 400;
 	margin-top: 20px;
 }
@@ -287,12 +287,12 @@ h3 {
 	max-width: 344px;
 }
 
-.body-text-muted {
+/* .body-text-muted {
 	font-size: 16px;
 	line-height: 1.6;
 	color: var(--text-muted);
 	margin: 0;
-}
+} */
 
 .text-highlight {
 	color: var(--text-main);
@@ -416,7 +416,7 @@ h3 {
 .text-base-muted {
 	font-size: 17px;
 	line-height: 1.6;
-	color: var(--text-muted);
+	color: var(--text-body-bright);
 }
 
 @media (max-width: 992px) {
@@ -1174,156 +1174,18 @@ h3 {
    SECTION 12: FINAL CLOSE
    ========================================================================== */
 
-/* .final-close-section {
-	padding: var(--section-padding) 0;
-	text-align: center;
-}
-
-.final-calm-container {
-	margin: 0 auto;
-}
-
-.display-title {
-	margin-bottom: 24px;
-	line-height: 1.2;
-}
-
-.line-soft {
-	display: block;
-	color: rgba(255, 255, 255, 0.4);
-	font-weight: 400;
-	font-size: 0.65em;
-	text-transform: none;
-	letter-spacing: 0;
-	margin-bottom: 6px;
-}
-
-.line-strong {
-	display: block;
-	color: var(--text-main);
-	letter-spacing: -0.03em;
-}
-
-.final-text-sub {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 2px;
-}
-
-.sub-highlight {
-	color: var(--text-main);
-	font-weight: 600;
-	font-size: 18px;
-	margin: 0;
-}
-
-.sub-muted {
-	color: var(--text-muted);
-	font-size: 16px;
-	margin: 0;
-}
-
-
-@media (max-width: 768px) {
-	.line-soft {
-		font-size: 0.85em;
-	}
-
-	.final-text-sub {
-		font-size: 16px;
-		gap: 0;
-	}
-
-	.sub-muted {
-		font-size: 14px;
-		margin: 0;
-	}
-} */
-
-/*  */
-/* .final-close-section {
-	padding: 120px 0;
-
-	text-align: center;
-}
-
-.final-calm-container {
-	max-width: 650px;
-	
-	margin: 0 auto;
-}
-
-.display-title {
-	margin-bottom: 32px;
-
-	line-height: 1.2;
-}
-
-.line-soft {
-	display: block;
-	color: rgba(255, 255, 255, 0.4);
-	font-weight: 400;
-
-	font-size: 0.8em;
-	margin-bottom: 6px;
-}
-
-.line-strong {
-	display: block;
-	color: var(--text-main);
-	font-weight: 600;
-
-	letter-spacing: -0.02em;
-}
-
-
-.final-text-sub {
-	font-size: 18px;
-	line-height: 1.6;
-	color: var(--text-muted);
-
-	max-width: 550px;
-	margin: 0 auto;
-}
-
-
-.text-highlight {
-	color: var(--text-main);
-
-	font-weight: 600;
-}
-
-@media (max-width: 768px) {
-	.final-close-section {
-		padding: 80px 24px;
-	}
-
-	.line-soft {
-		font-size: 0.9em;
-	}
-
-	.final-text-sub {
-		font-size: 16px;
-	}
-} */
-/* --- Final Close Section --- */
-
 .final-close-section {
 	padding: var(--section-padding) 0;
-
-	text-align: center;
+	/* text-align: center; */
 }
 
 .final-calm-container {
 	max-width: 600px;
-	margin: 0 auto;
+	/* margin: 0 auto; */
 }
-
 
 .final-message-simple .display-title {
 	font-size: 42px;
-
 	font-weight: 600;
 	line-height: 1.2;
 	margin-bottom: 32px;
@@ -1333,7 +1195,6 @@ h3 {
 .line-soft {
 	display: block;
 	color: var(--text-label);
-
 	font-weight: 400;
 	margin-bottom: 4px;
 }
@@ -1343,22 +1204,18 @@ h3 {
 	color: #ffffff;
 }
 
-
 .final-description {
 	font-size: 17px;
 	line-height: 1.6;
 	color: var(--text-muted);
-
 	max-width: 500px;
-	margin: 0 auto;
+	/* margin: 0 auto; */
 }
-
 
 .highlight-white {
 	color: #ffffff;
 	font-weight: 500;
 }
-
 
 @media (max-width: 768px) {
 	.final-message-simple .display-title {
