@@ -1315,9 +1315,7 @@ h3 {
 }
 
 .final-calm-container {
-	max-width: 800px;
 	margin: 0 auto;
-	padding: 0 24px;
 }
 
 /* Використовуємо твій стандартний розмір заголовка секції */
@@ -1363,10 +1361,10 @@ h3 {
 /* Адаптація */
 @media (max-width: 768px) {
 	.final-message-simple .display-title {
-		font-size: 28px;
+		font-size: 24px;
 	}
 
 	.final-description {
-		font-size: 16px;
+		font-size: 14px;
 	}
 }
