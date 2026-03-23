@@ -419,7 +419,7 @@ a {
 	color: var(--text-main);
 }
 
-.text-base-muted {
+.text-content {
 	font-size: 17px;
 	line-height: 1.6;
 	color: var(--text-content);
