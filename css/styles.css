@@ -863,14 +863,14 @@ h3 {
 .role-main-instruction {
 	font-size: 17px;
 	line-height: 1.4;
-	color: var(--text-muted);
+	color: var(--text-body-bright);
 	margin-bottom: 40px;
 }
 
 .role-accent-text {
 	font-size: 17px;
 	line-height: 1.4;
-	color: rgba(255, 255, 255, 0.7);
+	color: var(--text-body-bright);
 }
 
 .prominent {
@@ -945,7 +945,7 @@ h3 {
 @media (max-width: 768px) {
 	.authority-text-inline {
 		gap: 6px;
-		font-size: 15px;
+		font-size: 16px;
 	}
 }
 
