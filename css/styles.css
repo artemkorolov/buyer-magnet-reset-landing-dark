@@ -1129,7 +1129,7 @@ h3 {
    SECTION 12: FINAL CLOSE
    ========================================================================== */
 
-.final-close-section {
+/* .final-close-section {
 	padding: clamp(100px, 10vw, 140px) 0;
 	text-align: center;
 }
@@ -1184,5 +1184,84 @@ h3 {
 	.final-text-sub {
 		font-size: 16px;
 		gap: 2px;
+	}
+} */
+
+/*  */
+/* --- Final Close Section Polish --- */
+
+.final-close-section {
+	padding: var(--section-padding) 0;
+	text-align: center;
+}
+
+.final-calm-container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 24px;
+}
+
+
+.display-title {
+
+	margin-bottom: 24px;
+	line-height: 1.2;
+}
+
+
+.line-soft {
+	display: block;
+	color: rgba(255, 255, 255, 0.4);
+	font-weight: 400;
+	font-size: 0.65em;
+	text-transform: none;
+	letter-spacing: 0;
+	margin-bottom: 6px;
+}
+
+
+.line-strong {
+	display: block;
+	color: #ffffff;
+	letter-spacing: -0.03em;
+}
+
+.final-text-sub {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2px;
+
+}
+
+.sub-highlight {
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 18px;
+	margin: 0;
+}
+
+.sub-muted {
+	color: #a1a1a1;
+
+	font-size: 16px;
+	margin: 0;
+}
+
+
+@media (max-width: 768px) {
+	.final-close-section {
+		padding: 75px 24px;
+	}
+
+	.line-soft {
+		font-size: 0.85em;
+
+	}
+
+	.final-text-sub {
+		font-size: 16px;
+		gap: 0;
+
 	}
 }
