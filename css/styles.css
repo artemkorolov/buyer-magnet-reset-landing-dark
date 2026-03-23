@@ -960,7 +960,7 @@ h3 {
 	position: relative;
 }
 
-.glossy-checkout-container {
+/* .glossy-checkout-container {
 	width: 100%;
 	max-width: 960px;
 	margin: 0 auto;
@@ -983,6 +983,65 @@ h3 {
 
 .feature-item {
 	color: var(--text-main);
+	font-weight: 600;
+} */
+
+.glossy-checkout-container {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 80px 40px;
+	display: flex;
+	justify-content: center;
+	box-sizing: border-box;
+
+
+	background: linear-gradient(165deg, rgba(15, 23, 42, 0.8) 0%, rgba(0, 0, 0, 0.95) 100%);
+
+
+	border: 1px solid rgba(59, 130, 246, 0.2);
+
+
+	border-radius: 32px;
+	backdrop-filter: blur(24px);
+	
+	-webkit-backdrop-filter: blur(24px);
+
+	box-shadow:
+		0 40px 100px rgba(0, 0, 0, 0.8),
+		0 0 80px rgba(59, 130, 246, 0.18),
+		
+		0 0 20px rgba(59, 130, 246, 0.1);
+
+
+	position: relative;
+	overflow: hidden;
+}
+
+/* 4. Додатковий внутрішній відблиск для преміальності */
+.glossy-checkout-container::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100px;
+	background: linear-gradient(180deg, rgba(59, 130, 246, 0.05) 0%, transparent 100%);
+	pointer-events: none;
+}
+
+/* Ієрархія для "One" (Muted) */
+.one-muted {
+	color: rgba(255, 255, 255, 0.3);
+	/* Робимо "One" тихішим */
+	font-weight: 400;
+	margin-right: 2px;
+}
+
+/* Акцент на ключових словах у фічах */
+.feature-item {
+	color: var(--text-main);
+	/* Білий */
 	font-weight: 600;
 }
 
