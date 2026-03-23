@@ -1051,7 +1051,7 @@ h3 {
 	justify-content: center;
 	box-sizing: border-box;
 
-box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4),
+	box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4),
 		0 0 100px rgba(59, 130, 246, 0.06);
 
 	position: relative;
@@ -1176,6 +1176,31 @@ box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4),
 		padding: 40px 20px;
 		border-radius: 24px;
 	}
+
+	.checkout-features-line {
+		display: flex;
+		flex-direction: row !important;
+		flex-wrap: nowrap;
+		justify-content: center;
+		gap: 6px;
+		font-size: 12px;
+		white-space: nowrap;
+	}
+
+	/* .dot-divider {
+			display: none;
+		} */
+
+	.dot-divider {
+		display: inline;
+		opacity: 0.4;
+	}
+
+	.investment-section {
+		padding: 75px 32px;
+	}
+
+
 }
 
 /* .checkout-features-line {
@@ -1183,28 +1208,7 @@ box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4),
 		gap: 12px;
 	} */
 
-.checkout-features-line {
-	display: flex;
-	flex-direction: row !important;
-	flex-wrap: nowrap;
-	justify-content: center;
-	gap: 6px;
-	font-size: 12px;
-	white-space: nowrap;
-}
 
-/* .dot-divider {
-		display: none;
-	} */
-
-.dot-divider {
-	display: inline;
-	opacity: 0.4;
-}
-
-.investment-section {
-	padding: 75px 32px;
-}
 
 .price-container-soft {
 	padding: 24px;
@@ -1274,66 +1278,77 @@ box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4),
 
 /*  */
 
+/* --- Final Close Section --- */
+
 .final-close-section {
-	
-	padding: var(--section-padding) 0;
+	padding: clamp(100px, 10vw, 140px) 0;
 	text-align: center;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.final-text-lead {
-	/* Використовуємо той самий розмір, що і для "Built from real patterns" */
-	font-size: clamp(28px, 4vw, 36px);
-	line-height: 1.2;
+.final-calm-container {
+	/* max-width: 800px;
+	margin: 0 auto;
+	padding: 0 24px; */
+}
+
+/* Використовуємо твій глобальний клас display-title */
+.display-title {
+	/* Тут твої стандартні налаштування font-size (32px-40px) */
 	margin-bottom: 24px;
-	letter-spacing: -0.02em;
-	text-align: center;
+	/* Зменшений відступ до тексту нижче */
+	line-height: 1.2;
 }
 
 .line-soft {
 	display: block;
 	color: rgba(255, 255, 255, 0.4);
+	/* Тьмяний, як просив клієнт */
 	font-weight: 400;
-	/* Робимо тоншим, щоб не було "loud" */
+	font-size: 0.95em;
+	/* Легкий баланс розміру */
 }
 
 .line-strong {
 	display: block;
 	color: #ffffff;
 	font-weight: 700;
-	margin-top: 4px;
-	/* Зближуємо рядки для цілісності */
+	/* Main emphasis */
+	margin-top: 6px;
+	letter-spacing: -0.02em;
 }
+
+/* Текст підтримки (Supporting Block) */
 .final-text-sub {
-	/* Робимо підтримуючий блок єдиним цілим */
-	font-size: 18px;
-	line-height: 1.5;
-	color: #a1a1a1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4px;
+	/* Зближуємо речення в один блок */
 }
 
 .sub-highlight {
 	color: #ffffff;
 	font-weight: 600;
-	display: block;
-	/* Щоб речення були одне під одним */
-	margin-bottom: 2px;
+	font-size: 18px;
+	margin: 0;
 }
 
 .sub-muted {
-	display: block;
+	color: #a1a1a1;
+	/* Консистентний сірий #a1a1a1 */
+	font-size: 17px;
+	margin: 0;
 }
 
+/* Мобільна адаптація */
 @media (max-width: 768px) {
 	.final-close-section {
-		padding: 75px 32px;
-	}
-
-	.final-text-lead {
-		font-size: 26px;
-		/* На мобайлі теж не "кричимо" */
+		padding: 80px 24px;
 	}
 
 	.final-text-sub {
 		font-size: 16px;
+		gap: 2px;
+		/* Ще щільніше на мобайлі */
 	}
 }
