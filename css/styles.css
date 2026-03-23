@@ -1085,7 +1085,7 @@ a {
 
 .checkout-footer-text {
 	margin-top: 24px;
-	font-size: 15px;
+	font-size: 17px;
 	line-height: 1.6;
 	color: var(--text-muted);
 }
@@ -1123,6 +1123,10 @@ a {
 	.investment-section {
 		padding: 75px 32px;
 	}
+		.checkout-footer-text {
+			margin-top: 24px;
+			font-size: 15px;
+		}
 }
 
 .price-container-soft {
