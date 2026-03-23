@@ -979,8 +979,8 @@ h3 {
 }
 
 .one-muted {
-	color: rgba(255, 255, 255, 0.3);
-	font-weight: 400;
+	color: var(--color-label);
+	/* font-weight: 400; */
 	margin-right: 2px;
 }
 
