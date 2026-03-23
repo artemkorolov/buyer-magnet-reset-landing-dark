@@ -1005,6 +1005,27 @@ h3 {
 	}
 }
 
+/*  */
+.authority-text-inline {
+	display: flex;
+	flex-wrap: nowrap;
+	/* Примусово в один рядок */
+	gap: 8px;
+	/* Невеликий простір між фразами */
+	align-items: center;
+	margin-top: 16px;
+	white-space: nowrap;
+	/* Щоб не розривалося на мобайлі */
+}
+
+@media (max-width: 768px) {
+	.authority-text-inline {
+		gap: 6px;
+		font-size: 15px;
+		/* Трохи менше для впевненості */
+	}
+}
+
 /* ==========================================================================
    SECTION 11: AUTHORITY FRAME (SUBTLE TRUST)
    ========================================================================== */
@@ -1030,12 +1051,8 @@ h3 {
 	display: flex;
 	justify-content: center;
 	box-sizing: border-box;
-	transition: border-color 0.4s ease;
 }
 
-.glossy-checkout-container:hover {
-	border-color: rgba(255, 255, 255, 0.15);
-}
 
 .checkout-card-calm {
 	width: 100%;
@@ -1131,7 +1148,6 @@ h3 {
 	}
 
 	.checkout-features-line {
-		/* flex-direction: column; */
 		font-size: 13px;
 		gap: 12px;
 	}
@@ -1211,69 +1227,6 @@ h3 {
 
 
 /*  */
-/* .final-close-section {
-	padding: 160px 0;
-
-	text-align: center;
-}
-
-.final-calm-container {
-	max-width: 800px;
-
-	margin: 0 auto;
-}
-
-.final-text-lead {
-	font-size: clamp(32px, 5vw, 56px);
-
-	line-height: 1.1;
-	margin-bottom: 48px;
-	letter-spacing: -0.03em;
-}
-
-
-.line-soft {
-	display: block;
-	color: rgba(255, 255, 255, 0.4);
-	font-weight: 500;
-}
-
-.line-strong {
-	display: block;
-	color: #ffffff;
-	font-weight: 700;
-	margin-top: 12px;
-}
-
-.final-text-sub {
-	font-size: 20px;
-	line-height: 1.6;
-}
-
-.sub-highlight {
-	color: #ffffff;
-	margin-bottom: 8px;
-	font-weight: 500;
-}
-
-.sub-muted {
-	color: #888888;
-}
-
-@media (max-width: 768px) {
-	.final-close-section {
-		padding: 100px 20px;
-	}
-
-	.final-text-lead {
-		font-size: 32px;
-	}
-
-	.final-text-sub {
-		font-size: 18px;
-	}
-} */
-/*  */
 
 .final-close-section {
 	padding: clamp(100px, 10vw, 160px) 0;
@@ -1311,7 +1264,7 @@ h3 {
 	display: block;
 	color: #ffffff;
 	font-weight: 700;
-	
+
 	margin-top: 8px;
 
 }
@@ -1329,5 +1282,4 @@ h3 {
 
 .sub-muted {
 	color: #888888;
-
 }
