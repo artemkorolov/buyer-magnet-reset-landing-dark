@@ -2,15 +2,19 @@
 	--bg-primary: #000000;
 	--accent-blue: #4f7cff;
 	--accent-glow: rgba(79, 124, 255, 0.25);
+
+	--color-label: #666666;
+
 	--text-main: #ffffff;
 	--text-muted: #a1a1a1;
-	--text-soft: #71717a;
-	--color-label: #666666;
+
 	--border-subtle: rgba(255, 255, 255, 0.08);
 	--border-content: rgba(255, 255, 255, 0.05);
-	--font-main: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+
 	--container-max: 1360px;
 	--section-padding: 115px;
+
+	--font-main: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 * {
@@ -601,21 +605,17 @@ h3 {
 	transition: transform 0.3s ease;
 }
 
-.phase-card:hover .icon-box-large {
-	/* transform: scale(1.02); */
-}
-
 .icon-box-large svg {
 	width: 24px;
 	height: 24px;
-	stroke: var(--text-muted);
+	stroke: var(--color-label);
 	stroke-width: 1.5;
 }
 
 .phase-badge {
 	font-size: 10px;
 	font-weight: 700;
-	color: #888888;
+	color: var(--text-muted);
 	background: var(--border-content);
 	padding: 4px 12px;
 	border-radius: 100px;
@@ -654,18 +654,18 @@ h3 {
 .phase-list-dash li::before {
 	content: "—";
 	margin-right: 10px;
-	color: rgba(255, 255, 255, 0.2);
+	color: var(--color-label);
 }
 
 .card-footer {
 	margin-top: auto;
-	border-top: 1px solid rgba(255, 255, 255, 0.08);
+	border-top: 1px solid var(--border-content);
 	padding-top: 20px;
 }
 
 .goal-label {
 	font-size: 11px;
-	color: #666666;
+	color: var(--color-label);
 	display: block;
 	margin-bottom: 6px;
 	text-transform: uppercase;
@@ -722,7 +722,7 @@ h3 {
 
 .momentum-card-linear {
 	background: rgba(255, 255, 255, 0.02);
-	border: 1px solid rgba(255, 255, 255, 0.08);
+	border: 1px solid var(--border-content);
 	border-radius: 28px;
 	padding: 48px;
 	max-width: 540px;
@@ -752,12 +752,12 @@ h3 {
 .phase-list-dash-new li::before {
 	content: "—";
 	margin-right: 16px;
-	color: rgba(255, 255, 255, 0.2);
+	color: var(--color-label);
 }
 
 .card-footer-momentum {
 	padding-top: 32px;
-	border-top: 1px solid rgba(255, 255, 255, 0.08);
+	border-top: 1px solid var(--border-content);
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
@@ -790,7 +790,7 @@ h3 {
 	align-items: center;
 	gap: 20px;
 	padding: 24px 0;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+	border-bottom: 1px solid var(--border-content);
 	transition: all 0.3s ease;
 }
 
@@ -806,9 +806,9 @@ h3 {
 	align-items: center;
 	justify-content: center;
 	background: rgba(255, 255, 255, 0.02);
-	border: 1px solid rgba(255, 255, 255, 0.08);
+	border: 1px solid var(--border-content);
 	border-radius: 12px;
-	color: #888888;
+	color: var(--color-label);
 	transition: all 0.3s ease;
 	flex-shrink: 0;
 }
@@ -822,9 +822,8 @@ h3 {
 @media (min-width: 1024px) {
 
 	.receive-item:hover .receive-icon-box {
-		background: rgba(255, 255, 255, 0.08);
-		border-color: rgba(255, 255, 255, 0.2);
-		color: var(--text-main);
+		background: var(--border-subtle);
+		border-color: var(--border-content);
 	}
 
 	.receive-item:hover p {
@@ -904,9 +903,7 @@ h3 {
    SECTION 10: AUTHORITY FRAME (SUBTLE TRUST)
    ========================================================================== */
 .authority-section {
-	border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
-	position: relative;
-	z-index: 1;
+	/* position: relative; */
 }
 
 .authority-grid-modern {
@@ -925,12 +922,6 @@ h3 {
 	font-size: 17px;
 	color: var(--text-main);
 	font-weight: 500;
-}
-
-.auth-divider {
-	width: 1px;
-	height: 14px;
-	background-color: rgba(255, 255, 255, 0.15);
 }
 
 @media (max-width: 768px) {
@@ -981,8 +972,9 @@ h3 {
 	display: flex;
 	justify-content: center;
 	box-sizing: border-box;
-	box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4),
-		0 0 100px rgba(59, 130, 246, 0.06);
+	/* box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4),
+		0 0 100px rgba(59, 130, 246, 0.06); */
+	box-shadow: 0 24px 64px rgba(0, 0, 0, 0.1), 0 0 34px rgba(59, 130, 246, 0.1);
 	position: relative;
 }
 
