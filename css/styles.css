@@ -5,10 +5,14 @@
 	--accent-glow: rgba(79, 124, 255, 0.25);
 	--text-body-bright: #b1b1b1;
 	--color-label: #666666;
+
 	--text-title: #ffffff;
+	--text-subtitle: #d0d6e0;
+	--text-content: #8a8f98;
+
 	--text-main: #f7f8f8;
 	--text-muted: #62666d;
-	--text-content: #8a8f98;
+
 
 	--border-subtle: rgba(255, 255, 255, 0.08);
 	--border-content: rgba(255, 255, 255, 0.05);
@@ -273,7 +277,7 @@ a {
 
 .problem-subtitle {
 	font-size: 17px;
-	color: var(--text-body-bright);
+	color: var(--text-subtitle);
 	font-weight: 400;
 	margin-top: 20px;
 }
@@ -419,6 +423,12 @@ a {
 	font-size: 17px;
 	line-height: 1.6;
 	color: var(--text-content);
+}
+
+.text-subtitle {
+	font-size: 17px;
+	line-height: 1.6;
+	color: var(--text-subtitle);
 }
 
 @media (max-width: 992px) {
