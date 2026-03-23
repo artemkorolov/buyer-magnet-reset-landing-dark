@@ -1046,28 +1046,38 @@ h3 {
 	border: 1px solid rgba(255, 255, 255, 0.08);
 	border-radius: 32px;
 	backdrop-filter: blur(20px);
+	box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4);
 	display: flex;
 	justify-content: center;
 	box-sizing: border-box;
-	box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4),
+
+box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4),
 		0 0 100px rgba(59, 130, 246, 0.06);
+
 	position: relative;
 }
 
+
 .one-muted {
 	color: rgba(255, 255, 255, 0.3);
+
 	font-weight: 400;
 	margin-right: 2px;
 }
 
 .feature-item {
 	color: #ffffff;
+
 	font-weight: 600;
 }
 
+
 .checkout-footer-text {
 	color: #a1a1a1;
+
 }
+
+
 
 .checkout-card-calm {
 	width: 100%;
@@ -1162,28 +1172,42 @@ h3 {
 		border-radius: 24px;
 		box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5),
 			0 0 45px rgba(59, 130, 246, 0.15);
+
 		padding: 40px 20px;
 		border-radius: 24px;
 	}
+}
 
-	.checkout-features-line {
-		display: flex;
-		flex-direction: row !important;
-		flex-wrap: nowrap;
-		justify-content: center;
-		gap: 6px;
-		font-size: 12px;
-		white-space: nowrap;
-	}
+/* .checkout-features-line {
+		font-size: 13px;
+		gap: 12px;
+	} */
 
-	.dot-divider {
-		display: inline;
-		opacity: 0.4;
-	}
+.checkout-features-line {
+	display: flex;
+	flex-direction: row !important;
+	flex-wrap: nowrap;
+	justify-content: center;
+	gap: 6px;
+	font-size: 12px;
+	white-space: nowrap;
+}
 
-	.price-container-soft {
-		padding: 24px;
-	}
+/* .dot-divider {
+		display: none;
+	} */
+
+.dot-divider {
+	display: inline;
+	opacity: 0.4;
+}
+
+.investment-section {
+	padding: 75px 32px;
+}
+
+.price-container-soft {
+	padding: 24px;
 }
 
 
@@ -1191,14 +1215,74 @@ h3 {
    SECTION 12: FINAL CLOSE
    ========================================================================== */
 
+
+/* .final-close-section {
+	padding: var(--section-padding) 0;
+	text-align: center;
+}
+
+.final-calm-container {
+	max-width: 600px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 48px;
+}
+
+.final-text-lead {
+	font-size: 28px;
+	font-weight: 500;
+	color: #ffffff;
+	line-height: 1.4;
+	margin-bottom: 24px;
+	letter-spacing: -0.02em;
+}
+
+.text-muted-inline {
+	color: #888888;
+}
+
+.final-message-simple {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.final-text-sub {
+	max-width: 400px;
+	font-size: 17px;
+	color: #888888;
+	line-height: 1.6;
+}
+
+.text-white-inline {
+	color: #ffffff;
+	font-weight: 500;
+}
+
+@media (max-width: 768px) {
+	.final-close-section {
+		padding: var(--section-padding) 0;
+	}
+
+	.final-text-lead {
+		font-size: 24px;
+	}
+} */
+
+
+/*  */
+
 .final-close-section {
+	
 	padding: var(--section-padding) 0;
 	text-align: center;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .final-text-lead {
-
+	/* Використовуємо той самий розмір, що і для "Built from real patterns" */
 	font-size: clamp(28px, 4vw, 36px);
 	line-height: 1.2;
 	margin-bottom: 24px;
@@ -1210,17 +1294,18 @@ h3 {
 	display: block;
 	color: rgba(255, 255, 255, 0.4);
 	font-weight: 400;
+	/* Робимо тоншим, щоб не було "loud" */
 }
 
 .line-strong {
-	font-size: clamp(32px, 4vw, 42px);
-		line-height: 1.2;
-		margin-bottom: 20px;
-		font-weight: 500;
-		letter-spacing: -0.045em;
+	display: block;
+	color: #ffffff;
+	font-weight: 700;
+	margin-top: 4px;
+	/* Зближуємо рядки для цілісності */
 }
-
 .final-text-sub {
+	/* Робимо підтримуючий блок єдиним цілим */
 	font-size: 18px;
 	line-height: 1.5;
 	color: #a1a1a1;
@@ -1230,6 +1315,7 @@ h3 {
 	color: #ffffff;
 	font-weight: 600;
 	display: block;
+	/* Щоб речення були одне під одним */
 	margin-bottom: 2px;
 }
 
@@ -1244,6 +1330,7 @@ h3 {
 
 	.final-text-lead {
 		font-size: 26px;
+		/* На мобайлі теж не "кричимо" */
 	}
 
 	.final-text-sub {
