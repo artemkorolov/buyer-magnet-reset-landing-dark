@@ -278,7 +278,7 @@ h3 {
 }
 
 .problem-column-clean {
-	max-width: 340px;
+	max-width: 344px;
 }
 
 .body-text-muted {
@@ -409,6 +409,7 @@ h3 {
 }
 
 .text-base-muted {
+	color: #a1a1a1;
 	font-size: 17px;
 	line-height: 1.6;
 	color: var(--text-muted);
@@ -644,7 +645,7 @@ h3 {
 }
 
 .phase-list-dash li {
-	color: #888888;
+	color: #a1a1a1;
 	font-size: 15px;
 	line-height: 1.5;
 	margin-bottom: 10px;
@@ -741,7 +742,7 @@ h3 {
 }
 
 .phase-list-dash-new li {
-	color: #888888;
+	color: #a1a1a1;
 	font-size: 17px;
 	line-height: 1.6;
 	margin-bottom: 16px;
