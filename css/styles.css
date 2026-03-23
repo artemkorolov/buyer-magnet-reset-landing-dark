@@ -7,7 +7,6 @@
 	--color-label: #666666;
 
 	--text-main: #ffffff;
-	/* --text-muted: #a1a1a1; */
 	--text-muted: #62666d;
 
 	--border-subtle: rgba(255, 255, 255, 0.08);
@@ -511,7 +510,7 @@ h3 {
 }
 
 .clean-list-vertical li {
-	color: var(--text-muted);
+	color: var(--text-body-bright);
 	font-size: 17px;
 	display: flex;
 	align-items: flex-start;
@@ -646,7 +645,7 @@ h3 {
 }
 
 .phase-list-dash li {
-	color: var(--text-muted);
+	color: var(--color-label);
 	font-size: 15px;
 	line-height: 1.5;
 	margin-bottom: 10px;
@@ -743,7 +742,7 @@ h3 {
 }
 
 .phase-list-dash-new li {
-	color: var(--text-muted);
+	color: var(--text-body-bright);
 	font-size: 17px;
 	line-height: 1.6;
 	margin-bottom: 16px;
@@ -862,14 +861,14 @@ h3 {
 }
 
 .role-main-instruction {
-	font-size: 18px;
+	font-size: 17px;
 	line-height: 1.4;
 	color: var(--text-muted);
 	margin-bottom: 40px;
 }
 
 .role-accent-text {
-	font-size: 20px;
+	font-size: 17px;
 	line-height: 1.4;
 	color: rgba(255, 255, 255, 0.7);
 }
