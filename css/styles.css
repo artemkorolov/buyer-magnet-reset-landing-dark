@@ -876,7 +876,7 @@ a {
 
 .prominent {
 	color: var(--text-main);
-	font-weight: 700;
+	font-weight: 500;
 	letter-spacing: -0.01em;
 }
 
