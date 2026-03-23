@@ -1188,8 +1188,8 @@ box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4),
 	flex-direction: row !important;
 	flex-wrap: nowrap;
 	justify-content: center;
-	gap: 8px;
-	font-size: 13px;
+	gap: 6px;
+	font-size: 12px;
 	white-space: nowrap;
 }
 
@@ -1199,7 +1199,7 @@ box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4),
 
 .dot-divider {
 	display: inline;
-	opacity: 0.2;
+	opacity: 0.4;
 }
 
 .investment-section {
