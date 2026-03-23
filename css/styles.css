@@ -1004,13 +1004,13 @@ h3 {
 
 	border-radius: 32px;
 	backdrop-filter: blur(24px);
-	
+
 	-webkit-backdrop-filter: blur(24px);
 
 	box-shadow:
 		0 40px 100px rgba(0, 0, 0, 0.8),
 		0 0 80px rgba(59, 130, 246, 0.18),
-		
+
 		0 0 20px rgba(59, 130, 246, 0.1);
 
 
@@ -1306,10 +1306,11 @@ h3 {
 	.final-text-sub {
 		font-size: 16px;
 	}
-} *//* --- Final Close Section --- */
+} */
+/* --- Final Close Section --- */
 
 .final-close-section {
-	padding: 140px 0;
+	padding: var(--section-padding) 0;
 
 	text-align: center;
 }
@@ -1368,7 +1369,8 @@ h3 {
 	.final-description {
 		font-size: 16px;
 	}
-		.final-calm-container {
-			max-width: 100%;
-		}
+
+	.final-calm-container {
+		max-width: 100%;
+	}
 }
