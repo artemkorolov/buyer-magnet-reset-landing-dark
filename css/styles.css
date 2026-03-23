@@ -1187,10 +1187,6 @@ h3 {
 		white-space: nowrap;
 	}
 
-	/* .dot-divider {
-			display: none;
-		} */
-
 	.dot-divider {
 		display: inline;
 		opacity: 0.4;
@@ -1219,111 +1215,39 @@ h3 {
    SECTION 12: FINAL CLOSE
    ========================================================================== */
 
-
-/* .final-close-section {
-	padding: var(--section-padding) 0;
-	text-align: center;
-}
-
-.final-calm-container {
-	max-width: 600px;
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 48px;
-}
-
-.final-text-lead {
-	font-size: 28px;
-	font-weight: 500;
-	color: #ffffff;
-	line-height: 1.4;
-	margin-bottom: 24px;
-	letter-spacing: -0.02em;
-}
-
-.text-muted-inline {
-	color: #888888;
-}
-
-.final-message-simple {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-}
-
-.final-text-sub {
-	max-width: 400px;
-	font-size: 17px;
-	color: #888888;
-	line-height: 1.6;
-}
-
-.text-white-inline {
-	color: #ffffff;
-	font-weight: 500;
-}
-
-@media (max-width: 768px) {
-	.final-close-section {
-		padding: var(--section-padding) 0;
-	}
-
-	.final-text-lead {
-		font-size: 24px;
-	}
-} */
-
-
-/*  */
-
-/* --- Final Close Section --- */
-
 .final-close-section {
 	padding: clamp(100px, 10vw, 140px) 0;
 	text-align: center;
 }
 
-.final-calm-container {
-	/* max-width: 800px;
-	margin: 0 auto;
-	padding: 0 24px; */
-}
 
-/* Використовуємо твій глобальний клас display-title */
+
 .display-title {
-	/* Тут твої стандартні налаштування font-size (32px-40px) */
 	margin-bottom: 24px;
-	/* Зменшений відступ до тексту нижче */
 	line-height: 1.2;
 }
 
 .line-soft {
 	display: block;
 	color: rgba(255, 255, 255, 0.4);
-	/* Тьмяний, як просив клієнт */
+	margin-bottom: 24px;
 	font-weight: 400;
 	font-size: 0.95em;
-	/* Легкий баланс розміру */
 }
 
 .line-strong {
 	display: block;
 	color: #ffffff;
 	font-weight: 700;
-	/* Main emphasis */
 	margin-top: 6px;
 	letter-spacing: -0.02em;
 }
 
-/* Текст підтримки (Supporting Block) */
 .final-text-sub {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 4px;
-	/* Зближуємо речення в один блок */
 }
 
 .sub-highlight {
@@ -1335,12 +1259,12 @@ h3 {
 
 .sub-muted {
 	color: #a1a1a1;
-	/* Консистентний сірий #a1a1a1 */
+
 	font-size: 17px;
 	margin: 0;
 }
 
-/* Мобільна адаптація */
+
 @media (max-width: 768px) {
 	.final-close-section {
 		padding: 80px 24px;
@@ -1349,6 +1273,5 @@ h3 {
 	.final-text-sub {
 		font-size: 16px;
 		gap: 2px;
-		/* Ще щільніше на мобайлі */
 	}
 }
