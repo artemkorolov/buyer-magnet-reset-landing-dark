@@ -1315,6 +1315,7 @@ h3 {
 }
 
 .final-calm-container {
+	max-width: 480px;
 	margin: 0 auto;
 }
 
@@ -1367,4 +1368,7 @@ h3 {
 	.final-description {
 		font-size: 16px;
 	}
+		.final-calm-container {
+			max-width: 100%;
+		}
 }
