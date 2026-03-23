@@ -8,6 +8,7 @@
 	--text-title: #ffffff;
 	--text-main: #f7f8f8;
 	--text-muted: #62666d;
+	--text-content: #8a8f98;
 
 	--border-subtle: rgba(255, 255, 255, 0.08);
 	--border-content: rgba(255, 255, 255, 0.05);
@@ -417,7 +418,7 @@ a {
 .text-base-muted {
 	font-size: 17px;
 	line-height: 1.6;
-	color: var(--text-body-bright);
+	color: var(--text-content);
 }
 
 @media (max-width: 992px) {
