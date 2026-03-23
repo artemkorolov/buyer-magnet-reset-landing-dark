@@ -745,6 +745,9 @@ a {
 	border-color: var(--border-content);
 }
 
+.momentum-card-linear .mb-24{
+	color: var(--color-label);
+}
 .phase-list-dash-new {
 	list-style: none;
 	padding: 0;
@@ -826,6 +829,7 @@ a {
 .receive-item p {
 	transition: color 0.3s ease;
 	margin: 0;
+	color: var(--color-label);
 }
 
 
@@ -836,7 +840,7 @@ a {
 	}
 
 	.receive-item:hover p {
-		color: var(--text-main);
+		color: var(--text-content);
 
 	}
 }
