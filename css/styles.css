@@ -857,7 +857,7 @@ a {
 }
 
 .role-header-col .display-title {
-	margin-bottom: 32px;
+	margin-bottom: 20px;
 	line-height: 1.0;
 }
 
@@ -1000,12 +1000,12 @@ a {
 }
 
 .feature-item {
-	color: var(--text-main);
+	color: var(--text-body-bright);
 	font-weight: 600;
 }
 
 .checkout-footer-text {
-	color: var(--text-muted);
+	color: var(--text-body-bright);
 }
 
 .checkout-card-calm {
