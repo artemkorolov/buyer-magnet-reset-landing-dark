@@ -146,7 +146,7 @@ h3 {
 	justify-content: center;
 	padding: 80px 0;
 	box-sizing: border-box;
-	background-color: #000000;
+	background-color: var(--bg-primary);
 	background-image: radial-gradient(circle at 50% -20%, rgba(130, 177, 255, 0.15) 0%, transparent 60%);
 }
 
@@ -195,7 +195,7 @@ h3 {
 .badge .dot {
 	width: 5px;
 	height: 5px;
-	background-color: #52525b;
+	background-color: var(--color-label);
 	border-radius: 50%;
 }
 
@@ -246,7 +246,7 @@ h3 {
 }
 
 .gray-dots {
-	color: #a1a1a1;
+	color: var(--color-label);
 }
 
 .problem-header-new {
@@ -267,7 +267,7 @@ h3 {
 
 .problem-subtitle {
 	font-size: 17px;
-	color: #a1a1a1;
+	color: var(--text-muted);
 	font-weight: 400;
 	margin-top: 20px;
 }
@@ -286,7 +286,7 @@ h3 {
 .body-text-muted {
 	font-size: 16px;
 	line-height: 1.6;
-	color: #a1a1a1;
+	color: var(--text-muted);
 	margin: 0;
 }
 
@@ -411,7 +411,6 @@ h3 {
 }
 
 .text-base-muted {
-	color: #a1a1a1;
 	font-size: 17px;
 	line-height: 1.6;
 	color: var(--text-muted);
@@ -571,7 +570,7 @@ h3 {
 }
 
 .phase-card {
-	background: #000000;
+	background: var(--bg-primary);
 	border: 1px solid var(--border-subtle);
 	border-radius: 20px;
 	padding: 32px;
@@ -647,7 +646,7 @@ h3 {
 }
 
 .phase-list-dash li {
-	color: #a1a1a1;
+	color: var(--text-muted);
 	font-size: 15px;
 	line-height: 1.5;
 	margin-bottom: 10px;
@@ -744,7 +743,7 @@ h3 {
 }
 
 .phase-list-dash-new li {
-	color: #a1a1a1;
+	color: var(--text-muted);
 	font-size: 17px;
 	line-height: 1.6;
 	margin-bottom: 16px;
@@ -1001,7 +1000,7 @@ h3 {
 }
 
 .checkout-footer-text {
-	color: #a1a1a1;
+	color: var(--text-muted);
 }
 
 .checkout-card-calm {
@@ -1014,7 +1013,7 @@ h3 {
 	font-size: 13px;
 	text-transform: uppercase;
 	letter-spacing: 0.12em;
-	color: #a1a1a1;
+	color: var(--text-muted);
 	margin-bottom: 32px;
 	font-weight: 500;
 }
@@ -1038,7 +1037,7 @@ h3 {
 
 .price-label {
 	font-size: 14px;
-	color: #a1a1a1;
+	color: var(--text-muted);
 	margin-bottom: 4px;
 }
 
@@ -1083,7 +1082,7 @@ h3 {
 	margin-top: 24px;
 	font-size: 15px;
 	line-height: 1.6;
-	color: #a1a1a1;
+	color: var(--text-muted);
 }
 
 .text-white-bold {
@@ -1119,8 +1118,6 @@ h3 {
 	.investment-section {
 		padding: 75px 32px;
 	}
-
-
 }
 
 .price-container-soft {
@@ -1140,7 +1137,6 @@ h3 {
 .final-calm-container {
 	margin: 0 auto;
 }
-
 
 .display-title {
 	margin-bottom: 24px;
@@ -1168,7 +1164,6 @@ h3 {
 	flex-direction: column;
 	align-items: center;
 	gap: 2px;
-
 }
 
 .sub-highlight {
@@ -1179,29 +1174,23 @@ h3 {
 }
 
 .sub-muted {
-	color: #a1a1a1;
-
+	color: var(--text-muted);
 	font-size: 16px;
 	margin: 0;
 }
 
 
 @media (max-width: 768px) {
-
 	.line-soft {
 		font-size: 0.85em;
-
 	}
 
 	.final-text-sub {
 		font-size: 16px;
 		gap: 0;
-
 	}
 
 	.sub-muted {
-		color: #a1a1a1;
-
 		font-size: 14px;
 		margin: 0;
 	}
