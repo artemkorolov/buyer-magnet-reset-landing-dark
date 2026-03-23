@@ -1044,14 +1044,40 @@ h3 {
 	padding: 80px 40px;
 	background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.01) 100%);
 	border: 1px solid rgba(255, 255, 255, 0.08);
-	border-top: 1px solid rgba(255, 255, 255, 0.15);
 	border-radius: 32px;
 	backdrop-filter: blur(20px);
 	box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4);
 	display: flex;
 	justify-content: center;
 	box-sizing: border-box;
+
+box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4),
+
+		0 0 80px rgba(59, 130, 246, 0.1);
+
+	position: relative;
 }
+
+
+.one-muted {
+	color: rgba(255, 255, 255, 0.3);
+
+	font-weight: 400;
+	margin-right: 2px;
+}
+
+.feature-item {
+	color: #ffffff;
+
+	font-weight: 600;
+}
+
+
+.checkout-footer-text {
+	color: #a1a1a1;
+
+}
+
 
 
 .checkout-card-calm {
@@ -1147,13 +1173,28 @@ h3 {
 		border-radius: 24px;
 	}
 
-	.checkout-features-line {
+	/* .checkout-features-line {
 		font-size: 13px;
 		gap: 12px;
+	} */
+
+	.checkout-features-line {
+		display: flex;
+		flex-direction: row !important;
+		flex-wrap: nowrap;
+		justify-content: center;
+		gap: 8px;
+		font-size: 13px;
+		white-space: nowrap;
 	}
 
-	.dot-divider {
+	/* .dot-divider {
 		display: none;
+	} */
+
+	.dot-divider {
+		display: inline;
+		opacity: 0.2;
 	}
 
 	.investment-section {
