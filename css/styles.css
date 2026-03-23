@@ -3,9 +3,9 @@
 	--bg-secondary: (255, 255, 255, 0.02);
 	--accent-blue: #4f7cff;
 	--accent-glow: rgba(79, 124, 255, 0.25);
-	--text-body-bright: #e0e0e0;
+	--text-body-bright: #d0d6e0;
 	--color-label: #666666;
-
+	--text-title: #ffffff;
 	--text-main: #f7f8f8;
 	--text-muted: #62666d;
 
@@ -1123,10 +1123,11 @@ a {
 	.investment-section {
 		padding: 75px 32px;
 	}
-		.checkout-footer-text {
-			margin-top: 24px;
-			font-size: 15px;
-		}
+
+	.checkout-footer-text {
+		margin-top: 24px;
+		font-size: 15px;
+	}
 }
 
 .price-container-soft {
