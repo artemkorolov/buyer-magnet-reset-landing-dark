@@ -1026,10 +1026,10 @@ a {
 }
 
 .checkout-kicker {
-	font-size: 13px;
+	font-size: 16px;
 	text-transform: uppercase;
 	letter-spacing: 0.12em;
-	color: var(--text-muted);
+	color: var(--text-content);
 	margin-bottom: 32px;
 	font-weight: 500;
 }
@@ -1098,7 +1098,7 @@ a {
 	margin-top: 24px;
 	font-size: 17px;
 	line-height: 1.6;
-	color: var(--text-muted);
+	color: var(--text-content);
 }
 
 .text-white-bold {
@@ -1183,7 +1183,7 @@ a {
 .final-description {
 	font-size: 17px;
 	line-height: 1.6;
-	color: var(--text-body-bright);
+	color: var(--text-content);
 	max-width: 500px;
 }
 
