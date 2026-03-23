@@ -3,10 +3,10 @@
 	--bg-secondary: (255, 255, 255, 0.02);
 	--accent-blue: #4f7cff;
 	--accent-glow: rgba(79, 124, 255, 0.25);
-	--text-body-bright: #8a8f98;
+	--text-body-bright: #e0e0e0;
 	--color-label: #666666;
 
-	--text-main: #ffffff;
+	--text-main: #f7f8f8;
 	--text-muted: #62666d;
 
 	--border-subtle: rgba(255, 255, 255, 0.08);
@@ -1171,7 +1171,7 @@ a {
 .final-description {
 	font-size: 17px;
 	line-height: 1.6;
-	color: var(--text-muted);
+	color: var(--text-body-bright);
 	max-width: 500px;
 }
 
