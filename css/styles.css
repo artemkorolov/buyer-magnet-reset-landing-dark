@@ -745,9 +745,10 @@ a {
 	border-color: var(--border-content);
 }
 
-.momentum-card-linear .mb-24{
+.momentum-card-linear .mb-24 {
 	color: var(--color-label);
 }
+
 .phase-list-dash-new {
 	list-style: none;
 	padding: 0;
