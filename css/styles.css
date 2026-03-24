@@ -892,6 +892,10 @@ a {
 	font-weight: 500;
 }
 
+.text-subtitle br {
+	display: none;
+}
+
 @media (max-width: 991px) {
 	.role-grid {
 		grid-template-columns: 1fr;
@@ -910,6 +914,10 @@ a {
 
 	.role-accent-text {
 		font-size: 19px;
+	}
+
+	.text-subtitle br {
+		display: block;
 	}
 }
 
