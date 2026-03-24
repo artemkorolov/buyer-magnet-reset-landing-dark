@@ -467,7 +467,7 @@ a {
 		padding-top: 24px;
 	}
 
-	.process-line .arrow{
+	.process-line .arrow {
 		display: none;
 	}
 }
@@ -639,7 +639,7 @@ a {
 .phase-card-title {
 	font-size: 18px;
 	margin-bottom: 20px;
-	color: var(--color-label);
+	color: var(--text-subtitle);
 	font-weight: 500;
 	letter-spacing: -0.01em;
 }
@@ -651,7 +651,7 @@ a {
 }
 
 .phase-list-dash li {
-	color: var(--color-label);
+	color: var(--text-content);
 	font-size: 15px;
 	line-height: 1.5;
 	margin-bottom: 10px;
@@ -661,7 +661,7 @@ a {
 .phase-list-dash li::before {
 	content: "—";
 	margin-right: 10px;
-	color: var(--color-label);
+	color: var(--text-content);
 }
 
 .card-footer {
@@ -672,7 +672,6 @@ a {
 
 .card-footer .text-content {
 	font-size: 16px;
-	color: var(--color-label);
 }
 
 .goal-label {
