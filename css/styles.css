@@ -463,8 +463,12 @@ a {
 
 @media (max-width: 768px) {
 	.process-line {
-		gap: 8px;
+		gap: 18px;
 		padding-top: 24px;
+	}
+
+	.process-line .arrow{
+		display: none;
 	}
 }
 
