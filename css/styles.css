@@ -669,7 +669,7 @@ a {
 .phase-badge {
 	font-size: 10px;
 	font-weight: 700;
-	color: var(--color-label);
+	color: var(--text-content);
 	background: var(--border-content);
 	padding: 4px 12px;
 	border-radius: 100px;
@@ -684,11 +684,12 @@ a {
 }
 
 .phase-card-title {
-	font-size: 18px;
+	/* font-size: 18px;
 	margin-bottom: 20px;
 	color: var(--text-subtitle);
 	font-weight: 500;
-	letter-spacing: -0.01em;
+	letter-spacing: -0.01em; */
+	margin-bottom: 20px;
 }
 
 .phase-list-dash {
