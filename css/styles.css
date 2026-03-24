@@ -120,7 +120,7 @@ a {
 }
 
 .text-highlight {
-	color: var(--text-main);
+	color: var(--text-subtitle);
 	font-weight: 600;
 	letter-spacing: -0.01em;
 	text-shadow: 0 0 20px var(--text-shadow);
@@ -292,7 +292,7 @@ a {
 }
 
 .text-highlight {
-	color: var(--text-main);
+	color: var(--text-subtitle);
 	font-weight: 500;
 }
 
