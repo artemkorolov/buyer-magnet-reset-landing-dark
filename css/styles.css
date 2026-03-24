@@ -192,9 +192,9 @@ a {
 }
 
 .hero-subtext {
-	margin-top: 22px;
-	font-size: 14px;
-	color: var(--text-subtitle);
+	margin-top: 24px;
+	/* font-size: 14px;
+	color: var(--text-subtitle); */
 }
 
 .badge {
@@ -374,8 +374,8 @@ a {
 }
 
 .reason-header {
-	position: sticky;
-	top: 120px;
+	/* position: sticky;
+	top: 120px; */
 }
 
 .reason-content-clean {
@@ -456,9 +456,9 @@ a {
 		padding: 0 24px;
 	}
 
-	.reason-header {
+	/* .reason-header {
 		position: static;
-	}
+	} */
 
 	.text-subtitle {
 		font-size: 15px;
