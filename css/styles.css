@@ -321,7 +321,8 @@ a {
 
 	.problem-grid-3-col {
 		grid-template-columns: 1fr;
-		gap: 24px;
+		/* gap: 24px; */
+		gap: 2px;
 	}
 
 	.problem-header-new {
