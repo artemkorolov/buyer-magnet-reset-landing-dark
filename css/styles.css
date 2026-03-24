@@ -438,7 +438,7 @@ a {
 }
 
 .text-content {
-	font-size: 17px;
+	font-size: 15px;
 	line-height: 1.6;
 	color: var(--text-content);
 }
@@ -1279,4 +1279,18 @@ a {
 		padding-top: 80px;
 		padding-bottom: 140px;
 	}
+}
+
+/*  */
+.impact-line {
+	display: block;
+	white-space: nowrap;
+	/* Ось це те, що він просив - ОДИН рядок */
+	/* Сірий колір */
+}
+
+/* Прибираємо білий колір з акцентів, залишаємо тільки жирність */
+.text-subtitle strong {
+	font-weight: 700;
+	color: inherit;
 }
