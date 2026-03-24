@@ -965,6 +965,10 @@ a {
 		font-size: 19px;
 	}
 
+	.text-subtitle {
+		font-size: 15px;
+	}
+
 	.text-subtitle br {
 		display: block;
 	}
