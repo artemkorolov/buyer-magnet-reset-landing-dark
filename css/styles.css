@@ -674,7 +674,7 @@ a {
 
 .phase-number {
 	font-size: 13px;
-	color: var(--color-label);
+	color: var(--text-content);
 	font-weight: 600;
 	margin-bottom: 20px;
 }
@@ -720,7 +720,7 @@ a {
 
 .goal-label {
 	font-size: 11px;
-	color: var(--color-label);
+	color: var(--text-content);
 	display: block;
 	margin-bottom: 6px;
 	text-transform: uppercase;
