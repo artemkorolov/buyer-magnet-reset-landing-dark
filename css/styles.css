@@ -1,6 +1,5 @@
 :root {
-	--bg-primary: #000000;
-	/* --bg-primary: #08090a; */
+	/* --bg-primary: #000000; */
 	--bg-primary: #050505;
 	--bg-secondary: (255, 255, 255, 0.02);
 	--accent-blue: #4f7cff;
@@ -39,10 +38,10 @@ html {
 }
 
 body {
-	/* font-family: var(--font-main); */
+
 	font-family: var(--inter);
 	background-color: var(--bg-primary);
-	/* color: var(--text-main); */
+
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -200,9 +199,6 @@ a {
 	background: var(--bg-secondary);
 	border: 1px solid var(--border-subtle);
 	border-radius: 10px;
-	/* font-size: 13px; */
-	/* font-weight: 500; */
-	/* color: var(--text-subtitle); */
 	margin-bottom: 28px;
 }
 
@@ -273,15 +269,6 @@ a {
 	letter-spacing: -0.022em;
 }
 
-.display-title {
-	/* font-size: 36px; */
-	/* font-weight: 600; */
-	/* line-height: 1.25;
-	letter-spacing: -0.02em;
-	margin-bottom: 0; */
-}
-
-
 .white-text {
 	color: var(--text-main);
 }
@@ -302,7 +289,6 @@ a {
 }
 
 .text-highlight {
-	/* color: var(--text-subtitle); */
 	font-weight: 700;
 	color: inherit;
 }
@@ -321,20 +307,12 @@ a {
 
 	.problem-grid-3-col {
 		grid-template-columns: 1fr;
-		/* gap: 24px; */
 		gap: 2px;
 	}
 
 	.problem-header-new {
 		margin-bottom: 24px;
 	}
-
-	/* .problem-header-new .display-title {
-		font-size: 24px;
-		line-height: 1.33;
-		letter-spacing: 0.012em;
-		font-weight: 510;
-	} */
 
 	.display-title {
 		font-size: 24px;
@@ -367,11 +345,6 @@ a {
 	grid-template-columns: 1fr 1.1fr;
 	gap: 100px;
 	align-items: start;
-}
-
-.reason-header {
-	/* position: sticky;
-	top: 120px; */
 }
 
 .reason-content-clean {
@@ -418,7 +391,6 @@ a {
 	padding-top: 32px;
 	display: flex;
 	flex-direction: column;
-	/* gap: 8px; */
 }
 
 .body-text-white-punch {
@@ -451,10 +423,6 @@ a {
 		gap: 48px;
 		padding: 0 24px;
 	}
-
-	/* .reason-header {
-		position: static;
-	} */
 
 	.text-subtitle {
 		font-size: 15px;
@@ -680,11 +648,6 @@ a {
 }
 
 .phase-card-title {
-	/* font-size: 18px;
-	margin-bottom: 20px;
-	color: var(--text-subtitle);
-	font-weight: 500;
-	letter-spacing: -0.01em; */
 	margin-bottom: 8px;
 }
 
@@ -712,10 +675,6 @@ a {
 	margin-top: auto;
 	border-top: 1px solid var(--border-content);
 	padding-top: 20px;
-}
-
-.card-footer .text-content {
-	/* font-size: 16px; */
 }
 
 .goal-label {
@@ -790,11 +749,6 @@ a {
 	border-color: var(--border-content);
 }
 
-.momentum-card-linear .mb-24 {
-	/* color: var(--text-content);
-	font-size: 17px; */
-}
-
 .phase-list-dash-new {
 	list-style: none;
 	padding: 0;
@@ -823,10 +777,6 @@ a {
 	flex-direction: column;
 	/* gap: 8px; */
 }
-
-/* .card-footer-momentum p {
-	color: var(--color-label);
-} */
 
 @media (max-width: 768px) {
 	.momentum-card-linear {
@@ -891,7 +841,6 @@ a {
 
 	.receive-item:hover p {
 		color: var(--text-content);
-
 	}
 }
 
@@ -900,7 +849,6 @@ a {
 		padding: 20px 0;
 	}
 }
-
 
 
 /* ==========================================================================
@@ -1142,8 +1090,6 @@ a {
 	color: #888888;
 }
 
-
-
 .dot-divider {
 	color: rgba(255, 255, 255, 0.15);
 }
@@ -1285,15 +1231,11 @@ a {
 	}
 }
 
-/*  */
 .impact-line {
 	display: block;
 	white-space: nowrap;
-	/* Ось це те, що він просив - ОДИН рядок */
-	/* Сірий колір */
 }
 
-/* Прибираємо білий колір з акцентів, залишаємо тільки жирність */
 .text-subtitle strong {
 	font-weight: 700;
 	color: inherit;
