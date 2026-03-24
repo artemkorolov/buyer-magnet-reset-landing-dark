@@ -1,5 +1,4 @@
 :root {
-	/* --bg-primary: #000000; */
 	--bg-primary: #050505;
 	--bg-secondary: (255, 255, 255, 0.02);
 	--accent-blue: #4f7cff;
@@ -1254,7 +1253,3 @@ a {
 	white-space: nowrap;
 }
 
-.text-subtitle strong {
-	font-weight: 700;
-	color: inherit;
-}
