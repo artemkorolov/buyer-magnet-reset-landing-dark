@@ -128,10 +128,7 @@ a {
 }
 
 .text-highlight {
-	/* color: var(--text-subtitle); */
 	font-weight: 700;
-	/* letter-spacing: -0.01em;
-	text-shadow: 0 0 20px var(--text-shadow); */
 }
 
 .btn-primary {
@@ -193,8 +190,6 @@ a {
 
 .hero-subtext {
 	margin-top: 24px;
-	/* font-size: 14px;
-	color: var(--text-subtitle); */
 }
 
 .badge {
@@ -395,7 +390,7 @@ a {
 	padding: 0;
 	display: flex;
 	flex-direction: column;
-	gap: 16px;
+	gap: 8px;
 }
 
 .because-list-new li {
@@ -422,7 +417,7 @@ a {
 	padding-top: 32px;
 	display: flex;
 	flex-direction: column;
-	gap: 8px;
+	/* gap: 8px; */
 }
 
 .body-text-white-punch {
@@ -689,7 +684,7 @@ a {
 	color: var(--text-subtitle);
 	font-weight: 500;
 	letter-spacing: -0.01em; */
-	margin-bottom: 20px;
+	margin-bottom: 8px;
 }
 
 .phase-list-dash {
@@ -702,7 +697,7 @@ a {
 	color: var(--text-content);
 	font-size: 15px;
 	line-height: 1.5;
-	margin-bottom: 10px;
+	margin-bottom: 8px;
 	display: flex;
 }
 
@@ -809,7 +804,7 @@ a {
 	color: var(--text-content);
 	font-size: 15px;
 	line-height: 1.6;
-	margin-bottom: 10px;
+	margin-bottom: 8px;
 	display: flex;
 	align-items: flex-start;
 }
