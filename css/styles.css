@@ -1087,11 +1087,7 @@ a {
 }
 
 .checkout-kicker {
-	font-size: 17px;
-	letter-spacing: 0.12em;
-	color: var(--text-content);
 	margin-bottom: 32px;
-	font-weight: 500;
 }
 
 .price-container-soft {
@@ -1113,14 +1109,14 @@ a {
 
 .price-label {
 	font-size: 14px;
-	color: var(--color-label);
+	color: var(--text-content);
 	margin-bottom: 4px;
 }
 
 .price-value {
 	font-size: 36px;
 	font-weight: 700;
-	color: var(--text-main);
+	color: var(--text-title);
 	letter-spacing: -0.02em;
 }
 
@@ -1144,6 +1140,8 @@ a {
 	font-size: 17px;
 	color: #888888;
 }
+
+
 
 .dot-divider {
 	color: rgba(255, 255, 255, 0.15);
@@ -1198,6 +1196,10 @@ a {
 	.checkout-footer-text {
 		margin-top: 24px;
 		font-size: 15px;
+	}
+
+	.checkout-features-line span {
+		font-size: 12px;
 	}
 }
 
