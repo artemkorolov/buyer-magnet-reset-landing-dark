@@ -780,9 +780,9 @@ a {
 	gap: 8px;
 }
 
-.card-footer-momentum p {
+/* .card-footer-momentum p {
 	color: var(--color-label);
-}
+} */
 
 @media (max-width: 768px) {
 	.momentum-card-linear {
