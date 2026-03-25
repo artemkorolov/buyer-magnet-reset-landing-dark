@@ -443,7 +443,7 @@ a {
 .text-subtitle {
 	font-size: 15px;
 	line-height: 1.6;
-	color: var(--text-subtitle);
+	color: var(--text-main);
 	font-weight: 580;
 }
 
