@@ -537,7 +537,7 @@ a {
 	border-right: 1px solid var(--border-content);
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	/* justify-content: center; */
 }
 
 .linear-feature-col:first-child {
