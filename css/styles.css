@@ -455,12 +455,12 @@ a {
 	text-overflow: ellipsis; */
 
 	font-size: 15px;
-		line-height: 1.6;
-		color: var(--text-subtitle);
-		/* Muted blue-grey */
-		font-weight: 400;
-		/* Strictly regular as requested */
-		letter-spacing: -0.01em;
+	line-height: 1.6;
+	color: var(--text-subtitle);
+	/* Muted blue-grey */
+	font-weight: 475;
+	/* Strictly regular as requested */
+	letter-spacing: -0.01em;
 }
 
 @media (max-width: 992px) {
@@ -472,8 +472,8 @@ a {
 
 	.text-subtitle {
 		font-size: 15px;
-		line-height: 1.6;
-		letter-spacing: -0.011em;
+		/* line-height: 1.6;
+		letter-spacing: -0.011em; */
 		/* margin-bottom: 24px; */
 	}
 
