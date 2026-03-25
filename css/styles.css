@@ -681,7 +681,7 @@ a {
 .phase-card-title {
 	margin-bottom: 8px;
 	font-weight: 580;
-	color: var(--text-subtitle);
+	color: var(--text-main);
 }
 
 .phase-list-dash {
