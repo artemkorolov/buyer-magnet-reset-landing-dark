@@ -248,7 +248,7 @@ a {
 }
 
 .text-highlight-white {
-	font-weight: 600;
+	font-weight: 700;
 	color: var(--text-subtitle);
 	line-height: 1.6;
 }
@@ -898,7 +898,7 @@ a {
 }
 
 .highlight-white {
-	color: #ffffff;
+	/* color: #ffffff; */
 	font-weight: 500;
 }
 
