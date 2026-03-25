@@ -697,10 +697,10 @@ a {
 
 .phase-card-title {
 	margin-bottom: 8px;
-	font-weight: 510;
+	/* font-weight: 510; */
 	/* color: var(--text-main); */
-	color: var(--text-subtitle);
-	letter-spacing: -0.011em;
+	/* color: var(--text-subtitle);
+	letter-spacing: -0.011em; */
 }
 
 .phase-list-dash {
