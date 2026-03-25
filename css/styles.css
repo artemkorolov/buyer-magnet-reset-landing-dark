@@ -373,7 +373,7 @@ a {
 .reason-content-clean {
 	display: flex;
 	flex-direction: column;
-	gap: 48px;
+	gap: var(--space-xl);
 }
 
 .because-content {
@@ -575,7 +575,8 @@ a {
 @media (max-width: 992px) {
 	.linear-features-grid {
 		grid-template-columns: 1fr;
-		gap: 32px;
+		/* gap: 32px; */
+		gap: var(--space-xl);
 	}
 
 	.linear-feature-col {
