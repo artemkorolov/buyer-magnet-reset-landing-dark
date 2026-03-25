@@ -1,5 +1,6 @@
 :root {
 	--bg-primary: #050505;
+	--bg-primary: #08090a;
 	--bg-secondary: (255, 255, 255, 0.02);
 	--accent-blue: #4f7cff;
 	--accent-glow: rgba(79, 124, 255, 0.25);
