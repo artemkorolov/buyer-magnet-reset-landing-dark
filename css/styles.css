@@ -458,7 +458,7 @@ a {
 		font-size: 15px;
 		line-height: 1.6;
 		letter-spacing: -0.011em;
-		margin-bottom: 24;
+		/* margin-bottom: 24px; */
 	}
 
 	.text-content {
@@ -1259,4 +1259,3 @@ a {
 	display: block;
 	white-space: nowrap;
 }
-
