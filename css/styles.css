@@ -27,7 +27,7 @@
 	--space-lg: 28px;
 	--space-xl: 38px;
 	--space-md: 24px;
-
+	--gap-xl: 40px;
 	--font-main: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
 	/* --inter: "Inter", -apple-system, sans-serif; */
 	--inter: "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -182,7 +182,7 @@ a {
 .hero-container {
 	display: flex;
 	flex-direction: column;
-	gap: var(--space-lg);
+	gap: var(--gap-xl);
 }
 
 .display-title-hero {
@@ -208,7 +208,7 @@ a {
 }
 
 .hero-subtext {
-	margin-top: var(--space-lg);
+	margin-top: var(--gap-xl);
 }
 
 .badge {
@@ -299,10 +299,6 @@ a {
 	color: var(--text-main);
 }
 
-.problem-subtitle {
-	/* margin-top: 20px; */
-}
-
 .problem-grid-3-col {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -316,7 +312,6 @@ a {
 
 .text-highlight {
 	font-weight: 500;
-
 	color: var(--text-subtitle);
 }
 
@@ -669,7 +664,7 @@ a {
 .icon-box-large svg {
 	width: 24px;
 	height: 24px;
-	stroke: var(--color-label);
+	stroke: var(--text-subtitle);
 	stroke-width: 1.5;
 }
 
@@ -692,10 +687,7 @@ a {
 
 .phase-card-title {
 	margin-bottom: 8px;
-	/* font-weight: 510; */
-	/* color: var(--text-main); */
-	/* color: var(--text-subtitle);
-	letter-spacing: -0.011em; */
+	font-weight: 500;
 }
 
 .phase-list-dash {
@@ -868,7 +860,7 @@ a {
 	background: rgba(255, 255, 255, 0.02);
 	border: 1px solid var(--border-content);
 	border-radius: 12px;
-	color: var(--color-label);
+	color: var(--text-subtitle);
 	transition: all 0.3s ease;
 	flex-shrink: 0;
 }
