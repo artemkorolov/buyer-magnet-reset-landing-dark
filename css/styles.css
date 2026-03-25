@@ -6,7 +6,6 @@
 	--accent-glow: rgba(79, 124, 255, 0.25);
 	--color-label: #666666;
 
-	/* --text-title: #ffffff; */
 	--text-subtitle: #d0d6e0;
 	--text-content: #8a8f98;
 	--text-main: #f7f8f8;
@@ -29,7 +28,6 @@
 	--space-md: 24px;
 	--gap-xl: 40px;
 	--font-main: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
-	/* --inter: "Inter", -apple-system, sans-serif; */
 	--inter: "Inter", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
@@ -118,7 +116,6 @@ h3 {
 .display-title {
 	font-size: clamp(32px, 4vw, 42px);
 	line-height: 1.2;
-	/* margin-bottom: 38px; */
 	font-weight: 550;
 	letter-spacing: -0.045em;
 	color: var(--text-main);
@@ -188,7 +185,6 @@ a {
 .display-title-hero {
 	font-size: clamp(54px, 8.5vw, 100px);
 	line-height: 0.95;
-	/* margin-bottom: 32px; */
 	max-width: 1100px;
 	margin-left: auto;
 	margin-right: auto;
@@ -219,7 +215,6 @@ a {
 	background: var(--bg-secondary);
 	border: 1px solid var(--border-subtle);
 	border-radius: 10px;
-	/* margin-bottom: 28px; */
 }
 
 .badge .dot {
@@ -241,7 +236,6 @@ a {
 	}
 
 	.hero-description {
-		/* margin-bottom: 32px; */
 		font-size: 18px;
 	}
 }
@@ -280,14 +274,11 @@ a {
 }
 
 .problem-header-new {
-	/* margin-bottom: 64px; */
 	display: flex;
 	flex-direction: column;
 	gap: var(--space-xl);
 	margin-bottom: var(--space-xl);
 }
-
-
 
 .display-title {
 	font-size: 40px;
@@ -311,8 +302,9 @@ a {
 }
 
 .text-highlight {
-	font-weight: 500;
+	font-weight: 600;
 	color: var(--text-subtitle);
+	line-height: 1.6;
 }
 
 .hidden {
@@ -344,16 +336,11 @@ a {
 		gap: 2px;
 	}
 
-	.problem-header-new {
-		/* margin-bottom: 24px; */
-	}
-
 	.display-title {
 		font-size: 24px;
 		line-height: 1.33;
 		letter-spacing: 0.012em;
 		font-weight: 600;
-		/* margin-bottom: 24px; */
 	}
 
 	.hide-mobile {
@@ -365,7 +352,6 @@ a {
 	}
 }
 
-/*  */
 
 /* ==========================================================================
    SECTION 3: THE REAL REASON
@@ -407,7 +393,6 @@ a {
 	align-items: center;
 	gap: 12px;
 }
-
 
 .because-list-new li svg {
 	width: 18px;
@@ -529,10 +514,6 @@ a {
 	padding: var(--section-padding) 0;
 }
 
-.threads-header-full {
-	/* margin-bottom: 64px; */
-}
-
 .linear-features-grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -543,7 +524,6 @@ a {
 	border-right: 1px solid var(--border-content);
 	display: flex;
 	flex-direction: column;
-	/* justify-content: center; */
 }
 
 .linear-feature-col:first-child {
@@ -581,7 +561,6 @@ a {
 @media (max-width: 992px) {
 	.linear-features-grid {
 		grid-template-columns: 1fr;
-		/* gap: 32px; */
 		gap: var(--space-xl);
 	}
 
@@ -602,12 +581,6 @@ a {
 	}
 }
 
-@media (max-width: 768px) {
-	.threads-header-full {
-		/* margin-bottom: 40px; */
-	}
-}
-
 
 /* ==========================================================================
    SECTION 6: THE SYSTEM (3 PHASES)
@@ -615,10 +588,6 @@ a {
 
 .phases-section {
 	padding: var(--section-padding) 0;
-}
-
-.phases-header {
-	/* margin-bottom: 56px; */
 }
 
 .phases-grid {
@@ -814,7 +783,6 @@ a {
 	border-top: 1px solid var(--border-content);
 	display: flex;
 	flex-direction: column;
-	/* gap: 8px; */
 }
 
 @media (max-width: 768px) {
@@ -906,21 +874,18 @@ a {
 }
 
 .role-header-col .display-title {
-	/* margin-bottom: 20px; */
 	line-height: 1.0;
 }
 
 .role-main-instruction {
 	font-size: 17px;
 	line-height: 1.4;
-	/* color: var(--text-body-bright); */
 	margin-bottom: 40px;
 }
 
 .role-accent-text {
 	font-size: 17px;
 	line-height: 1.4;
-	/* color: var(--text-body-bright); */
 }
 
 .prominent {
@@ -1061,12 +1026,10 @@ a {
 }
 
 .feature-item {
-	/* color: var(--text-body-bright); */
 	font-weight: 600;
 }
 
 .checkout-footer-text {
-	/* color: var(--text-body-bright); */
 }
 
 .checkout-card-calm {
