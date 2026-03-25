@@ -314,8 +314,8 @@ a {
 }
 
 .text-highlight {
-	font-weight: 700;
-	color: inherit;
+	font-weight: 500;
+	color: var(--text-subtitle);
 }
 
 .hidden {
