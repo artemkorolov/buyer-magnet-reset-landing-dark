@@ -448,6 +448,10 @@ a {
 	color: var(--text-content);
 }
 
+.text-balance {
+	text-wrap: balance;
+}
+
 .text-subtitle {
 	/* font-size: 15px;
 	line-height: 1.6; */
@@ -459,7 +463,7 @@ a {
 	line-height: 1.6;
 	color: var(--text-subtitle);
 	/* Muted blue-grey */
-	font-weight: 495;
+	font-weight: 485;
 	/* Strictly regular as requested */
 	letter-spacing: -0.011em;
 }
