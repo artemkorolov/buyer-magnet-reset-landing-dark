@@ -308,7 +308,7 @@ a {
 }
 
 .reason-content-clean:hover .because-list-new li svg {
-	stroke: rgba(255, 255, 255, 0.4);
+	stroke: var(--text-subtitle);
 }
 
 .reason-footer-highlight {
