@@ -439,9 +439,16 @@ a {
 }
 
 .text-subtitle {
-	font-size: 22px;
+	/* font-size: 22px;
+	line-height: 1.6;
+	color: var(--text-subtitle); */
+}
+
+.text-subtitle {
+	font-size: 15px;
 	line-height: 1.6;
 	color: var(--text-subtitle);
+	font-weight: 580;
 }
 
 @media (max-width: 992px) {
