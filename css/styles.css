@@ -314,7 +314,7 @@ a {
 
 .text-highlight {
 	font-weight: 500;
-	
+
 	color: var(--text-subtitle);
 }
 
@@ -458,7 +458,7 @@ a {
 	font-size: 15px;
 	line-height: 1.6;
 	color: var(--text-subtitle);
-	font-weight: 410;
+	font-weight: 400;
 	letter-spacing: -0.011em;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
