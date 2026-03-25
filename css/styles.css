@@ -241,7 +241,8 @@ a {
 }
 
 .text-highlight {
-	font-weight: 500;
+	font-size: 15px;
+	font-weight: 600;
 	color: var(--text-subtitle);
 	line-height: 1.6;
 }
@@ -1170,7 +1171,7 @@ a {
 	}
 
 	.checkout-features-line span {
-		font-size: 12px;
+		font-size: 13px;
 	}
 
 	.final-description {
