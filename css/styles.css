@@ -26,15 +26,15 @@
 	--glossy-border: 1px solid rgba(59, 130, 246, 0.2);
 	--text-gradient: linear-gradient(180deg, #ffffff 40%, rgba(255, 255, 255, 0.4) 100%);
 	--glow-top: radial-gradient(circle at 50% -20%, rgba(130, 177, 255, 0.15) 0%, transparent 60%);
-
 	--transition-main: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 	--stroke-icon: rgba(255, 255, 255, 0.2);
+
 	--container-max: 1360px;
 	--section-padding: 115px;
 
+	--space-md: 24px;
 	--space-lg: 32px;
 	--space-xl: 38px;
-	--space-md: 24px;
 	--gap-xl: 40px;
 
 }
@@ -88,14 +88,13 @@ section+section {
 	margin-bottom: var(--space-xl);
 }
 
-
 h1,
 h2,
 h3 {
 	color: var(--text-main);
 }
 
-p{
+p {
 	color: var(--text-subtitle);
 }
 
@@ -117,14 +116,14 @@ p{
 	margin-bottom: 24px;
 }
 
-.btn-primary,
-a {
-	-webkit-tap-highlight-color: transparent;
-}
-
 .keyword {
 	color: var(--text-main);
 	font-weight: 600;
+}
+
+.btn-primary,
+a {
+	-webkit-tap-highlight-color: transparent;
 }
 
 .btn-primary {
@@ -472,7 +471,6 @@ a {
 
 .phase-card:hover {
 	border-color: var(--stroke-icon);
-	/* box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4); */
 }
 
 .card-header {
@@ -519,7 +517,6 @@ a {
 }
 
 .phase-card-title {
-	font-size: 18px;
 	margin-bottom: 8px;
 	font-weight: 500;
 }
@@ -544,6 +541,10 @@ a {
 	content: "—";
 	margin-right: 10px;
 	color: var(--text-content);
+}
+
+.card-body .text-subtitle {
+	font-size: 18px;
 }
 
 .card-footer {
