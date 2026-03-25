@@ -5,12 +5,14 @@
 	--accent-blue: #4f7cff;
 	--accent-glow: rgba(79, 124, 255, 0.25);
 	--color-label: #666666;
-	--text-title: #ffffff;
+
+	/* --text-title: #ffffff; */
 	--text-subtitle: #d0d6e0;
 	--text-content: #8a8f98;
 	--text-main: #f7f8f8;
 	--text-title: #f7f8f8;
 	--text-muted: #62666d;
+
 	--text-body-bright: #b1b1b1;
 	--border-btn: rgba(255, 255, 255, 0.1);
 	--text-shadow: rgba(255, 255, 255, 0.08);
@@ -919,14 +921,14 @@ a {
 .role-main-instruction {
 	font-size: 17px;
 	line-height: 1.4;
-	color: var(--text-body-bright);
+	/* color: var(--text-body-bright); */
 	margin-bottom: 40px;
 }
 
 .role-accent-text {
 	font-size: 17px;
 	line-height: 1.4;
-	color: var(--text-body-bright);
+	/* color: var(--text-body-bright); */
 }
 
 .prominent {
@@ -1067,12 +1069,12 @@ a {
 }
 
 .feature-item {
-	color: var(--text-body-bright);
+	/* color: var(--text-body-bright); */
 	font-weight: 600;
 }
 
 .checkout-footer-text {
-	color: var(--text-body-bright);
+	/* color: var(--text-body-bright); */
 }
 
 .checkout-card-calm {
