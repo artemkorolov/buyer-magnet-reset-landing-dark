@@ -459,9 +459,9 @@ a {
 	line-height: 1.6;
 	color: var(--text-subtitle);
 	/* Muted blue-grey */
-	font-weight: 475;
+	font-weight: 495;
 	/* Strictly regular as requested */
-	letter-spacing: -0.01em;
+	letter-spacing: -0.011em;
 }
 
 @media (max-width: 992px) {
